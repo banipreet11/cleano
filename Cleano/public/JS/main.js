@@ -95,6 +95,6 @@ function closeDocuPop()
 
 
 
-// ========= show password ===
+// ========= tab script ===
 
 
