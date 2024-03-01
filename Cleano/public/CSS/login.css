@@ -1,0 +1,182 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../IMAGES/Login.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.login-main-box .login-box,
+.login-main-box .login-box-signup {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-main-box .login-box-signup {
+    width: 80%;
+}
+
+.login-main-box .login-box h2,
+.login-main-box .login-box-signup h2 {
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-main-box .login-box-signup h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.login-main-box .form_cont,
+.login-main-box .form_cont_signup {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.login-main-box .form_cont input,
+.login-main-box .form_cont_signup input,
+.login-main-box .form_cont_signup select {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #696D61;
+    width: 100%;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+}
+
+.login-main-box .form_cont_signup label {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.login-main-box .form_cont_signup input {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+.login-main-box .form_cont_signup select {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+.login-main-box .form_cont .fill-admin {
+    text-align: center;
+    font-size: 14px;
+    outline-color: #333;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.login-main-box .form_cont_signup .heading {
+    margin-bottom: 20p;
+}
+
+.login-main-box .form_cont_signup .heading p {
+    font-size: 10px;
+    color: #000;
+}
+
+.login-main-box .form_cont button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #2148C0;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.login-main-box .form_cont span {
+    float: right;
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.login-main-box .form_cont .inpt {
+    position: relative;
+}
+
+.login-main-box .form_cont .icon_eye {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.login-main-box .form_cont .already-registerd {
+    margin: 15px 0;
+    text-align: center;
+    color: #616161;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.login-main-box .form_cont .already-registerd a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline !important;
+}
+
+
+.login-main-box .form_cont_signup .para {
+    font-size: 14px;
+    color: #696D61;
+}
+
+.login-main-box .form_cont_signup .para a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: underline !important;
+
+}
+
+.login-main-box .form_cont_signup .btn_section 
+{
+    float: right;
+}
+.login-main-box .form_cont_signup .btn_section button
+{
+    border: none;
+    outline: none;
+    background-color: #2148C0;
+    color:#fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    right: 0;
+    float: right;
+}
+.login-main-box .form_cont_signup  span.already
+{
+    float: right !important;
+    color: #696D61;
+    font-size: 13px;
+    margin-top: 40px;
+    font-weight: 500;
+    margin-right: -100px;
+}
+.login-main-box .form_cont_signup  span.already a 
+{
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline !important;
+}

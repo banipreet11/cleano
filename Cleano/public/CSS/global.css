@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --body-text: "DM Sans";
+  --font-sora: Sora;
+
+  /* font sizes */
+  --font-size-smi: 13px;
+  --font-size-3xs: 10px;
+  --body-text-size: 16px;
+  --font-size-5xl: 24px;
+  --font-size-xs: 12px;
+  --heading-3-size: 32px;
+
+  /* Colors */
+  --light-background: #fff;
+  --primary-color: #8dc73f;
+  --color-gainsboro: #e0e8e0;
+  --subheadings: #696d61;
+  --grey: #f1f1f2;
+  --color-whitesmoke-100: rgba(241, 241, 242, 0.7);
+  --dark-mode: #201335;
+  --color-gray-100: rgba(255, 255, 255, 0.13);
+
+  /* Gaps */
+  --gap-7xs: 6px;
+  --gap-11xs: 2px;
+
+  /* Paddings */
+  --padding-mini: 15px;
+  --padding-13xl: 32px;
+  --padding-7xs: 6px;
+  --padding-xl: 20px;
+  --padding-8xs: 5px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-3xs: 10px;
+}
