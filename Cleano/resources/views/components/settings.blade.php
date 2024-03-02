@@ -30,102 +30,190 @@
 
     <div class="user_container">
 
-        <div class="d-flex align-items-start">
+      <div class="settings_left">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'settings-domain')" id="defaultOpen">
+            <i class="fa-solid fa-globe"></i>
+            &nbsp;Domain
+          </button>
+          
+          <button class="tablinks" onclick="openCity(event, 'settings-staff-account')">
+            <i class="fa-solid fa-user"></i> &nbsp;Staff Account</button>
 
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+          <button class="tablinks" onclick="openCity(event, 'settings-notification')">
+            <i class="fa-solid fa-bell"></i> &nbsp;Notification</button>
 
-    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+          <button class="tablinks" onclick="openCity(event, 'settings-payment')">
+            <i class="fa-regular fa-credit-card"></i>&nbsp;Payment</button>
 
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
+          <button class="tablinks" onclick="openCity(event, 'settings-checkout')">
+            <i class="fa-solid fa-cart-shopping"></i> &nbsp;
+            Checkout</button>
 
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+          <button class="tablinks" onclick="openCity(event, 'settings-warehouse')">
+            <i class="fa-solid fa-warehouse"></i> &nbsp;
+            Warehouse</button>
+          
+          <button class="tablinks" onclick="openCity(event, 'settings-delivery')">
+            <i class="fa-solid fa-truck-ramp-box"></i> &nbsp;
+            Delivery</button>
 
-        <div class="" style="width:50%;">
-        <h3>Staff account</h3>
-                <p>Control and assign roles for your team members here.</p>
-                <div class="tab-searchAdd"><div class="tab-search">
-                    <img src="\IMAGES\icon.svg" >
-                    <input type=text placeholder="Search" required>
-                </div>
-                <button class="btn btn-primary" id="addStaff">Add Staff</button></div>
-                <div id="staffTable">
-                <table class="table">
-                    <tr>
-                      <th>Company</th>
-                      <th>Contact</th>
-                      <th>Country</th>
-                    </tr>
-                    <tr>
-                      <td>Alfreds Futterkiste</td>
-                      <td>Maria Anders</td>
-                      <td>Germany<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                    <tr>
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                      <td>Mexico<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                    <tr>
-                      <td>Ernst Handel</td>
-                      <td>Roland Mendel</td>
-                      <td>Austria<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                    <tr>
-                      <td>Island Trading</td>
-                      <td>Helen Bennett</td>
-                      <td>UK<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                    <tr>
-                      <td>Laughing Bacchus Winecellars</td>
-                      <td>Yoshi Tannamuri</td>
-                      <td>Canada<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                    <tr>
-                      <td>Magazzini Alimentari Riuniti</td>
-                      <td>Giovanni Rovelli</td>
-                      <td>Italy<img src="\IMAGES\ph_dots-three-vertical-bold.svg"></td>
-                    </tr>
-                  </table>
-                </div>
-    </div>
+          <button class="tablinks" onclick="openCity(event, 'settings-returns')">
+            <i class="fa-solid fa-truck"></i> &nbsp;
+            Returns</button>
 
-</div>
+          <button class="tablinks" onclick="openCity(event, 'settings-tax')">
+            <i class="fa-solid fa-calculator"></i>&nbsp;
+            Tax</button>
 
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-      <div class="Auto_accept">
-        <h3>Auto accept orders</h3>
-        <h4 class="order">Mark orders as Accepted Automatically for the desired payment nodes</h4>
-        <h4 class="order2">Never ></h4>
+          <button class="tablinks" onclick="openCity(event, 'settings-extracharges')">
+            <i class="fa-solid fa-money-bills"></i> &nbsp;
+            Extra Charges</button>
+
+          <button class="tablinks" onclick="openCity(event, 'settings-seo')">
+            <i class="fa-brands fa-searchengin"></i> &nbsp;
+            SEO</button>
+
+          <button class="tablinks" onclick="openCity(event, 'settings-languages')">
+            <i class="fa-solid fa-language"></i> &nbsp;
+            Languages</button>
+
+          <button class="tablinks" onclick="openCity(event, 'settings-support')">
+            <i class="fa-solid fa-user-group"></i> &nbsp;
+            Support</button>
+
+          <button class="tablinks" onclick="openCity(event, 'settings-policies')">
+            <i class="fa-regular fa-file-lines"></i>&nbsp;
+            Policies</button>
+
+          <button class="tablinks" onclick="openCity(event, 'settings-storetimings')">
+            <i class="fa-solid fa-clock"></i> &nbsp;
+            Store Timings
+          </button>
+          
+        </div>
       </div>
-      <div class="notification">
-       <h3>Notification</h3>
-       <p class="content1">Send order notifications to the customers automatically.</p>
-       <p class="content2">Sender email (SMTP)</p>
-       <p class="content3">CleaneoApp Technologies India Pvt Ltd. <no-reply@cleaneoapp.com ></p>
-       <p class="content4">WhatsApp notification</p>
-       <p class="content5">Dukaan ></p>
+
+      <div class="settings_right">
+
+        <div id="settings-domain" class="tabcontent">
+          <p>Customer Domain</p>
+          <div class="domain-name">Domain Name</div>
+          <div class="domain1">
+          <div class="domain-link">
+            <a href="">cleaneoapp.com</a>
+          </div>
+          <div class="domain2">
+          <p class="ext">External</p>
+          <a href=""><img src="IMAGES/ph_dots-three-vertical-bold.svg"/></a>
+          </div>
+          </div>
+        </div>
+        
+        <div id="settings-staff-account" class="tabcontent">
+           <h3>Staff account</h3>
+           <p>Control and assign roles for your team members here.</p>
+           <div class="staff-searchAdd">
+              <div class="staff-search">&nbsp;
+                <img src="\IMAGES\icon.svg" alt="">
+              <input type="text" placeholder="Search.." required>
+              </div>
+              <button class="btn btn-primary" id="staff-add" >Add Staff</button>
+            </div>
+           
+           <div class="staff-account-table">
+            <table class="table" id="staff-table" >
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Contact Details</th>
+              </tr>
+              <tr>
+                <td>This Kumar</td>
+                <td>Maria Anders</td>
+                <td class="staff-td"><span class="staff-td-text">Germany</span> <span class="staff-td-dot"> <img src="IMAGES\ph_dots-three-vertical-bold.svg" alt=""> </span></td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td class="staff-td"><span class="staff-td-text">Germany</span> <span class="staff-td-dot"> <img src="IMAGES\ph_dots-three-vertical-bold.svg" alt=""> </span></td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td class="staff-td"><span class="staff-td-text">Uk</span> <span class="staff-td-dot"> <img src="IMAGES\ph_dots-three-vertical-bold.svg" alt=""> </span></td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td class="staff-td"><span class="staff-td-text">Germany</span> <span class="staff-td-dot"> <img src="IMAGES\ph_dots-three-vertical-bold.svg" alt=""> </span></td>
+              </tr>
+            </table>
+            </div>
+           </div>
+        
+        <div id="settings-notification" class="tabcontent">
+          <div class="Auto-accept">
+          <p>Auto accept orders</p>
+          <div class="notification-combine">
+            <div class="notification-content">Mark orders as Accepted Automatically for the desired payment nodes</div>
+            <div class="notification-content1">Never ></div>
+          </div>
+        </div>
+        </div>
+
+        <div id="settings-payment" class="tabcontent">
+          settings-payment
+        </div>
+
+        <div id="settings-checkout" class="tabcontent">
+          settings-checkout
+        </div>
+
+        <div id="settings-warehouse" class="tabcontent">
+          settings-warehouse
+        </div>
+
+        <div id="settings-delivery" class="tabcontent">
+          settings-delivery
+        </div>
+
+        <div id="settings-returns" class="tabcontent">
+          settings-returns
+        </div>
+
+        <div id="settings-tax" class="tabcontent">
+          settings-tax
+        </div>
+
+        <div id="settings-extracharges" class="tabcontent">
+          settings-extracharges
+        </div>
+
+        <div id="settings-seo" class="tabcontent">
+          settings-seo
+        </div>
+
+        <div id="settings-languages" class="tabcontent">
+          settings-languages
+        </div>
+
+        <div id="settings-support" class="tabcontent">
+          settings-support
+        </div>
+
+        <div id="settings-policies" class="tabcontent">
+          settings-policeis
+        </div>
+
+        <div id="settings-storetimings" class="tabcontent">
+          settings-storetimings
+        </div>
+
+
+
       </div>
-    </div>
-    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
-
-        <h1></h1>
-    </div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-
-        <h1>dfvbhc4</h1>
-    </div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
-
-        <h1>dfvbhc</h1>
-    </div>
-
-  </div>
-</div>
+   
     </div>
 
     
