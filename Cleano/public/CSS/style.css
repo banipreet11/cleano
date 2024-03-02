@@ -1416,15 +1416,10 @@ ul {
 .tabcontent {
     display: none;
     float: left;
+    width: 100%;
     padding: 0px 12px;
-    border: 1px solid #ccc;
-    border-left: none;
-    height: 300px;
-    margin-left: 25px;
 }
-#settings-domain{
-    display: block;
-}
+
 #settings-domain {
     width: 100%;
     height: 177px;
@@ -1432,7 +1427,9 @@ ul {
     left: 553px;
     border-radius: 2px;
     background: #ffffff;
-    padding-top:15px;
+    padding-top: 15px;
+    display: block;
+    margin-left: 20px;
 }
 #settings-domain p {
     width: 172px;
@@ -1458,7 +1455,6 @@ ul {
     padding-left: 30px;
 }
 .domain-link {
-   
     left: 60px;
     font-family: Inter;
     font-size: 20px;
@@ -1490,9 +1486,10 @@ p .img {
     padding: 4.12px, 0px, 4.12px, 0px;
 }
 
-#settings-staff-account.tabcontent{
+#settings-staff-account.tabcontent {
     width: 100%;
     height: 100%;
+    background: white;
 }
 #settings-staff-account h3 {
     /* Staff account */
@@ -1533,7 +1530,7 @@ p .img {
     justify-content: space-between;
 }
 .staff-searchAdd .staff-search {
-    box-shadow: 0px 1px 2px 0px #0000000F;
+    box-shadow: 0px 1px 2px 0px #0000000f;
     border: none;
     height: auto;
     width: auto;
@@ -1542,92 +1539,89 @@ p .img {
     display: flex;
     align-items: stretch;
 }
-.staff-searchAdd .staff-search input{
+.staff-searchAdd .staff-search input {
     border: none;
     outline: none;
     height: auto;
     width: auto;
     margin-left: 18px;
 }
-.staff-searchAdd #staff-add{
+
+#staff-add {
     height: auto;
     width: auto;
     border-radius: 2px;
 }
-.staff-account-table{
-    margin-top: 40px; 
+.staff-account-table {
+    margin-top: 40px;
     height: auto;
 }
-.staff-account-table #staff-table th{
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    line-height: 2.5;
+}
+.staff-account-table #staff-table th {
     background-color: #e6e6e6;
     text-align: center;
+    color: #696974;
 }
-.staff-account-table #staff-table td{
+.staff-account-table #staff-table td {
     text-align: center;
 }
-.staff-account-table #staff-table .staff-td{
+.staff-account-table #staff-table .staff-td {
     display: flex;
 }
-.staff-account-table #staff-table .staff-td .staff-td-text{
-    flex:90%;
+.staff-account-table #staff-table .staff-td .staff-td-text {
+    flex: 90%;
     justify-content: center;
     align-items: center;
 }
-.staff-account-table #staff-table .staff-td .staff-td-dot{
-    flex:10%;
+.staff-account-table #staff-table .staff-td .staff-td-dot {
+    flex: 10%;
 }
 
-
-.domain1
-{
+.domain1 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    margin-top:25px;
+    margin-top: 25px;
 }
-.domain2
-{
+.domain2 {
     padding-right: 0.5rem;
 }
-
-.Auto-accept
-{
-    width: 824px;
+.notification-first-div {
+    width: 100%;
     height: 103px;
     top: 146px;
     left: 562px;
     border-radius: 4px;
     border: 1px;
-    background: #FFFFFF;
-    border: 1px solid #979797
+    background: #ffffff;
+    border: 1px solid #979797;
 }
-.Auto-accept p
-{
-    width: 159px;
+.notification-first-div .notification-content1 {
+    width: 100%;
     height: 31px;
+    top: 22px;
+    left: 16px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: #000000;
-    padding-top:30px;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
-
-.notification-content
-t-family: Inter;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #4D4D4D;
-}
-.notification-content1
-{
-    width: 516px;
+.notification-first-div .notification-content2 {
+    width: 100%;
     height: 31px;
     top: 43px;
     left: 16px;
@@ -1637,6 +1631,318 @@ t-family: Inter;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-    color: #4D4D4D;
+    color: #4d4d4d;
+    padding-top: 21px;
+    padding-left: 20px;
+}
+.notification-first-div .notification-content3 {
+    width: 69px;
+    height: 31px;
+    left: 746px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    padding-top: 15px;
+}
+.notification-first-div .notification-combined {
+    display: flex;
+    justify-content: space-between;
+}
+.notification-div2 {
+    width: 100%;
+    height: 186px;
+    left: 562px;
+    border-radius: 4px;
+    border: 1px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    margin-top: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
 
+.notification-div2 .notification-div2-content1 {
+    width: 100%;
+    height: 31px;
+    left: 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.notification-div2 .notification-div2-content2 {
+    width: 516px;
+    height: 31px;
+    top: 45px;
+    left: 16px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.notification-div2 .notification-div2-content3 {
+    width: 177px;
+    height: 31px;
+    top: 91px;
+    left: 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4d4d4d;
+    padding-top: 18px;
+    padding-left: 10px;
+}
+.notification-div2 .notification-div2-content4
+{
+    width: 476px;
+    height: 31px;
+    top: 91px;
+    left: 337px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top:18px;
+}
+.notification-div2 .notification-div2-content5
+{
+    width: 100%;
+    height: 31px;
+    top: 129px;
+    left: 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#4D4D4D;
+    padding-top: 18px;
+}
+.notification-div2 .notification-div2-content5
+{
+    width: 100%;
+    height: 31px;
+    top: 129px;
+    left: 722px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;   
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    padding-left: 10px;
+}
+.notification-div2 .notification-div2-content6
+{
+    width: 78px;
+    height: 31px;
+    top: 129px;
+    left: 722px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    padding-top: 20px;
+
+}
+.notification-div2 .notification-div2-combined1
+{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-top:18px;
+}
+.notification-div2 .notification-div2-combined2
+{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+#settings-payment .tabcontent {
+    display: block;
+}
+.settings-paytm,
+.settings-payment-provider,
+.settings-payment-mpm {
+    height: 100%;
+    background: white;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+.settings-paytm-heading {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.settings-paytm-heading-text {
+    width: auto;
+    height: 100%;
+    left: 17px;
+    top: 0px;
+}
+.settings-paytm-heading-button {
+    box-sizing: border-box;
+    width: 86.5px;
+    height: 27.5px;
+    left: 708px;
+    top: 17px;
+    background: #ffffff;
+    border: 1px solid #1b59f8;
+    border-radius: 2px;
+    padding-right: 5px;
+}
+.settings-paytm-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.settings-payment-provider {
+    padding: 10px;
+}
+.settings-payment-provider-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.settings-payment-provider-one .s-one {
+    height: 91px;
+    width: 91px;
+    border: 1px solid #4D4D4D;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-payment-provider-one .s-two {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    flex: left;
+    flex: 2;
+    margin-left: 42px;
+}
+.settings-payment-provider-one .s-two p{
+    /* Receive payments in cash upon delivery. */
+
+
+    width: 289px;
+    height: 18px;
+    left: 127px;
+    top: 388px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #4D4D4D;
+}
+
+div#settings-payment div.settings-payment-provider-one > div.s-three > button#setup-btn {
+    background: #1B59F8;
+    /* border-radius: 2px; */
+    width: 99px !important;
+    height: 32px !important;
+    text-align: center !important;
+    margin: auto !important;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.settings-payment-mpm{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.settings-payment-mpm h4{
+    /* Manual Payment Methods */
+
+width: 280px;
+height: 31px;
+left: 17px;
+top: 26px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+.settings-payment-mpm p
+{
+    /* Manage payment providers to accept payments from your customers. */
+
+width: 516px;
+height: 31px;
+left: 17px;
+top: 49px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+padding-top: 1px;
+color: #4D4D4D;
 }

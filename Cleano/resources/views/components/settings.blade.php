@@ -2,7 +2,7 @@
 
 
     <style>
-        
+      
     </style>
     <header>
         <div class="d-flex justify-content-between header_box">
@@ -102,11 +102,11 @@
           <div class="domain1">
           <div class="domain-link">
             <a href="">cleaneoapp.com</a>
-          </div>
+         </div>
           <div class="domain2">
           <p class="ext">External</p>
           <a href=""><img src="IMAGES/ph_dots-three-vertical-bold.svg"/></a>
-          </div>
+         </div>
           </div>
         </div>
         
@@ -120,7 +120,7 @@
               </div>
               <button class="btn btn-primary" id="staff-add" >Add Staff</button>
             </div>
-           
+            
            <div class="staff-account-table">
             <table class="table" id="staff-table" >
               <tr>
@@ -153,17 +153,105 @@
            </div>
         
         <div id="settings-notification" class="tabcontent">
-          <div class="Auto-accept">
-          <p>Auto accept orders</p>
-          <div class="notification-combine">
-            <div class="notification-content">Mark orders as Accepted Automatically for the desired payment nodes</div>
-            <div class="notification-content1">Never ></div>
+          <div class="notification-first-div">
+          <div class="notification-content1">Auto accept orders</div>
+          <div class="notification-combined">
+          <div class="notification-content2">Mark orders as Accepted Automatically for the desired payment nodes</div>
+          <div class="notification-content3">Never ></div>
+          </div>
+          <div class="notification-div2">
+          <div class="notification-div2-content1">Notification</div>
+          <div class="notification-div2-content2">Send order notifications to the customers automatically.</div>
+          <div class="notification-div2-combined1">
+            <div class="notification-div2-content3">Sender email (SMTP)</div>
+            <div class="notification-div2-content4">CleaneoApp Technologies India Pvt Ltd. &lt;no-reply@cleaneoapp.com &gt;</div>
+          </div>
+          <div class="notification-div2-combined2">
+            <div class="notification-div2-content5">WhatsApp notification</div>
+            <div class="notification-div2-content6">Dukaan ></div>
+          </div>
+          </div>
           </div>
         </div>
-        </div>
+          
 
         <div id="settings-payment" class="tabcontent">
-          settings-payment
+          <div class="settings-paytm">
+            <div class="settings-paytm-heading">
+              <p class="settings-paytm-heading-text">paytm</p>
+              <button class="settings-paytm-heading-button" >Details</button>
+            </div>
+            <div class="settings-paytm-content">
+              <div class="settings-paytm-content-left">
+                <p class="settings-paytm-content-left-pgt">Payment gateway fee</p>
+                <p class="settings-paytm-content-left-no">1.49%</p>
+              </div>
+              <div class="settings-paytm-content-right">
+                <p class="settings-paytm-content-right-tl">Transaction limit</p>
+                <p class="settings-paytm-content-right-no">₹5000</p>
+              </div>
+          </div> 
+          </div>
+
+          <div class="settings-payment-provider">
+              <h4>Payment providers</h4>
+              <p >Manage payment providers to accept payments from your customers.</p>
+              
+              <div class="settings-payment-provider-one">
+                  <div class="s-one">
+                    <img src="IMAGES\lucide_wallet-cards.svg" alt="">
+                  </div>
+                  <div class="s-two" style="text-align:left;">
+                    Credit Card / Debit Card
+                  </div>
+                  <div class="s-three">
+                    <button class="btn btn-primary" id="setup-btn" >Set Up</button>
+                  </div>
+              </div>
+
+              <div class="settings-payment-provider-one">
+                <div class="s-one">
+                  <img src="IMAGES\simple-icons_phonepe.svg" alt="">
+                </div>
+                <div class="s-two" style="text-align:left;">
+                  PhonePe Payment Gateway
+                </div>
+                <div class="s-three">
+                  <button class="btn btn-primary" id="setup-btn" >Set Up</button>
+                </div>
+            </div>
+
+
+            <div class="settings-payment-provider-one">
+              <div class="s-one">
+                <img src="IMAGES\Vector (1).svg" alt="">
+              </div>
+              <div class="s-two" style="text-align:left;">
+                Cash on delivery
+                <p>Receive payments in cash upon delivery.</p>
+              </div>
+              <div class="s-three">
+                <button class="btn btn-primary" id="setup-btn" >Set Up</button>
+              </div>
+          </div>
+
+       
+
+          </div> 
+
+          <div class="settings-payment-mpm">
+            <div class="settings-payment-mpm-left">
+              <h4>Manual Payment Methods</h4>
+              <p >Manage payment providers to accept payments from your customers.</p>
+            </div>
+            <div class="settings-paytm-content-right">
+              
+            </div>
+          </div>
+
+
+        </div> 
+          
         </div>
 
         <div id="settings-checkout" class="tabcontent">
