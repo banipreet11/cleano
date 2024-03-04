@@ -1,13 +1,10 @@
-
-
 function showSubmenu() {
-    var submenu = document.querySelector('.sub_menu_dropdown');
-    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    var submenu = document.querySelector(".sub_menu_dropdown");
+    submenu.style.display =
+        submenu.style.display === "block" ? "none" : "block";
 }
 
-
-
-// ============= slider  product ========== 
+// ============= slider  product ==========
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -38,15 +35,14 @@ function showSlides(n) {
     }
 
     // Display the current slide
-    slides[slideIndex - 1].style.display = "block";
+    // slides[slideIndex - 1].style.display = "block";
 }
-
 
 // ====== slider services =======
 // ====== slider services =======
 
 let slideIndex_ser = 1;
-showSlides_ser(slideIndex_ser);
+// showSlides_ser(slideIndex_ser);
 
 function plusSlides_ser(m) {
     showSlides_ser(slideIndex_ser + m);
@@ -78,22 +74,17 @@ function showSlides_ser(m) {
     slides_ser[slideIndex_ser - 1].style.display = "block";
 }
 
-
 // ===================  vendor  details   popup  ============
 
-function showDocImg()
-{
-    var docuPo = document.querySelector('.documnet_popup_section ');
+function showDocImg() {
+    var docuPo = document.querySelector(".documnet_popup_section ");
     docuPo.style.display = "block";
 }
 
-function closeDocuPop()
-{
-    var docuPo = document.querySelector('.documnet_popup_section ');
+function closeDocuPop() {
+    var docuPo = document.querySelector(".documnet_popup_section ");
     docuPo.style.display = "none";
 }
-
-
 
 // ========= tabs script ===
 
@@ -101,7 +92,7 @@ function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
     // console.log(tabcontent);
 
@@ -109,13 +100,43 @@ function openCity(evt, cityName) {
     // console.log(tablinks);
 
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+    $(".add-staff").hide();
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
+/*================popup==============================*/
+$('#popupx').hide();
+$('#3-dots').click(function(){
+    $('#popupx').toggle();
+    $('#popupx').css({"display":"flex",
+    "justify-content":"center",
+    "align-items":"center"});
+});
+
+// window.addEventListener('click',function(){
+//     $('#popupx').hide();
+// });
+
+// // staff account show -----------------
+console.log("ready");
+$(".add-staff").hide();
+
+$("#staff-add").click(function () {
+    $("#settings-staff-account").hide();
+    $(".add-staff").show();
+    console.log('clicked');
+});
+// --------------------------------------
+
+const slide =document.getElementsByClassName('slide-field');
+const slide_content = document.getElementsByClassName('round');
+
+slide.addEventListener('change', ()=>{
+    slide_content.textContent =slide.checked ? 'On' :'Off';
+});

@@ -42,4 +42,5 @@ Route::get('analystic_products',  [Homecontroller::class ,"analystic_products"])
 
 
 Route::get('settings',  [Homecontroller::class ,"settings"])->name('settings');
+Route::post('settings/add',  [Homecontroller::class ,"staff_add"]);
 

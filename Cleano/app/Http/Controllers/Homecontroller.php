@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use App\Models\Staff;
 
 class Homecontroller extends Controller
 {
@@ -33,6 +34,17 @@ class Homecontroller extends Controller
 
     public function settings()
     {
-        return view('components.settings');
+        $user = Staff::all();
+        return view('components.settings',['data'=>$user]);
+    }
+
+    public function staff_add(Request $r)
+    {
+        $entry =new Staff;
+        $entry->name= $r->input('name');
+        $entry->role= $r->input('r1');
+        $entry->contact= $r->input('email');
+        $entry->save();
+        return back();
     }
 }
