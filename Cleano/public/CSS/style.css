@@ -456,14 +456,14 @@ ul {
 
 /*style items (options):*/
 .dashboard_select_items {
-    position: absolute;
+    
     background-color: #fff;
     top: 110%;
     width: 190px;
     padding: 10px;
     left: -45%;
     color: #000;
-    z-index: 99;
+    /* z-index: 99; */
     border-radius: 5px 5px 10px 10px;
     color: #000;
     font-size: 12px;
@@ -1325,6 +1325,12 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.heading-short
+{
+    color:rgb(109, 106, 106);
+    font-weight:600;
+    font-size:22px;
 }
 
 /* ========tabs========================================= */

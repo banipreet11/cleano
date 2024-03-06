@@ -282,8 +282,8 @@
 
 		.payment-status-button {
 			/* Badge */
-			width: 72px;
-            height: Hug (14.78px);
+			width: 75px;
+            height: Hug (14px);
             padding: 1.39px, 6.95px, 1.39px, 6.95px;
             border-radius: 8px;
             color: white;
@@ -300,44 +300,57 @@
 			border-radius: 20px;
 		}
 
-		#th-1 {
+		.th-1 {
 			width: 36px;
 			height: 40px;
 		}
 
-		#th-2 {
-			width: 220px;
+		.th-2 {
+			width: 120px;
 			height: 40px;
 		}
 
-		#th-3 {
-			width: 147px;
+		.th-3 {
+			width: 130px;
 			height: 40px;
 		}
 
-		#th-4 {
-			width: 186px;
+		.th-4 {
+			width: 170px;
 			height: 40px;
 		}
 
-		#th-5 {
-			width: 190px;
+		.th-5 {
+			width: 170px;
 			height: 40px;
 		}
 
-		#th-6 {
-			width: 178px;
+		.th-6 {
+			width: 120px;
 			height: 40px;
 		}
 
-		#th-7 {
-			width: 129px;
+		.th-7 {
+			width: 90px;
 			height: 40px;
 		}
+		.th-8 {
+			width: 120px;
+			height: 40px;
+		}
+		.th-9 {
+			width: 90px;
+			height: 40px;
+		}
+		.th-10 {
+			width: 80px;
+			height: 40px;
+		}
+		
 	</style>
 	<header>
 		<div class="d-flex justify-content-between header_box">
-			<h3>Order Management/Total Order</h3>
+			<h3>Order Management<span class="heading-short">/Total Order</span></h3>
 			<div class="header_left_side">
 				<span class="first"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36">
 						<path class="clr-i-outline clr-i-outline-path-1" fill="currentColor"
@@ -450,17 +463,16 @@
 				<table id="dynamic-table">
 					<thead id="t-head">
 						<tr>
-							<th id="th-1"><input type="checkbox"></th>
-							<th id="th-2">Orders</th>
-							<th id="th-3">User </th>
-							<th id="th-4">Mobile Number </th>
-							<th id="th-5">Location</th>
-							<th id="th-6">Payment</th>
-							<th id="th-7">Status</th>
-							<th id="th-8">Total Items</th>
-							<th id="th-9">Total Order</th>
-							<th id="th-10">Total Sales</th>
-							<th id="th-11">Date</th>
+							<th class="th-1"><input type="checkbox"></th>
+							<th class="th-2">Orders</th>
+							<th class="th-3">User </th>
+							<th class="th-4">Mobile Number </th>
+							<th class="th-5">Location</th>
+							<th class="th-6">Payment</th>
+							<th class="th-7">Status</th>
+							<th class="th-8">Total Order</th>
+							<th class="th-9">Total Sales</th>
+							<th class="th-10">Date</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -512,7 +524,9 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background: #A67548;
+							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+							linear-gradient(0deg, #1B59F8, #1B59F8);">Debit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -524,7 +538,9 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background: #158D86;
+							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+							linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -536,7 +552,9 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background:
+                             #5EAA3A;border: 0.7px solid #500050;
+                            background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -547,19 +565,9 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background: #DE7B07;
+                            border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
+                            linear-gradient(0deg, #955306, #955306)";>UPI</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -571,7 +579,9 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background: #001C6E;
+                            border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+                            linear-gradient(0deg, #1B59F8, #1B59F8);">Credit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -583,7 +593,23 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button" style="background: #A67548;
+							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+							linear-gradient(0deg, #1B59F8, #1B59F8);">Debit Card</button></td>
+							<td>username@company.com</td>
+							<td>Clock Tower, Dehradun</td>
+							<td>Active</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>Deposited on 2 Jan 2024</td>
+							<td>Username</td>
+							<td>+91 1234567890</td>
+							<td>+91 1234567890</td>
+							<td><button class="payment-status-button"style="background:
+                             #5EAA3A;border: 0.7px solid #500050;
+                                background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
@@ -596,7 +622,8 @@
 							<td>Username</td>
 							<td>+91 1234567890</td>
 							<td>+91 1234567890</td>
-							<td><button class="payment-status-button">Paid</button></td>
+							<td><button class="payment-status-button"style="background:
+                             #5EAA3A;border: 0.7px solid #500050;background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
 							<td>Active</td>
