@@ -377,25 +377,6 @@ ul {
     font-weight: 500;
 }
 
-@media (max-width: 1200px) {
-    .Dashboard .SideBar {
-        width: 80px;
-    }
-
-    .Dashboard .SideBar .sidebar_name {
-        display: none;
-    }
-
-    .Dashboard_header {
-        left: 80px;
-        width: calc(100% - 80px) !important;
-    }
-
-    .Dashboard_header header {
-        width: calc(100% - 80px);
-    }
-}
-
 /* ================================ */
 
 .Dashboard_header .user_container {
@@ -1503,8 +1484,7 @@ p .img {
     align-items: center;
     margin-top: 25px;
 }
-.domain2 
-{
+.domain2 {
     padding-right: 0.2rem;
 }
 
@@ -1576,19 +1556,25 @@ p .img {
 }
 .staff-searchAdd {
     width: 100%;
+    height: 35px;
     background-color: white;
     display: flex;
     justify-content: space-between;
 }
 .staff-searchAdd .staff-search {
+    border-radius: 6px;
     box-shadow: 0px 1px 2px 0px #0000000f;
     border: none;
     height: auto;
     width: auto;
     box-shadow: 0px 0px 0px 1px #68718229;
-    padding-left: 10px;
+    padding-left: 8px;
     display: flex;
     align-items: stretch;
+}
+.staff-searchAdd .staff-search img{
+    height: 20px;
+    margin-top: 10px;
 }
 .staff-searchAdd .staff-search input {
     border: none;
@@ -1653,11 +1639,11 @@ tr {
     display: none;
     width: 100%;
     height: 400px;
-    margin-left:20px;
+    margin-left: 20px;
     border-radius: 4px;
     padding: 10px 20px;
     background: #ffffff;
-    border: 1px solid #000000; 
+    border: 1px solid #000000;
 }
 .add-staff p.content {
     width: 100%;
@@ -1670,8 +1656,7 @@ tr {
     color: #000000;
     padding-left: 20px;
 }
-.add-staff-combined1 .add-staff-combined2 p.add-staff-name 
-{
+.add-staff-combined1 .add-staff-combined2 p.add-staff-name {
     width: 100%;
     height: 21px;
     font-family: Inter;
@@ -1701,8 +1686,7 @@ tr {
     text-align: left;
     background: #979797;
 }
-.add-staff-combined1 .add-staff-combined2 p.add-staff-email 
-{
+.add-staff-combined1 .add-staff-combined2 p.add-staff-email {
     width: 100%;
     height: 21px;
     font-family: Inter;
@@ -1712,9 +1696,9 @@ tr {
     letter-spacing: 0px;
     text-align: left;
     padding-left: 20px;
-    padding-top:12px;
+    padding-top: 12px;
 }
-#staff-add-button{
+#staff-add-button {
     margin: 30px 30px;
 }
 .staffemail {
@@ -1779,10 +1763,9 @@ input[type="radio"] {
     background: #ffffff;
     border: 1px solid #1b59f8;
 }
-.add-staff-radio .add-staff-name 
-{
-    display:flex;
-    
+.add-staff-radio .add-staff-name {
+    display: flex;
+
     width: 38px;
     height: 22px;
     top: 82px;
@@ -1824,13 +1807,10 @@ input[type="radio"] {
 .notification-first-div .notification-content1 {
     width: 100%;
     height: 31px;
-    top: 22px;
-    left: 16px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
     padding-top: 20px;
     padding-left: 20px;
@@ -1838,13 +1818,10 @@ input[type="radio"] {
 .notification-first-div .notification-content2 {
     width: 100%;
     height: 31px;
-    top: 43px;
-    left: 16px;
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
     text-align: left;
     color: #4d4d4d;
     padding-top: 21px;
@@ -1853,12 +1830,10 @@ input[type="radio"] {
 .notification-first-div .notification-content3 {
     width: 69px;
     height: 31px;
-    left: 746px;
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
     padding-top: 15px;
@@ -1870,7 +1845,6 @@ input[type="radio"] {
 .notification-div2 {
     width: 100%;
     height: 186px;
-    left: 562px;
     border-radius: 4px;
     border: 1px;
     background: #ffffff;
@@ -1883,12 +1857,10 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content1 {
     width: 100%;
     height: 31px;
-    left: 16px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
     padding-top: 20px;
@@ -1897,13 +1869,10 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content2 {
     width: 516px;
     height: 31px;
-    top: 45px;
-    left: 16px;
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
     text-align: left;
     padding-top: 15px;
     padding-left: 10px;
@@ -1911,13 +1880,10 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content3 {
     width: 177px;
     height: 31px;
-    top: 91px;
-    left: 16px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
     color: #4d4d4d;
     padding-top: 18px;
@@ -1926,32 +1892,25 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content4 {
     width: 476px;
     height: 31px;
-    top: 91px;
-    left: 337px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0em;
     text-align: left;
     padding-top: 18px;
 }
 .notification-div2 .notification-div2-content5 {
     width: 100%;
     height: 31px;
-    top: 129px;
-    left: 16px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
     color: #4d4d4d;
     padding-top: 18px;
@@ -1959,8 +1918,6 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content5 {
     width: 100%;
     height: 31px;
-    top: 129px;
-    left: 722px;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -1971,7 +1928,6 @@ input[type="radio"] {
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
     padding-left: 10px;
@@ -1979,7 +1935,6 @@ input[type="radio"] {
 .notification-div2 .notification-div2-content6 {
     width: 78px;
     height: 31px;
-
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -1990,7 +1945,6 @@ input[type="radio"] {
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
     padding-top: 20px;
@@ -2170,7 +2124,7 @@ input:checked + .round:before {
 }
 
 /* Rounded sliders */
-.round{
+.round {
     border-radius: 34px;
 }
 
@@ -2182,7 +2136,6 @@ input:checked + .round:before {
     padding-left: 5px;
     padding-top: 4px;
 }
-
 
 .settings-payment-mpm h4,
 .settings-payment-provider h4 {
@@ -2224,14 +2177,17 @@ input:checked + .round:before {
     color: #4d4d4d;
 }
 
-.settings-payment-mpm, .settings-checkout-guest{
+.settings-payment-mpm,
+.settings-checkout-guest {
     display: flex;
     justify-content: space-between;
 }
-.settings-payment-mpm-left, .settings-checkout-guest-left {
+.settings-payment-mpm-left,
+.settings-checkout-guest-left {
     flex: 90%;
 }
-.settings-payment-mpm-right, .settings-checkout-guest-right{
+.settings-payment-mpm-right,
+.settings-checkout-guest-right {
     flex: 10%;
     display: flex;
     justify-content: center;
@@ -2248,7 +2204,7 @@ input:checked + .round:before {
     border: 1px solid #aaa;
     margin-top: 15px;
 }
-.settings-checkout-guest{
+.settings-checkout-guest {
     height: 100%;
     background: white;
     border: 1px solid #aaa;
@@ -2292,12 +2248,12 @@ input:checked + .round:before {
     color: #4d4d4d;
     margin-left: 15px;
 }
-.settings-checkout-form-input{
+.settings-checkout-form-input {
     display: flex;
 }
 .settings-checkout-form-input input {
     /* Frame 1715 */
-    flex:50%;
+    flex: 50%;
     width: 100%;
     height: 50px;
     background: #e1e1e1;
@@ -2306,3 +2262,301 @@ input:checked + .round:before {
     outline: none;
     margin: 20px;
 }
+
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the custom radio button */
+.custom-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 1px solid #1b59f8;
+    border-radius: 50%;
+    margin-left: 35px;
+}
+
+/* Style the inner dot */
+.custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1b59f8;
+    display: none;
+}
+
+/* Show the inner dot when radio button is checked */
+input[type="radio"]:checked + .custom-radio::after {
+    display: block;
+}
+.importAnt {
+    color: red !important;
+}
+
+/*Rating and Review*/
+
+.Review .nav-item .nav-link {
+    color: red;
+    border-bottom: 2px solid #c13030;
+}
+
+.Review {
+    margin-top: 10px;
+}
+
+.Review .container .review-section-1 {
+    border: 1px solid #1b59f8 !important;
+    height: 371px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 14px;
+    width: 100%;
+}
+.Review .container .review-section-1 h6 {
+    font-weight: bold;
+    margin: 20px;
+}
+.Review .container .review-section-1 .lisa {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 63px;
+}
+.Review .container .review-section-1 .lisa img {
+    margin-right: 10px;
+}
+.Review .container .review-section-1 .head {
+    font-size: 14px;
+    font-weight: bold;
+}
+.Review .container .review-section-1 .para {
+    font-size: 12px;
+}
+.container .review-section-1 .text-end {
+    margin-right: 20px;
+    margin-top: -60px;
+}
+.container .review-section-1 .text-end .decline {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #1F2933;
+}
+
+.container .review-section-1 .text-end .Accept-btn {
+    width: 95px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid #1b59f8;
+    color: #1b59f8;
+    font-size: 14px;
+    background: white;
+}
+.Review .container .review-section-1 .Orlando {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px !important;
+    height: 63px;
+}
+.Review .container .review-section-1 .Orlando img {
+    margin-right: 10px;
+}
+
+.Review .container .review-section-1 .Andi {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 63px;
+}
+.Review .container .review-section-1 .Andi img {
+    margin-right: 10px;
+}
+
+.Review .container .review-section-1 .Eva {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 63px;
+}
+.Review .container .review-section-1 .Eva img {
+    margin-right: 10px;
+    height: 28.8px;
+    width: 28.8px;
+}
+.Review .container .review-section-1 .fa-solid {
+    height: 10px;
+    width: 10px;
+}
+
+.Review .container .review-section-2 {
+    border: 1px solid #1b59f8 !important;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 20px;
+    height: 371px;
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+.Review .container .review-section-2 .rene-wells {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 70px;
+}
+.Review .container .review-section-2 .head {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.Review .container .review-section-2 .para {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.container .review-section-2 .text-end {
+    margin-right: 20px;
+    margin-top: -40px;
+    font-size: 14px;
+}
+.container .review-section-2 .text-end .time {
+    font-size: 14px;
+}
+
+.Review .container .review-section-2 .joshua {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 70px;
+}
+.Review .container .review-section-2 .head {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.Review .container .review-section-2 .para {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.container .review-section-2 .text-end {
+    margin-right: 20px;
+    margin-top: -40px;
+}
+.container .review-section-2 .text-end .time {
+    font-size: 16px;
+}
+
+.Review .container .review-section-2 .anaiah {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.Review .container .review-section-2 .head {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.Review .container .review-section-2 .para {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.container .review-section-2 .text-end {
+    margin-right: 20px;
+    margin-top: -40px;
+    font-size: 10px;
+}
+.container .review-section-2 .text-end .time {
+    font-size: 12px;
+}
+
+/*section-3 *************/
+.Review .container .review-section-3 {
+    border: 1px solid #1b59f8 !important;
+    background-color: #fff;
+    border-radius: 14px;
+    height: 371px;
+    margin-top: 40px;
+}
+.Review .container .review-section-3 h6 {
+    font-weight: bold;
+    margin: 20px;
+}
+.Review .container .review-section-3 .lisa {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 63px;
+}
+.Review .container .review-section-3 .lisa img {
+    margin-right: 10px;
+}
+.Review .container .review-section-3 .head {
+    font-size: 14px;
+    font-weight: bold;
+}
+.Review .container .review-section-3 .para {
+    font-size: 12px;
+}
+.container .review-section-3 .text-end {
+    margin-right: 20px;
+    margin-top: -60px;
+}
+.container .review-section-3 .text-end .decline {
+    margin-right: 20px;
+    font-size: 14px;
+
+}
+
+.container .review-section-3 .text-end .Accept-btn {
+    width: 95px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid #1b59f8;
+    color: #1b59f8;
+    font-size: 14px;
+    background: white;
+}
+.Review .container .review-section-3 .Orlando {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px !important;
+    height: 63px;
+}
+.Review .container .review-section-3 .Orlando img {
+    margin-right: 10px;
+}
+
+.Review .container .review-section-3 .Andi {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 63px;
+}
+.Review .container .review-section-3 .Andi img {
+    margin-right: 10px;
+}
+
+.Review .container .review-section-3 .Eva {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 63px;
+}
+.Review .container .review-section-3 .Eva img {
+    margin-right: 10px;
+}
+
+/*===============*/
+
+
+
+
+/*===============*/
+/*Order Management styling */
+/*===============*/
+

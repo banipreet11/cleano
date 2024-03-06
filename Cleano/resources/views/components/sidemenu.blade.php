@@ -56,7 +56,7 @@
             </a>
         </li>
 
-        <li><a href=""><button class="" id="button5" onclick="addActiveClass('button5')"><span
+        <li><a href="{{route('orders')}}"><button class="" id="button5" onclick="addActiveClass('button5')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                             <g fill="none" stroke="currentColor">
@@ -95,7 +95,7 @@
                 </button>
             </a>
         </li>
-        <li><a href=""><button class="" id="button8" onclick="addActiveClass('button8')"><span
+        <li><a href="{{route('payment')}}"><button class="" id="button8" onclick="addActiveClass('button8')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -107,7 +107,7 @@
             </a>
         </li>
 
-        <li><a href=""><button class="" id="button9" onclick="addActiveClass('button9')"><span
+        <li><a href="{{ route('ratings')}}"><button class="" id="button9" onclick="addActiveClass('button9')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -132,7 +132,7 @@
             </a>
         </li>
 
-        <li><a href=""><button class="" id="button11" onclick="addActiveClass('button11')"><span
+        <li><a href="{{route('discount')}}"><button class="" id="button11" onclick="addActiveClass('button11')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
                             <path fill="currentColor"

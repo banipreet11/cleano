@@ -47,4 +47,23 @@ class Homecontroller extends Controller
         $entry->save();
         return back();
     }
+
+    public function ratings()
+    {
+        return view('components.ratings-and-review');
+    }
+
+    public function discount()
+    {
+        return view('components.discount');
+    }
+    public function orders()
+    {
+        return view('components.orders');
+    }
+    public function payment()
+    {
+        return view('components.payment-management');
+    }
+
 }

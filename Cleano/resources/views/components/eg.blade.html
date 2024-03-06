@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link href="CSS/style.css" rel="stylesheet">
+	<link href="CSS/style.css" rel="stylesheet">
+	<link href="CSS/bootstrap.css" rel="stylesheet">
+	<link href="CSS/font-awesome.css" rel="stylesheet">
+	<link href="CSS/usermanagment.css" rel="stylesheet"> <!-- google font  -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+	<link href="CSS/font-family.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> <!-- this is the jQUERY cdn link -->
+	<link href="CSS/data-table.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="Dashboard">
+		<div class="Dashboard_header">
+
+			<div class="user_container">
+				<ul class="nav nav-pills mb-3 gap-4" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation"> <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+							aria-selected="true">All</button> </li>
+					<li class="nav-item" role="presentation"> <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+							aria-selected="true">Percent Discount</button> </li>
+					<li class="nav-item" role="presentation"> <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+							aria-selected="false">Flat Discount</button> </li>
+					<li class="nav-item" role="presentation"> <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+							aria-selected="false">Percent Discount</button> </li>
+					<li class="nav-item" role="presentation"> <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+							aria-selected="false">Percent Discount</button> </li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+						tabindex="0">
+						<div class="d-flex gap-4">
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox" checked>
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox">
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex mt-4 gap-4">
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox">
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox">
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex mt-4 gap-4">
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox">
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+							<div class="CARD ms-2">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<p class="card-title fw-bold fs-3">45% OFF</p> <label class="Discount switch"> <input type="checkbox">
+											<span class="Discount slider round"></span> </label>
+									</div>
+									<p class="card-text fw-bold">Up to ₹20,000 <br> On orders above ₹200</p>
+									<div class="d-flex justify-content-between">
+										<p class="text-primary fw-bold">Times Used:4 </p>
+										<div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+												viewBox="0 0 24 24">
+												<path fill="currentColor"
+													d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22" />
+											</svg>
+											<p class="SHARE fw-bold">SHARE</p>
+										</div>
+									</div>
+									<div class="Total-Sales d-flex justify-content-between align-items-center px-2 pt-3">
+										<p class="SHARE fw-bold">Total Sales Generated</p>
+										<p class="SHARE fw-bold">₹17,082</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+						tabindex="0">....</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+						tabindex="0">1212 </div>
+					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+						tabindex="0">wqewqew</div>
+					<div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+						tabindex="0">00000</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="add-coupon-popup">
+		<div class="add_coupon_container_add_new bg-white p-2">
+			<!-- The cross button to close the form -->
+			<div class="d-flex justify-content-between">
+				<h5 class="px-3">Add New Coupon</h5>
+				<div class="cross" id="closeCoupon"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+						viewBox="0 0 16 16">
+						<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+							d="m11.25 4.75l-6.5 6.5m0-6.5l6.5 6.5" />
+					</svg> </div>
+			</div>
+			<form>
+				<div class="d-flex">
+					<div class="m-2"> <label class="form-label" for="exampleInputName">Coupon Code*</label> <input
+							class="form-control" id="exampleInputName" type="Name" aria-describedby="NameHelp" placeholder="HR20">
+					</div>
+					<div class="m-2"> <label class="form-label" for="exampleInputMobile">Usage limit per customer* </label>
+						<select class="form-select form-control" aria-label="Default select example">
+							<option selected>UNLIMITED</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<div class="d-flex">
+					<div class="m-2"> <label class="form-label" for="exampleInputName">Discount Percentage*</label> <input
+							class="form-control d-flex" id="exampleInputAddress" type="Address" aria-describedby="AddressHelp"
+							placeholder="20"> </div>
+					<div class="m-2"> <label class="form-label" for="exampleInputMobile">Apply coupon on* </label> <select
+							class="form-select form-control" aria-label="Default select example">
+							<option selected>ALL PRODUCTS</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select> </div>
+				</div> <label class="form-label ms-3" for="exampleInputMobile">Apply coupon on* </label>
+				<div class="form-check ms-3"> <input class="form-check-input" id="flexCheckDefault" type="checkbox"
+						value="" checked> <label class="form-check-label" for="flexCheckDefault"> Order Value </label> </div>
+				<div class="form-check ms-3"> <input class="form-check-input" id="flexCheckChecked" type="checkbox"
+						value=""> <label class="form-check-label" for="flexCheckChecked"> Order Quantity </label> </div>
+				<div class="d-flex">
+					<div class="m-2"> <label class="form-label" for="exampleInputName">Minimum Order Value*</label> <input
+							class="form-control" id="exampleInputCity" type="City" aria-describedby="CityHelp" placeholder="₹12">
+					</div>
+					<div class="m-2"> <label class="form-label" for="exampleInputMobile">Maximum discount* </label> <input
+							class="form-control" id="exampleInputState" type="State" aria-describedby="StateHelp" placeholder="₹1200">
+					</div>
+				</div>
+				<div class="d-flex"> <label class="form-label fw-bold fs-5 ms-3" for="exampleInputMobile">Coupon Functionality
+					</label>
+					<div class="drop-select"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+							viewBox="0 0 24 24">
+							<path fill="currentColor" d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z" />
+						</svg> </div>
+				</div>
+				<div class="d-flex"> <label class="form-label fw-bold fs-5 ms-3" for="exampleInputMobile">Coupon Validity
+					</label>
+					<div class="drop-select"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+							viewBox="0 0 24 24">
+							<path fill="currentColor" d="m12 15l-4.243-4.242l1.415-1.414L12 12.172l2.828-2.828l1.415 1.414z" />
+						</svg> </div>
+				</div> <button class="btn btn-primary w-100 align-items-center mb-4" type="button">Next</button>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+	// JavaScript to handle form visibility
+	document.addEventListener('DOMContentLoaded', function() {
+		var addCouponPopup = document.querySelector('.add-coupon-popup');
+		var closeCouponBtn = document.getElementById('closeCoupon');
+
+		// Show the form by default
+		addCouponPopup.style.display = 'block';
+
+		// Close the form when the cross button is clicked
+		closeCouponBtn.addEventListener('click', function() {
+			addCouponPopup.style.display = 'none';
+		});
+	});
+</script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/font-awesome.js"></script>
+<script src="JS/main.js"></script>
+
+</html>
