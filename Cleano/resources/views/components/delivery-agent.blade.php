@@ -1,86 +1,66 @@
 <x-app-layout>
+<style>
+    .delivery-container1
+    {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+    }
+    .delivery-combine1
+    {
+        display: flex;
+        width:auto;
+        height:auto;
+        margin-top:-30px;
+    }
+    .add-delivery
+    {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #FFFFFF;
+        background: #75B1E8;
+        width: 227px;
+        height: 51px;
+        border-radius: 8px;
+        padding-top:13px;
+        padding-left:15px;
+    }
+    .delivery-count 
+    {
+            width: 265px;
+            height: 90px;
+            border-radius: 20px;
+            border: 1px;
+            box-sizing: border-box;
+            background: white;
+            padding-top: 20px;
+            padding-left: 20px;
+    }
+    .delivery-count p
+    {
+        width: 100%;
+        height: 16px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #000000;
 
-	<style>
-		.custom-container {
-			width: 100%;
-			height: 93px;
-			border-radius: 8px;
-			margin: 0;
-		}
-
-		.Dashboard_header .user_container {
-			margin-top: 120px;
-			padding: 0 0px;
-		}
-
-		.order-column {
-			width: 170px;
-			height: 92.39px;
-			border-radius: 8px;
-			border: 1px;
-			background: #ffffff;
-			border: 1px solid eff0f6;
-
-		}
-
-		.order-div1 {
-			width: 100%;
-			height: 17px;
-			font-family: Inter;
-			font-size: 14px;
-			font-weight: 500;
-			line-height: 17px;
-			letter-spacing: -0.15399999916553497px;
-			text-align: left;
-			padding: 5px;
-		}
-
-		.row {
-			display: flex;
-			width: 100%;
-			justify-content: space-between;
-			align-items: center;
-			margin: 0;
-		}
-
-		.row .order-column {
-			flex: 15%;
-			width: 140.14px;
-			height: 92.39px;
-			border-radius: 8px border: 1px padding:0 !important;
-			margin-left: 10px;
-			padding: 10px 15px;
-		}
-
-		.order-combine1 .order-div2 {
-			width: 129px;
-			height: 16.37px;
-			font-family: Inter;
-			font-size: 24px;
-			font-weight: 700;
-			line-height: 29px;
-			text-align: left;
-			padding-left: 5px;
-			display: flex;
-			margin-top: 10px;
-			flex: 30%;
-		}
-
-		.order-combine1 {
-			display: flex;
-		}
-
-		.order-combine1 img {
-			width: 35px;
-			height: 8.89px;
-			vertical-align: middle;
-			margin-top: 20px;
-			margin-left: -110px;
-			flex: 30%;
-			justify-content: flex-start;
-		}
-
-		.payemnt-status {
+    }
+    .delivery-count h6
+    {
+        width: 100%;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #222B45;
+    }
+    .payemnt-status 
+    {
 			width: 100%;
 			height: auto;
 			margin-top: 20px;
@@ -89,50 +69,7 @@
 			border: 1px solid #1b59f8;
 			padding: 10px;
 		}
-
-		.order-row2-div1 {
-			width: 130px;
-			height: 17px;
-			font-family: Inter;
-			font-size: 14px;
-			font-weight: 500;
-			line-height: 17px;
-			letter-spacing: -0.15399999916553497px;
-			text-align: left;
-			margin-left: 10px;
-			margin-top: 18px;
-		}
-
-		.order-row2-combine1 {
-			display: flex;
-			width: 170px;
-		}
-
-		.order-row2-combine1-text {
-			width: 129px;
-			height: 27px;
-			font-family: Inter;
-			font-size: 24px;
-			font-weight: 700;
-			line-height: 29px;
-			text-align: left;
-			color: #000000;
-			margin-left: 12px;
-			margin-top: 10px;
-		}
-
-		.order-row2-combine1 img {
-			width: 35px;
-			height: 8.89px;
-			vertical-align: middle;
-			margin-top: 20px;
-			margin-left: -110px;
-			flex: 30%;
-			justify-content: flex-start;
-		}
-
-
-		.payemnt-status-top {
+    .payemnt-status-top {
 			width: 100%;
 			display: flex;
 			margin-bottom: 15px;
@@ -272,7 +209,7 @@
 			margin-top: 15px;
 		}
 
-		tr:nth-child(even) {
+		tr:nth-child(even),#t-head {
 			background: #F1F3F9;
 		}
 
@@ -282,14 +219,13 @@
 
 		.payment-status-button {
 			/* Badge */
-			width: 75px;
-            height: Hug (14px);
+			width: Fixed (53px);
+            height: Hug (14.78px);
             padding: 1.39px, 6.95px, 1.39px, 6.95px;
-            border-radius: 8px;
-            color: white;
-            
-		}
-
+            border-radius: 2.78px;
+            border: 0.7px;
+        }
+			
 		.payment-order .payment-order-completed {
 			width: 280px;
 			height: 90px;
@@ -306,51 +242,47 @@
 		}
 
 		.th-2 {
-			width: 120px;
+			width: 157px;
 			height: 40px;
 		}
 
 		.th-3 {
-			width: 130px;
+			width: 152px;
 			height: 40px;
 		}
 
 		.th-4 {
-			width: 170px;
+			width: 178px;
 			height: 40px;
 		}
 
 		.th-5 {
-			width: 170px;
+			width: 167px;
 			height: 40px;
 		}
 
 		.th-6 {
-			width: 120px;
+			width: 78px;
 			height: 40px;
 		}
 
 		.th-7 {
-			width: 90px;
+			width: 130px;
 			height: 40px;
 		}
 		.th-8 {
-			width: 120px;
+			width: 93px;
 			height: 40px;
 		}
 		.th-9 {
-			width: 90px;
+			width: 103px;
 			height: 40px;
 		}
-		.th-10 {
-			width: 80px;
-			height: 40px;
-		}
-		
-	</style>
-	<header>
+
+</style>
+<header>
 		<div class="d-flex justify-content-between header_box">
-			<h3>Order Management<span class="heading-short">/Total Order</span></h3>
+			<h3>Delivery Agent</h3>
 			<div class="header_left_side">
 				<span class="first"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36">
 						<path class="clr-i-outline clr-i-outline-path-1" fill="currentColor"
@@ -367,60 +299,41 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="user_container">
-		<div class="custom-container container">
-			<div class="row">
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Total Order</div>
-					<div class="order-combine1">
-						<div class="order-div2">3,298</div>
-						<img src="IMAGES\Leaderboard Arrow.svg" alt="">
-					</div>
-				</div>
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Pending Order</div>
-					<div class="order-combine1">
-						<div class="order-div2">2980</div>
-						<img src="IMAGES\Down.svg" alt="">
-					</div>
-				</div>
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Accepted Order</div>
-					<div class="order-combine1">
-						<div class="order-div2">5026</div>
-						<img src="IMAGES\Leaderboard Arrow.svg" alt="">
-					</div>
-				</div>
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Shipping Order</div>
-					<div class="order-combine1">
-						<div class="order-div2">2700</div>
-						<img src="IMAGES\Down.svg" alt="">
-					</div>
-				</div>
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Delivered Orders</div>
-					<div class="order-combine1">
-						<div class="order-div2">4000</div>
-						<img src="IMAGES\Down.svg" alt="">
-					</div>
-				</div>
-				<div class="col-md-2 order-column">
-					<div class="order-div1">Others Order</div>
-					<div class="order-combine1">
-						<div class="order-div2">200</div>
-						<img src="IMAGES\Down.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="order-row2-div1">Total Order Number</div>
-			<div class="order-row2-combine1">
-				<div class="order-row2-combine1-text">3,298</div>
-				<img src="IMAGES\Leaderboard Arrow.svg" alt="">
-			</div>
-
-			<div class="payemnt-status">
+         <div class="user_container">
+        <div class="delivery-container1">
+            <div class="delivery-combine1">
+                <a href="vendor-add"><div class="add-delivery">Add Delivery Agent</div></a>
+                <div class="add-delivery" style="margin-left: 30px">Import Agent File</div>
+            </div>
+            <div class="delivery-combine1" style="margin-top: 25px";>
+                <div class="delivery-count">
+                    <p>Total Agent</p>
+                    <h6>614</h6>
+                </div>
+                <div class="delivery-count" style="margin-left:20px";>
+                    <p>Online Agent</p>
+                    <h6>124</h6>
+                </div>
+                <div class="delivery-count"  style="margin-left:20px";>
+                    <p>Offline Agent</p>
+                    <h6>504</h6>
+                </div>
+                <div class="delivery-count"  style="margin-left:20px";>
+                    <p>Cash Collection</p>
+                    <h6>₹12400</h6>
+                </div>
+            </div>    
+            <div class="delivery-combine1" style="margin-top: 25px";>
+                <div class="delivery-count">
+                    <p>Pickup Order</p>
+                    <h6>614</h6>
+                </div>
+                <div class="delivery-count"  style="margin-left:20px";>
+                    <p>Delivery</p>
+                    <h6>124</h6>
+                </div>
+            </div> 
+            <div class="payemnt-status">
 				<div class="payemnt-status-top">
 					<div class="payemnt-status-top-left">
 						<div class="payemnt-status-top-left-one">
@@ -464,181 +377,156 @@
 					<thead id="t-head">
 						<tr>
 							<th class="th-1"><input type="checkbox"></th>
-							<th class="th-2">Orders</th>
-							<th class="th-3">User </th>
-							<th class="th-4">Mobile Number </th>
+							<th class="th-2">Agent </th>
+							<th class="th-3">Mobile Number </th>
+                            <th class="th-4">Email </th>
 							<th class="th-5">Location</th>
-							<th class="th-6">Payment</th>
-							<th class="th-7">Status</th>
-							<th class="th-8">Total Order</th>
-							<th class="th-9">Total Sales</th>
-							<th class="th-10">Date</th>
+							<th class="th-6">Status</th>
+							<th class="th-7">Pickup Order</th>
+							<th class="th-8">Total Sales</th>
+							<th class="th-9">Cash Collection</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background:
-                             #5EAA3A;border: 0.7px solid #500050;
-                                background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							</button></td>
+							<td>10</td>
+							<td>2000</td>
+							<td>₹1000</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #DE7B07;
-                            border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
-                            linear-gradient(0deg, #955306, #955306);">UPI</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="background: #999999;border: 0.7px solid #4D4D4D";><div class="button-text">Offline</div>
+							<td>10</td>
+							<td>2000</td>
+							<td>₹1000</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #001C6E;
-                                border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-                                linear-gradient(0deg, #1B59F8, #1B59F8);">Credit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>2000</td>
+							<td>₹1000</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #A67548;
-							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-							linear-gradient(0deg, #1B59F8, #1B59F8);">Debit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>2000</td>
+							<td>₹1000</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #158D86;
-							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-							linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>2000</td>
+							<td>₹1000</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background:
-                             #5EAA3A;border: 0.7px solid #500050;
-                            background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #DE7B07;
-                            border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
-                            linear-gradient(0deg, #955306, #955306)";>UPI</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #001C6E;
-                            border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-                            linear-gradient(0deg, #1B59F8, #1B59F8);">Credit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button" style="background: #A67548;
-							border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-							linear-gradient(0deg, #1B59F8, #1B59F8);">Debit Card</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button"style="background:
-                             #5EAA3A;border: 0.7px solid #500050;
-                                background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						</tr>
 
 						<tr>
 							<td><input type="checkbox"></td>
-							<td>Deposited on 2 Jan 2024</td>
 							<td>Username</td>
 							<td>+91 1234567890</td>
-							<td>+91 1234567890</td>
-							<td><button class="payment-status-button"style="background:
-                             #5EAA3A;border: 0.7px solid #500050;background: #6F0D6F;">Cash</button></td>
 							<td>username@company.com</td>
 							<td>Clock Tower, Dehradun</td>
-							<td>Active</td>
-							<td>-</td>
+							<td><button class="payment-status-button" 
+							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td>10</td>
+							<td>₹50,000</td>
+							<td>₹1200</td>
 						</tr>
 
 
 					</tbody>
 				</table>
 
-			</div>
-
-
-
-	</div>
-	</div>
-
+			</div>   
+        </div>
+    </div>
 </x-app-layout>

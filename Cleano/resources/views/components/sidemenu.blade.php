@@ -15,7 +15,7 @@
             </a>
 
         </li>
-        <li><a href=""><button class="" id="button2" onclick="addActiveClass('button2')"><span
+        <li><a href="{{route('users')}}"><button class="" id="button2" onclick="addActiveClass('button2')"><span
                         class=" sidebar_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
                             viewBox="0 0 24 24">
                             <g fill="none" stroke="currentColor" stroke-width="1.5">
@@ -29,7 +29,7 @@
                 </button>
             </a>
         </li>
-        <li><a href="vendor_management.php"><button class="" id="button3" onclick="addActiveClass('button3')"><span
+        <li><a href="{{route('vendors')}}"><button class="" id="button3" onclick="addActiveClass('button3')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
                             <path fill="currentColor"
@@ -43,7 +43,7 @@
                 </button>
             </a>
         </li>
-        <li><a href=""> <button class="" id="button4" onclick="addActiveClass('button4')"><span
+        <li><a href="{{route('delivery')}}"> <button class="" id="button4" onclick="addActiveClass('button4')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 256 256">
                             <path fill="currentColor"

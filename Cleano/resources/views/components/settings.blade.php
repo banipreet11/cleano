@@ -145,59 +145,52 @@
 					</table>
 				</div>
 
-
-
-
 			</div>
-			{{-- ye dikna chaiye  --}}
+
+			{{-- add staff  --}}
 			<div class="add-staff">
 				<p class="content">Add Staff</p>
 				<form action="settings/add" method="POST">
 					@csrf
 					<div class="add-staff-combined1">
-						<div class="add-staff-combined2">
-
-							<p class="add-staff-name">Staff Name</p>
-							<input class="staffname" name="name" type="text" placeholder="Enter Staff name">
-
-							<p class="add-staff-email">Staff Email</p>
-							<input class="staffemail" name="email" type="text" placeholder="Email">
-
-							<div class="mb-3 text-left"><button class="btn btn-primary" id="staff-add-button">Add </button></div>
-						</div>
+					  <div class="add-staff-combined2">
+	
+						<p class="add-staff-name">Staff Name</p>
+						<input type="text" class="staffname" placeholder="Enter Staff name" name="name">
+					
+						<p class="add-staff-email">Staff Email</p>
+						<input type="text" class="staffemail" placeholder="Email" name="email">
+	
+						<div class="mt-4 ms-4"><button class="btn btn-primary " id="staff-add-button" >Add </button></div>
+					  </div>
 						<div class="add-staff-radio">
-							<p class="add-staff-name">Role</p>
-							<div class="combined-radio">
-								<label for='r1'>Admin</label>
-								<input class="radio-btn" name="r1" type="radio">
-								<label class="custom-radio" for="radio1"></label>
-							</div>
-							<div class="combined-radio">
-								<label for r1>Super Admin</label>
-								<input class="radio-btn" name="r1" type="radio">
-								<label class="custom-radio" for="radio1"></label>
-							</div>
-
-							<div class="combined-radio">
-								<label for r1>Security Officers</label>
-								<input class="radio-btn" id="radio1" name="r1" type="radio" style="width: 20px; height:20px;">
-								<label class="custom-radio" for="radio1"></label>
-							</div>
-
-							<div class="combined-radio">
-								<label for r1>Auditor</label>
-								<input name="r1"class="radio-btn" type="radio">
-								<label class="custom-radio" for="radio1"></label>
-							</div>
-
-							<div class="combined-radio">
-								<label for r1>Developer</label>
-								<input class="radio-btn" name="r1" type="radio">
-								<label class="custom-radio" for="radio1"></label>
-							</div>
-						</div>
-					</div>
-				</form>
+							  <p class="add-staff-name">Role</p>
+							<div class="combined-radio">  
+							  <label >Admin</label>
+							  <input type="radio" name="r1" value="Admin" >
+					        </div>
+						    <div class="combined-radio">  
+						  <label >Super Admin</label>  
+						  <input type="radio" name="r1" value="Super Admin">
+						    </div>
+							  
+						    <div class="combined-radio">
+						        <label >Security Officers</label>   
+						        <input type="radio"  name="r1" value="Security Officers" >
+						    </div>
+							  
+					        <div class="combined-radio">  
+						        <label >Auditor</label>  
+						        <input type="radio" name="r1" value="Auditor">
+					        </div>
+								  
+					        <div class="combined-radio">  
+						        <label >Developer</label>  
+						        <input type="radio" name="r1" value="Developer">
+					        </div>
+				        </div>
+					</div>	
+                </form>
 			</div>
 			{{-- ----------------- 3 --------------------------- --}}
 			<div class="tabcontent" id="settings-notification">
@@ -241,8 +234,6 @@
 							<p class="settings-paytm-content-right-no">₹5000</p>
 						</div>
 					</div>
-
-
 				</div>
 				<div class="settings-payment-provider">
 					<h4>Payment providers</h4>

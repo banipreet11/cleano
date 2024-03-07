@@ -65,5 +65,24 @@ class Homecontroller extends Controller
     {
         return view('components.payment-management');
     }
-
+    public function vendors()
+    {
+        return view('components.vendor-management');
+    }
+    public function addven()
+    {
+        return view('components.vendor-add');
+    }
+    public function users()
+    {
+        return view('components.user-management');
+    }
+    public function usersAdd()
+    {
+        return view('components.user-registration');
+    }
+    public function delivery()
+    {
+        return view('components.delivery-agent');
+    }
 }

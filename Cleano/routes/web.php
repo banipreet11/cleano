@@ -42,11 +42,21 @@ Route::get('analystic_products',  [Homecontroller::class ,"analystic_products"])
 
 
 Route::get('settings',  [Homecontroller::class ,"settings"])->name('settings');
-
 Route::post('settings/add',  [Homecontroller::class ,"staff_add"]);
 
 Route::get('ratings',  [Homecontroller::class ,"ratings"])->name('ratings');
+
 Route::get('payment',  [Homecontroller::class ,"payment"])->name('payment');
+
 Route::get('discount',  [Homecontroller::class ,"discount"])->name('discount');
 
 Route::get('orders',  [Homecontroller::class ,"orders"])->name('orders');
+
+Route::get('users',  [Homecontroller::class ,"users"])->name('users');
+Route::get('users/add',  [Homecontroller::class ,"usersAdd"]);
+
+Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
+
+Route::get('vendor-add',  [Homecontroller::class ,"addven"]);
+
+Route::get('delivery',  [Homecontroller::class ,"delivery"])->name('delivery');
