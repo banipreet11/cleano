@@ -60,3 +60,5 @@ Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
 Route::get('vendor-add',  [Homecontroller::class ,"addven"]);
 
 Route::get('delivery',  [Homecontroller::class ,"delivery"])->name('delivery');
+
+Route::get('delivery-add',  [Homecontroller::class ,"delivadd"])->name('delivadd');

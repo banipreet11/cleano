@@ -302,7 +302,7 @@
          <div class="user_container">
         <div class="delivery-container1">
             <div class="delivery-combine1">
-                <a href="vendor-add"><div class="add-delivery">Add Delivery Agent</div></a>
+                <a href="delivery-add"><div class="add-delivery">Add Delivery Agent</div></a>
                 <div class="add-delivery" style="margin-left: 30px">Import Agent File</div>
             </div>
             <div class="delivery-combine1" style="margin-top: 25px";>

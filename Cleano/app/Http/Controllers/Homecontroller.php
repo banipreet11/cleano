@@ -85,4 +85,8 @@ class Homecontroller extends Controller
     {
         return view('components.delivery-agent');
     }
+    public function delivadd()
+    {
+        return view('components.delivery-add');
+    }
 }
