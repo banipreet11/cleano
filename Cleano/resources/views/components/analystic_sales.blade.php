@@ -81,74 +81,74 @@
                     </div>
                 </div>
                 <div class="col-lg-6 right_section">
-                    <div class="sales_graph_container mb-5">
+                    <div class="sales_graph_container mb-5" style="box-sizing: content-box;width:auto;">
                         <h5 class=" d-flex justify-content-between">Total Orders
                             <span>90,000</span>
                         </h5>
                         <div class="graph_box">
-                            <canvas id="sales_graph" style="bottom: 0;"></canvas>
+                            <canvas id="sales_graph" style="bottom: 0; margin:0;"></canvas>
                             <script>
-                            const xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
-                            const yValues = ['150', '300', '100', '100', '120', '200', '400'];
+                                const xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+                                const yValues = ['150', '300', '100', '100', '120', '200', '400'];
 
-                            new Chart("sales_graph", {
-                                type: "line",
-                                data: {
-                                    labels: xValues,
-                                    datasets: [{
-                                        fill: true,
-                                        lineTension: 0,
-                                        backgroundColor: "#C8E9FF",
-                                        borderColor: "#1B59F8",
-                                        borderWidth: 1.1,
-                                        pointBackgroundColor: "#1B59F8",
-                                        data: yValues
-                                    }]
-                                },
-                                options: {
-                                    responsive: true,
-                                    maintainAspectRatio: true,
-                                    legend: {
-                                        display: false
+                                new Chart("sales_graph", {
+                                    type: "line",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                            fill: true,
+                                            lineTension: 0,
+                                            backgroundColor: "#C8E9FF",
+                                            borderColor: "#1B59F8",
+                                            borderWidth: 1.1,
+                                            pointBackgroundColor: "#1B59F8",
+                                            data: yValues
+                                        }]
                                     },
-                                    scales: {
-                                        xAxes: [{
-                                            ticks: {
-                                                min: 'January',
-                                                max: 'July'
-                                            },
-                                            gridLines: {
-                                                display: false
-                                            }
-                                        }],
-                                        yAxes: [{
-                                            ticks: {
-                                                min: 0,
-                                                max: 400,
-                                                stepSize: 100,
-                                                callback: function(value, index, values) {
-                                                    return value;
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: true,
+                                        legend: {
+                                            display: false
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                ticks: {
+                                                    min: 'January',
+                                                    max: 'July'
+                                                },
+                                                gridLines: {
+                                                    display: false
                                                 }
-                                            },
-                                            gridLines: {
-                                                color: "rgba(0,0,0,0.1)",
-                                                backgroundColor: "#0fa958"
-                                            },
-                                            position: 'left'
-                                        }],
+                                            }],
+                                            yAxes: [{
+                                                ticks: {
+                                                    min: 0,
+                                                    max: 400,
+                                                    stepSize: 100,
+                                                    callback: function(value, index, values) {
+                                                        return value;
+                                                    }
+                                                },
+                                                gridLines: {
+                                                    color: "rgba(0,0,0,0.1)",
+                                                    backgroundColor: "#0fa958"
+                                                },
+                                                position: 'left'
+                                            }],
+                                        }
                                     }
-                                }
-                            });
+                                });
                             </script>
                         </div>
                     </div>
-                    <div class="sales_graph_container mb-5">
+                    <div class="sales_graph_container mb-5" style="box-sizing: content-box;">
                         <h5 class="text_16 b_600 black d-flex justify-content-between"><span> Gross sales <br />
                                 <span class="green text_12">+2.5%</span></span>
                             <span> &#8377;90,000,0</span>
                         </h5>
                         <div class="graph_box_2">
-                            <canvas id="sales_graph_2" style="bottom: 0;"></canvas>
+                            <canvas id="sales_graph_2" style="bottom: 0; margin:0;"></canvas>
                             <script>
                             const xValues_2 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
                             const yValues_2 = ['150', '300', '100', '100', '120', '200', '400'];

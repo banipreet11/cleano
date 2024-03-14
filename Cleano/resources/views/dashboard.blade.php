@@ -1,6 +1,8 @@
 <x-app-layout>
 	<style>
-		
+		.dashboard_drop_select{
+			
+		}
 	</style>
 	<header>
 		<div class="d-flex justify-content-between header_box">
@@ -68,13 +70,13 @@
 
 		<div class="row total_Sale mt-2">
 			<div class="col-lg-6 col-md-12">
-				<div class="total_sales_graph_box">
+				<div class="total_sales_graph_box" style="box-sizing: content-box;height: 288px;width: 540px;">
 					<h3 class="d-flex justify-content-between text_16 b_600 black"><span>Total Sales </span>
 						<span>₹ 5000</span>
 					</h3>
 
-					<div class="total_sales_graph">
-						<canvas id="total_slaes_chart" style=" bottom:0;"></canvas>
+					<div class="total_sales_graph" style="">
+						<canvas id="total_slaes_chart" style="margin:0;"></canvas>
 						<script>
 							const xValues = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 							const yValues = ['150', '300', '100', '100', '120', '200', '400'];

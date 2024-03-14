@@ -111,63 +111,63 @@
 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 right_section">
-                    <div class="sales_graph_container mb-4">
+                    <div class="sales_graph_container mb-4" style="box-sizing: content-box;">
                         <h5 class="text_16 b_600 black d-flex justify-content-between"> Active Hours
                             <span>3PM to 6PM</span>
                         </h5>
-                        <div class="graph_box">
-                            <canvas id="sales_graph" style="bottom: 0;"></canvas>
+                        <div class="graph_box" >
+                            <canvas id="sales_graph" style="margin:0;"></canvas>
                             <script>
-                            const xValues = ['3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', ' ', ' '];
-                            const yValues = ['150', '300', '100', '100', '120', '200', '400'];
+                                const xValues = ['3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', ' ', ' '];
+                                const yValues = ['150', '300', '100', '100', '120', '200', '400'];
 
-                            new Chart("sales_graph", {
-                                type: "line",
-                                data: {
-                                    labels: xValues,
-                                    datasets: [{
-                                        fill: true,
-                                        lineTension: 0,
-                                        backgroundColor: "#C8E9FF",
-                                        borderColor: "#1B59F8",
-                                        borderWidth: 1.1,
-                                        pointBackgroundColor: "#1B59F8",
-                                        data: yValues
-                                    }]
-                                },
-                                options: {
-                                    responsive: true,
-                                    maintainAspectRatio: true,
-                                    legend: {
-                                        display: false
+                                new Chart("sales_graph", {
+                                    type: "line",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                            fill: true,
+                                            lineTension: 0,
+                                            backgroundColor: "#C8E9FF",
+                                            borderColor: "#1B59F8",
+                                            borderWidth: 1.1,
+                                            pointBackgroundColor: "#1B59F8",
+                                            data: yValues
+                                        }]
                                     },
-                                    scales: {
-                                        xAxes: [{
-                                            ticks: {
-                                                min: 'January',
-                                                max: 'July'
-                                            },
-                                            gridLines: {
-                                                display: false
-                                            }
-                                        }],
-                                        yAxes: [{
-                                            ticks: {
-                                                min: 0,
-                                                max: 400,
-                                                stepSize: 100,
-                                                callback: function(value, index, values) {
-                                                    return value;
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: true,
+                                        legend: {
+                                            display: false
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                ticks: {
+                                                    min: 'January',
+                                                    max: 'July'
+                                                },
+                                                gridLines: {
+                                                    display: false
                                                 }
-                                            },
-                                            gridLines: {
-                                                display: false
-                                            },
-                                            position: 'left'
-                                        }],
+                                            }],
+                                            yAxes: [{
+                                                ticks: {
+                                                    min: 0,
+                                                    max: 400,
+                                                    stepSize: 100,
+                                                    callback: function(value, index, values) {
+                                                        return value;
+                                                    }
+                                                },
+                                                gridLines: {
+                                                    display: false
+                                                },
+                                                position: 'left'
+                                            }],
+                                        }
                                     }
-                                }
-                            });
+                                });
                             </script>
                         </div>
                     </div>

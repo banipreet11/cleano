@@ -1,3 +1,11 @@
+<style>
+    .Dashboard .SideBar ul.navigation {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 0 20px 100px 20px;
+}
+</style>
 <div class="SideBar">
     <div class="logo_bx">
         <h2 class="logo">Cleaneo</h2>
