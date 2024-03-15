@@ -15,7 +15,7 @@ use App\Http\Controllers\Homecontroller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Route::middleware([

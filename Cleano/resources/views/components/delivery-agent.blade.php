@@ -59,225 +59,219 @@
         text-align: left;
         color: #222B45;
     }
-    .payemnt-status 
-    {
-			width: 100%;
-			height: auto;
-			margin-top: 20px;
-			border-radius: 8px;
-			background: white;
-			border: 1px solid #1b59f8;
-			padding: 10px;
-		}
-    .payemnt-status-top {
-			width: 100%;
-			display: flex;
-			margin-bottom: 15px;
-		}
+    .payemnt-status {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+                border-radius: 8px;
+                background: white;
+                border: 1px solid #1b59f8;
+                padding: 10px;
+            }
 
-		.payemnt-status-top-left {
-			display: flex;
-			flex: 90%;
-		}
+            .payemnt-status-top {
+                width: 100%;
+                display: flex;
+                margin-bottom: 15px;
+            }
 
-		.payemnt-status-top-left-one {
-			width: 40px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 12px;
-			border-radius: 6px;
-			gap: 8px;
-			border: 1px solid #5960781A;
-			box-shadow: 0px 0px 0px 1px #464F6029;
-			box-shadow: 0px 1px 1px 0px #0000001A;
-		}
+            .payemnt-status-top-left {
+                display: flex;
+                flex: 90%;
+            }
 
-		.payemnt-status-top-left-two {
-			width: 95px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 8px;
-			border-radius: 6px;
-			gap: 8px;
-			border: 1px solid #1B59F8;
-			display: flex;
-		}
+            .payemnt-status-top-left-one {
+                width: 40px;
+                height: 40px;
+                margin: 8px 12px 8px 16px;
+                padding: 8px 12px 8px 12px;
+                border-radius: 6px;
+                gap: 8px;
+                border: 1px solid #5960781A;
+                box-shadow: 0px 0px 0px 1px #464F6029;
+                box-shadow: 0px 1px 1px 0px #0000001A;
+            }
 
-		.payemnt-status-top-left-two p,
-		.payemnt-status-top-left-three p,
-		.payemnt-status-top-left-four p {
-			font-size: 13px;
-			font-weight: 400;
-			line-height: 16px;
-			letter-spacing: 0px;
-			display: flex;
-			flex: 70%;
-		}
+            .payemnt-status-top-left-two {
+                width: 140px;
+                height: 40px;
+                margin: 8px 12px 8px 16px;
+                padding: 8px 12px 8px 8px;
+                border-radius: 6px;
+                gap: 8px;
+                border: 1px solid #1B59F8;
+                display: flex;
+            }
 
-		.payemnt-status-top-left-two img,
-		.payemnt-status-top-left-three img,
-		.payemnt-status-top-left-four img {
-			flex: 30%;
-			height: 24px;
-		}
+            .payemnt-status-top-left-two p,
+            .payemnt-status-top-left-three p,
+            .payemnt-status-top-left-four p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0px;
+                display: flex;
+                text-align: center;
+            }
 
-		.payemnt-status-top-left-three {
-			width: 130px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 8px;
-			border-radius: 6px;
-			gap: 8px;
-			display: flex;
-			border: 1px solid #5960781A;
-			box-shadow: 0px 0px 0px 1px #464F6029;
-			box-shadow: 0px 1px 1px 0px #0000001A;
-		}
+            .payemnt-status-top-left-two img,
+            .payemnt-status-top-left-three img,
+            .payemnt-status-top-left-four img {
+                flex: 30%;
+                height: 30px;
+            }
 
-		.payemnt-status-top-left-four {
-			width: 125px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 8px;
-			border-radius: 6px;
-			gap: 8px;
-			display: flex;
-			border: 1px solid #5960781A;
-			box-shadow: 0px 0px 0px 1px #464F6029;
-			box-shadow: 0px 1px 1px 0px #0000001A;
-		}
+            .payemnt-status-top-left-three {
+                width: 200px;
+                height: 40px;
+                margin: 8px 12px 8px 16px;
+                padding: 8px 12px 8px 8px;
+                border-radius: 6px;
+                gap: 8px;
+                display: flex;
+                border: 1px solid #5960781A;
+                box-shadow: 0px 0px 0px 1px #464F6029;
+                box-shadow: 0px 1px 1px 0px #0000001A;
+            }
 
-		.payemnt-status-top-left-five {
-			width: 85px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 8px;
-			border-radius: 6px;
-			gap: 8px;
-			display: flex;
-			border: 1px solid #5960781A;
-			box-shadow: 0px 0px 0px 1px #464F6029;
-			box-shadow: 0px 1px 1px 0px #0000001A;
-		}
+            .payemnt-status-top-left-four {
+                width: 110px;
+                height: 40px;
+                margin: 8px 12px 8px 16px;
+                padding: 8px 12px 8px 8px;
+                border-radius: 6px;
+                gap: 8px;
+                display: flex;
+                border: 1px solid #5960781A;
+                box-shadow: 0px 0px 0px 1px #464F6029;
+                box-shadow: 0px 1px 1px 0px #0000001A;
+            }
 
-		.payemnt-status-top-left-six {
-			width: 115px;
-			height: 40px;
-			margin: 8px 12px 8px 16px;
-			padding: 8px 12px 8px 8px;
-			border-radius: 6px;
-			gap: 8px;
-			display: flex;
-			border: 1px solid #5960781A;
-			box-shadow: 0px 0px 0px 1px #464F6029;
-			box-shadow: 0px 1px 1px 0px #0000001A;
-		}
+            .payemnt-status-top-right {
+                display: flex;
+                flex: 10%;
+                gap: 18px;
+                margin-top: 13px;
+            }
+
+            .payemnt-status-top-right img {
+                height: 20px;
+            }
+
+            .payemnt-status-top-right p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0px;
+                color: #979797;
+            }
+
+            .staff-searchAdd .staff-search {
+                margin-left: 17px;
+            }
+
+            table {
+                caption-side: bottom;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table#dynamic-table {
+                width: 80%;
+                margin: auto;
+                margin-top: 15px;
+            }
+
+            tr:nth-child(even) {
+                background: #F1F3F9;
+            }
+
+            #t-head {
+                background: #F1F3F9;
+            }
+
+            .payment-status-button {
+                /* Badge */
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 1.39086px 6.95431px;
+                width: 80px;
+                height: 20px;
+                color: white;
+                background: #5EAA3A;
+                border: 0.695431px solid #93C5FD;
+                border-radius: 2.78173px;
+            }
+
+            .payment-order .payment-order-completed {
+                width: 280px;
+                height: 90px;
+                background-color: white;
+                padding-top: 20px;
+                padding-left: 16px;
+                margin-left: 20px;
+                border-radius: 20px;
+            }
+
+            .searchbaar {
+                width: 320px;
+                height: 38px;
+                border: 1px solid rgb(181, 180, 180);
+                border-radius: 6px
+            }
+
+            .searchbaar input {
+                overflow: hidden;
+                width: 70%;
+                border: none;
+                outline: none;
+                font-size: 13px;
 
 
-		.payemnt-status-top-right {
-			display: flex;
-			flex: 10%;
-			gap: 18px;
-			margin-top: 13px;
-		}
+            }
 
-		.payemnt-status-top-right img {
-			height: 20px;
-		}
 
-		.payemnt-status-top-right p {
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 17px;
-			letter-spacing: 0px;
-			color: #979797;
-		}
+            table .paid {
+                width: 53px;
+                height: 18px;
+                border: none;
+                color: white !important;
+                background-color: #5EAA3A !important;
+                font-size: 8px;
 
-		.staff-searchAdd .staff-search {
-			margin-left: 17px;
-		}
 
-		table {
-			caption-side: bottom;
-			border-collapse: collapse;
-			width: 100%;
-		}
 
-		table#dynamic-table {
-			width: 98%;
-			margin: auto;
-			margin-top: 15px;
-		}
+            }
 
-		tr:nth-child(even),#t-head {
-			background: #F1F3F9;
-		}
+            table .pending {
+                width: 53px;
+                height: 18x;
+                font-size: 8px;
+                border: none;
+                background-color: #AAAAAA;
+                color: white;
+            }
 
-		#t-head {
-			background: #F1F3F9;
-		}
+            table .check {
+                margin-right: 10px;
+                margin-top: 3px;
+            }
 
-		.payment-status-button {
-			/* Badge */
-			width: Fixed (53px);
-            height: Hug (14.78px);
-            padding: 1.39px, 6.95px, 1.39px, 6.95px;
-            border-radius: 2.78px;
-            border: 0.7px;
-        }
-			
-		.payment-order .payment-order-completed {
-			width: 280px;
-			height: 90px;
-			background-color: white;
-			padding-top: 20px;
-			padding-left: 16px;
-			margin-left: 20px;
-			border-radius: 20px;
-		}
+            .pagination {
+                border: none;
+                padding: 10px;
 
-		.th-1 {
-			width: 36px;
-			height: 40px;
-		}
+            }
 
-		.th-2 {
-			width: 157px;
-			height: 40px;
-		}
+            .page-item {
+                margin: 5px;
 
-		.th-3 {
-			width: 152px;
-			height: 40px;
-		}
+            }
 
-		.th-4 {
-			width: 178px;
-			height: 40px;
-		}
-
-		.th-5 {
-			width: 167px;
-			height: 40px;
-		}
-
-		.th-6 {
-			width: 78px;
-			height: 40px;
-		}
-
-		.th-7 {
-			width: 130px;
-			height: 40px;
-		}
-		.th-8 {
-			width: 93px;
-			height: 40px;
-		}
-		.th-9 {
-			width: 103px;
-			height: 40px;
-		}
+            .page-link {}
 
 </style>
 <header>
@@ -333,30 +327,63 @@
                     <h6>124</h6>
                 </div>
             </div> 
-            <div class="payemnt-status">
+			<div class="payemnt-status">
 				<div class="payemnt-status-top">
 					<div class="payemnt-status-top-left">
-						<div class="payemnt-status-top-left-one">
-							<img src="IMAGES\icon (1).svg" alt="">
-						</div>
-						<div class="payemnt-status-top-left-two">
-							<p>Today</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
+
+						<svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_ddd_501_18005)">
+								<rect x="5" y="5" width="40" height="32" rx="6" fill="white" />
+								<path
+									d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+									fill="#464F60" />
+							</g>
+							<defs>
+								<filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="2" />
+									<feGaussianBlur stdDeviation="2.5" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix"
+										result="effect1_dropShadow_501_18005" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feMorphology radius="1" operator="dilate" in="SourceAlpha"
+										result="effect2_dropShadow_501_18005" />
+									<feOffset />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+									<feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+										result="effect2_dropShadow_501_18005" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="1" />
+									<feGaussianBlur stdDeviation="0.5" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+									<feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+										result="effect3_dropShadow_501_18005" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_501_18005"
+										result="shape" />
+								</filter>
+							</defs>
+						</svg>
+						<div class="payemnt-status-top-left-two" style="height: 40px;">
+							<p>Overview</p>
+							<button class="btn btn-primary" style="height: 28px;">425</button>
+
 						</div>
 						<div class="payemnt-status-top-left-three">
-							<p>Yesterday</p>
+							<p>Completed Payout</p>
 							<img src="IMAGES\users\Frame 1637.svg" alt="">
 						</div>
 						<div class="payemnt-status-top-left-four">
-							<p>Imported</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
-						</div>
-						<div class="payemnt-status-top-left-five">
-							<p>Date</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
-						</div>
-						<div class="payemnt-status-top-left-six">
-							<p>Orders</p>
+							<p>Refund</p>
 							<img src="IMAGES\users\Frame 1637.svg" alt="">
 						</div>
 					</div>
@@ -365,168 +392,163 @@
 						<img src="IMAGES\Vector (2).svg" alt="">
 					</div>
 				</div>
-				<div class="staff-searchAdd">
-					<div class="staff-search">&nbsp;
-						<img src="\IMAGES\icon.svg" alt="">
-						<input type="text" placeholder="Search..." required>
-					</div>
+				<div class="searchbaar">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+						style="width: 14px; height: 14px; margin-left:10px;">
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free
+							Copyright 2024 Fonticons, Inc.-->
+						<path fill="#a0a0a2"
+							d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+					</svg>
+					<input type="text" placeholder="Search" id="searchInput">
 				</div>
 
 				{{-- -------table ------ --}}
-				<table id="dynamic-table">
-					<thead id="t-head">
+				<table class="table table-striped table-hover table-borderless" id="searchResults">
+					<thead>
 						<tr>
-							<th class="th-1"><input type="checkbox"></th>
-							<th class="th-2">Agent </th>
-							<th class="th-3">Mobile Number </th>
-                            <th class="th-4">Email </th>
-							<th class="th-5">Location</th>
-							<th class="th-6">Status</th>
-							<th class="th-7">Pickup Order</th>
-							<th class="th-8">Total Sales</th>
-							<th class="th-9">Cash Collection</th>
+							<th><input type="checkbox" id="selectAll"> Date</th>
+							<th>Transation ID</th>
+							<th>Status</th>
+							<th>Total Items</th>
+							<th>Total order Amount</th>
+							<th>Total Payout</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
-							</button></td>
+						<tr style="border: transparent">
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>2000</td>
-							<td>₹1000</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="background: #999999;border: 0.7px solid #4D4D4D";><div class="button-text">Offline</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>2000</td>
-							<td>₹1000</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="pending">Pedding</button></td>
 							<td>10</td>
-							<td>2000</td>
-							<td>₹1000</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>2000</td>
-							<td>₹1000</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>2000</td>
-							<td>₹1000</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
-						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
-							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
-
 						<tr>
-							<td><input type="checkbox"></td>
-							<td>Username</td>
-							<td>+91 1234567890</td>
-							<td>username@company.com</td>
-							<td>Clock Tower, Dehradun</td>
-							<td><button class="payment-status-button" 
-							style="border: 0.7px solid #0EAE00;color:#0EAE00";><div class="button-text">Online</div>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
 							<td>10</td>
-							<td>₹50,000</td>
-							<td>₹1200</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
 						</tr>
-
-
+						<tr>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
+							<td>10</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
+							<td>10</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
+							<td>10</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+							<td>123456789012</td>
+							<td><button class="paid">Paid</button></td>
+							<td>10</td>
+							<td>₹130.3</td>
+							<td>₹129</td>
+						</tr>
 					</tbody>
-				</table>
 
-			</div>   
+				</table>
+			</div>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#" onclick="previousPage()">&lt;</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1)">1</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#" onclick="goToPage(2)">2</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#" onclick="goToPage(3)">..</a>
+					</li>
+					<!-- Add more page numbers dynamically based on total pages -->
+					<li class="page-item">
+						<a class="page-link" href="#" onclick="nextPage()">&gt;</a>
+					</li>
+				</ul>
+			</nav>  
         </div>
     </div>
 </x-app-layout>

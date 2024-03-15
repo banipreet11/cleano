@@ -1,97 +1,210 @@
 <x-app-layout>
     <style>
-        img {
-            width: 14px;
-            height: 14px;
-            color: #333333;
-            margin-top: -70px;
-        }
+        .Agent-Registration-section .nav-pills .nav-link {
+    color: #696d61;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    border-bottom: 1px solid #696d61;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-        .container {
-            display: flex;
-        }
+.Agent-Registration-section .nav-pills .nav-link.active {
+    background: transparent;
+    color: #e71d36;
 
-        .btn {
-            outline: none;
-            border: none;
-            font-family: Inter;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 16px;
-            text-align: left;
-            border-bottom: 1px solid #E71D36;
-            margin-top: -20px;
-        }
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    border-bottom: 1px solid #e71d36;
+    border-radius: none !important;
+}
 
-        .text-md-left {
-            margin-top: 20px;
-        }
+.Agent-Registration-section .Agent_tabs h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    text-decoration: underline;
+}
 
-        .form-div {
-            width: 1112.83px;
-            height: 911px;
-            border-radius: 8.03px;
-            background: #FFFFFF;
-        }
+.Agent_tabs {
+    background-color: #ffffff;
+    border-radius: 8.03px;
+    padding: 40px 40px 10px 40px;
+    width: 1112.83px;
+}
 
-        .form-text {
-            width: 100%;
-            height: 15px;
-            font-family: Inter;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 15px;
-            text-align: left;
-            color: #696D61;
-            border: none;
-            padding-left: 30px;
-            padding-top: 20px;
-        }
+@media (max-width: 1430px) {
+    .Agent_tabs {
+        width: 100%;
+    }
+}
 
-        .form-heading {
-            width: 100%;
-            height: 35.12px;
-            font-family: Inter;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 29px;
-            text-align: center;
-            //padding-left:60px;
-        }
+.Agent_tabs .Agent_tabs_form p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 0;
+    color: #696d61;
+}
 
-        .form-combine2 {
-            width: 1022.07px;
-            height: 911px;
-            margin-top: 25px;
-        }
+.Agent_tabs form label {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+}
 
-        .form-combine2-text1 {
-            padding-left: 40px;
-            margin-top: 25px;
-        }
+.Agent_tabs form input[type="file"] {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
 
-        #file-input-container {
-            border: 1px solid rgb(155, 150, 150);
-            margin-left: 35px;
-            margin-top: 20px;
-            width: 100%;
-        }
+.Agent_tabs form input[type="text"] {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
 
-        #file-input {
-            padding: 5px;
-        }
+.Agent_tabs form select {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid rgb(205, 203, 203);
+    border-radius: 5px;
+    outline: none;
+}
 
-        #file-input-container input {
-            border: none;
-            width: 100%;
-            height: auto;
-            outline: none;
-        }
+.Agent_tabs form .btn_check {
+    display: flex;
+    justify-content: space-between;
+}
 
-        input::placeholder {
-            padding: 5px;
-            color: black;
-        }
+.Agent_tabs .btn_Submit button {
+    border: none;
+    background-color: #4b62dc;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    height: 35px;
+    width: 112px;
+}
+
+@media (max-width: 540px) {
+    .Agent-Registration-section .Agent_tabs h3 {
+        font-size: 18px;
+    }
+
+    .Agent_tabs form label {
+        font-size: 10px;
+    }
+
+    .Agent_tabs .btn_Submit button {
+        border-radius: 8px;
+        font-size: 20px;
+        height: 30px;
+        width: 100px;
+        margin-top: 8px;
+    }
+
+    .Agent_tabs form .btn_check {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Agent_tabs form .btn_check label {
+        margin-bottom: 0px !important;
+    }
+}
+
+.Multiple_section {
+    background-color: #ffffff;
+    border-radius: 8.03px;
+}
+
+.Multiple_section form {
+    padding: 10px 20px 30px 20px;
+}
+
+.Multiple_section form label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #000000;
+}
+
+.Multiple_section form input[type="file"] {
+    border: none;
+}
+
+.Multiple_section button {
+    background-color: #4b62dc;
+    width: 112px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.Multiple_section .file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.Multiple_section .file-input-label {
+    display: block;
+    padding: 8px 12px;
+    background-color: #d9d9d9; /* Set background color as desired */
+    /* border: 1px solid #aaa; */
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+    /* width: 91px; */
+    height: 37px;
+}
+
+.Multiple_section .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.Multiple_section p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.Multiple_section #label_border {
+    border: 1px solid #d7dedd;
+    border-radius: 6px;
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    .Multiple_section #label_border {
+        width: 100%;
+    }
+}
     </style>
     <header>
         <div class="d-flex justify-content-between header_box">
@@ -117,54 +230,155 @@
 
 
     <div class="user_container">
-        <div class="delivery">
-            <img src="IMAGES/Vector(5).svg">
-            <div class="container">
-                <button class="btn">Add Agent</button>
-                <button class="btn">Add Multiple Agent</button>
-            </div>
-            <div class="form-div">
-                <div class="form-combine1">
-                    <div class="form-text">Upload Document</div>
-                    <div class="form-heading"><u>Agent Registration Form</u></div>
-                </div>
-                <div class="form-combine2">
-                    <div class="form-combine2-text1"><b>Upload Business License or Registration Certificate:</b></div>
-                    <div id="file-input-container">
-                        <input type="file" id="file-input">
-                        <label for="file-input" id="file-input-label"></label>
-                    </div>
-                    <div class="form-combine2-text1"><b>Insurance Certificate(if available):</b></div>
-                    <div id="file-input-container">
-                        <input type="file" id="file-input">
-                        <label for="file-input" id="file-input-label"></label>
-                    </div>
-                    <div class="form-combine2-text1"><b>Photo ID(e.g.,Passport,Driver's License):</b></div>
-                        <div id="file-input-container">
-                        <input type="file" id="file-input">
-                        <label for="file-input" id="file-input-label"></label>
+
+        <div class="Agent-Registration-section">
+
+            <div class="mt-2">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-Agent-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Agent" type="button" role="tab"
+                            aria-controls="pills-Agent" aria-selected="true">Add Agent</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Multiple-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Multiple" type="button" role="tab"
+                            aria-controls="pills-Multiple" aria-selected="false">Add Multiple Agent</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+
+                    <div class="tab-pane fade show active" id="pills-Agent" role="tabpanel"
+                        aria-labelledby="pills-Agent-tab">
+
+                        <div class="Agent_tabs mt-5">
+
+                            <div class="Agent_tabs_form">
+                                <p>Uploade Document</p>
+                                <h3 class="mb-3">Agent Registration Form</h3>
+                            </div>
+
+                            <form>
+                                <div class="mb-4">
+                                    <label class="mb-2">Upload Business License or Registration Certification
+                                        :</label><br>
+                                    <input type="file">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Insurance Certification (if applicable)
+                                        :</label><br>
+                                    <input type="file">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Photo ID (e.g., Passport, Driver's License)
+                                        :</label><br>
+                                    <input type="file">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Bank Name
+                                        :</label><br>
+                                    <input type="text">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Account Number
+                                        :</label><br>
+                                    <input type="text">
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Account Holder Name
+                                        :</label><br>
+                                    <input type="text">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mb-2">UPI ID
+                                        :</label><br>
+                                    <input type="text">
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Availability Schedule (days and hours)
+                                        :</label><br>
+                                    <input type="text">
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <label class="mb-2">Preferred Communication Channels
+                                        :</label><br>
+                                    <Select>
+                                        <option selected>Email</option>
+                                        <option></option>
+                                        <option></option>
+                                    </Select>
+                                </div>
+
+                                <div class="mb-4 btn_check">
+                                    <div class="">
+                                        <input type="checkbox">
+                                        <label class="mb-2" id="checkbox_in">I agree to comply with company
+                                            policies and
+                                            standards
+                                        </label><br>
+                                    </div>
+
+                                    <div class="btn_Submit">
+                                        <button>Submit</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
                         </div>
-                    <div class="form-combine2-text1"><b>Bank Name:</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text">
+
                     </div>
-                    <div class="form-combine2-text1"><b>Account Number:</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text">
-                    </div>
-                    <div class="form-combine2-text1"><b>Account Holder Name:</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text">
-                    </div>
-                    <div class="form-combine2-text1"><b>UPI ID:</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text">
-                    </div>
-                    <div class="form-combine2-text1"><b>Availability Schedule(days and hours):</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text">
-                    </div>
-                    <div class="form-combine2-text1"><b>Preferred Communication Channels:</b></div>
-                    <div id="file-input-container" style="height:45px";><input type="text" placeholder="Email">
+
+
+                    <div class="tab-pane fade" id="pills-Multiple" role="tabpanel"
+                        aria-labelledby="pills-Multiple-tab">
+
+                        <div class="Multiple_section mt-5">
+
+                            <form>
+                                <label class="mb-3">Upload Excel Sheet Here</label><br>
+                                <div class="d-flex" id="label_border">
+                                    
+                                    <div class="file-input-container">
+                                        <label for="fileInput" class="file-input-label">Choose a file</label>
+                                        <input type="file" id="fileInput" class="file-input">
+                                    </div>
+
+                                    <div>
+                                        <p style="text-align: center"> No File Chosen</p>
+                                    </div>
+                                </div>
+                                <button class="mt-3">Submit</button>
+                            </form>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
+
+
         </div>
+
     </div>
+
+</div>
+
+</div>
 </x-app-layout>
+
