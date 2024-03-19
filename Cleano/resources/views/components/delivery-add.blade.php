@@ -257,7 +257,7 @@
                         <div class="Agent_tabs mt-5">
 
                             <div class="Agent_tabs_form">
-                                <p>Uploade Document</p>
+                                <p>Upload Document</p>
                                 <h3 class="mb-3">Agent Registration Form</h3>
                             </div>
 

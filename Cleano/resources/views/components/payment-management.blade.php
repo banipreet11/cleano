@@ -168,7 +168,9 @@
             .payemnt-status-top-left-three img,
             .payemnt-status-top-left-four img {
                 flex: 30%;
-                height: 30px;
+                height: 24px;
+                margin-top: -1px;
+                margin-right: -15px;
             }
 
             .payemnt-status-top-left-three {
@@ -410,7 +412,7 @@
                             </svg>
                             <div class="payemnt-status-top-left-two" style="height: 40px;">
                                 <p>Overview</p>
-                                <button class="btn btn-primary" style="height: 28px;">425</button>
+                                <img src="IMAGES\users\Frame 1637.svg" alt="">
 
                             </div>
                             <div class="payemnt-status-top-left-three">

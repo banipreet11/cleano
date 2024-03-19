@@ -89,4 +89,11 @@ class Homecontroller extends Controller
     {
         return view('components.delivery-add');
     }
+    public function Vendor_Approval_Request()
+    {
+        return view('components.VendorApprovalRequests');
+    }
+    public function vendor_preview(){
+        return view('components.vendor-preview');
+    }
 }

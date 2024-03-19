@@ -299,11 +299,15 @@
     <div class="user_container">
         <div class="vendor-container1">
             <div class="vendor-combine1">
-                <a href="vendor-add">
+                <a href="">
                     <div class="add-vendor">Add Vendor</div>
                 </a>
-                <div class="add-vendor" style="margin-left: 55px">Import Vendor File</div>
-                <div class="add-vendor" style="margin-left: 60px">Approve Request</div>
+                <a href="">
+                    <div class="add-vendor" style="margin-left: 55px">Import Vendor File</div>
+                </a>    
+                <a href="{{route('Vendor_Approval_Request')}}">
+                    <div class="add-vendor" style="margin-left: 60px">Approve Request</div>
+                </a>
             </div>
             <div class="vendor-combine1" style="margin-top: 25px";>
                 <div class="vendor-count">

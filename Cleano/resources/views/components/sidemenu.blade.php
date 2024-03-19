@@ -181,7 +181,7 @@
         </ul>
 
 
-        <li><a href=""><button class="" id="button13" onclick="addActiveClass('button13')"><span
+        <li><a href="{{route('settings')}}"><button class="" id="button13" onclick="addActiveClass('button13')"><span
                         class=" sidebar_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 1024 1024">
                             <path fill="currentColor"

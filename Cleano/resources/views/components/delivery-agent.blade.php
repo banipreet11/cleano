@@ -99,7 +99,6 @@
                 padding: 8px 12px 8px 8px;
                 border-radius: 6px;
                 gap: 8px;
-                border: 1px solid #1B59F8;
                 display: flex;
             }
 
@@ -118,7 +117,9 @@
             .payemnt-status-top-left-three img,
             .payemnt-status-top-left-four img {
                 flex: 30%;
-                height: 30px;
+                height: 24px;
+                margin-top: -1px;
+                margin-right: -15px;
             }
 
             .payemnt-status-top-left-three {
@@ -292,7 +293,7 @@
 					</svg> Download</span>
 			</div>
 		</div>
-	</header>
+</header>
          <div class="user_container">
         <div class="delivery-container1">
             <div class="delivery-combine1">
@@ -375,7 +376,7 @@
 						</svg>
 						<div class="payemnt-status-top-left-two" style="height: 40px;">
 							<p>Overview</p>
-							<button class="btn btn-primary" style="height: 28px;">425</button>
+							<img src="IMAGES\users\Frame 1637.svg" alt="">
 
 						</div>
 						<div class="payemnt-status-top-left-three">
@@ -548,7 +549,109 @@
 						<a class="page-link" href="#" onclick="nextPage()">&gt;</a>
 					</li>
 				</ul>
-			</nav>  
+			</nav>
+            
+            <script>
+                var searchInput = document.getElementById('searchInput');
+
+                // Add event listener to input for filtering
+                searchInput.addEventListener('input', function() {
+                    var filter = searchInput.value.toUpperCase();
+                    var table = document.getElementById('searchResults');
+                    var rows = table.getElementsByTagName('tr');
+
+                    // Loop through all table rows, and hide those who don't match the search query
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].getElementsByTagName('td');
+                        var found = false;
+                        for (var j = 0; j < cells.length; j++) {
+                            var cell = cells[j];
+                            if (cell) {
+                                var textValue = cell.textContent || cell.innerText;
+                                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                    found = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (found) {
+                            rows[i].style.display = '';
+                        } else {
+                            rows[i].style.display = 'none';
+                        }
+                    }
+                });
+            </script>
+
+            <script>
+                const rowsPerPage = 10;
+                const data = [...]; // Your array of transaction data
+
+                // Function to populate table with data for a given page
+                function populateTable(page) {
+                    const tbody = document.querySelector('#searchResults tbody');
+                    tbody.innerHTML = ''; // Clear existing rows
+
+                    const startIndex = (page - 1) * rowsPerPage;
+                    const endIndex = startIndex + rowsPerPage;
+
+                    for (let i = startIndex; i < endIndex && i < data.length; i++) {
+                        const rowData = data[i];
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td><input type="checkbox" class="check"> ${rowData.date}</td>
+                 <td>${rowData.transactionId}</td>
+                 <td><button class="${rowData.status.toLowerCase()}">${rowData.status}</button></td>
+                 <td>${rowData.totalItems}</td>
+                 <td>${rowData.totalOrderAmount}</td>
+                 <td>${rowData.totalPayout}</td>`;
+                        tbody.appendChild(row);
+                    }
+                }
+
+                // Function to navigate to previous page
+                function previousPage() {
+                    currentPage--;
+                    if (currentPage < script 1) {
+                        currentPage = 1;
+                    }
+                    populateTable(currentPage);
+                }
+
+                // Function to navigate to next page
+                function nextPage() {
+                    currentPage++;
+                    const totalPages = Math.ceil(data.length / rowsPerPage);
+                    if (currentPage > totalPages) {
+                        currentPage = totalPages;
+                    }
+                    populateTable(currentPage);
+                }
+
+                // Function to navigate to specific page
+                function goToPage(page) {
+                    currentPage = page;
+                    populateTable(currentPage);
+                }
+
+                let currentPage = 1;
+                populateTable(currentPage);
+            </script>
+
+
+            <script>
+                const selectAllCheckbox = document.getElementById('selectAll');
+                const checkboxes = document.querySelectorAll('#searchResults tbody input[type="checkbox"]');
+
+
+                function toggleCheckboxes() {
+                    checkboxes.forEach(checkbox => {
+                        checkbox.checked = selectAllCheckbox.checked;
+                    });
+                }
+
+
+                selectAllCheckbox.addEventListener('change', toggleCheckboxes);
+            </script>
         </div>
     </div>
 </x-app-layout>
