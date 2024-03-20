@@ -1,8 +1,8 @@
 <x-app-layout>
     <style>
-        .user_container{
+        /* .user_container{
             margin-left: 120px;
-        }
+        } */
         .vendor-name{
             font-weight: bold;
             display: flex;
@@ -49,7 +49,7 @@
         .last-dv {
     width: 98%;
     border: 1px solid #0430A1;
-    margin-left: 130px;
+    /* margin-left: 130px; */
     height: 680px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); 
 }
@@ -313,7 +313,7 @@
         </div>
     </div>
 
-        <h5 style="margin:20px 150px;">All Services</h5>
+        <h5 style="margin:20px ;">All Services</h5>
 
         <div class="py-3 container">
             <div class="last-dv">

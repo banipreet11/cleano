@@ -53,7 +53,8 @@ Route::get('discount',  [Homecontroller::class ,"discount"])->name('discount');
 Route::get('orders',  [Homecontroller::class ,"orders"])->name('orders');
 
 Route::get('users',  [Homecontroller::class ,"users"])->name('users');
-//Route::get('users/add',  [Homecontroller::class ,"usersAdd"]);
+Route::get('users/add',  [Homecontroller::class ,"usersAdd"])->name('users-add');
+// Route::get('users/import',  [Homecontroller::class ,"usersImport"]);
 
 Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
 Route::get('vendor-add',  [Homecontroller::class ,"addven"]);

@@ -73,6 +73,8 @@ class Homecontroller extends Controller
     {
         return view('components.vendor-add');
     }
+
+    // User Management
     public function users()
     {
         return view('components.user-management');
@@ -81,6 +83,10 @@ class Homecontroller extends Controller
     {
         return view('components.user-registration');
     }
+    public function usersImport(){
+        return view('components.user-registration');
+    }
+
     public function delivery()
     {
         return view('components.delivery-agent');
