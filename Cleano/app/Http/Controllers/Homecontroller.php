@@ -83,8 +83,9 @@ class Homecontroller extends Controller
     {
         return view('components.user-registration');
     }
-    public function usersImport(){
-        return view('components.user-registration');
+    public function usermanagement_userdetail()
+    {
+        return view('components.usermanagement_userdetail');
     }
 
     public function delivery()

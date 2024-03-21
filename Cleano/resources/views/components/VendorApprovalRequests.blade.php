@@ -6,7 +6,9 @@
             font-weight: 600;
             color: #000000;
         }
-
+        .VendorApprovalRequest{
+            width:100%;
+        }
 
         .table_form {
             /* width: 100%; */
@@ -75,7 +77,7 @@
             color: #ffffff;
             background-color: #2148C0;
             /* width: 129px; */
-            padding: 5px 20px;
+            padding: 0px 20px;
             border: none;
             height: 24px;
             border-radius: 3px;

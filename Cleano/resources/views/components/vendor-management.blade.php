@@ -50,7 +50,7 @@
             font-weight: 400;
             line-height: 16px;
             color: #000000;
-
+            text-align: left;
         }
 
         .vendor-count h6 {
@@ -97,14 +97,16 @@
         }
 
         .payemnt-status-top-left-two {
-            width: 140px;
+            width: 150px;
             height: 40px;
             margin: 8px 12px 8px 16px;
             padding: 8px 12px 8px 8px;
             border-radius: 6px;
             gap: 8px;
-            border: 1px solid #1B59F8;
             display: flex;
+            border: 1px solid #5960781A;
+            box-shadow: 0px 0px 0px 1px #464F6029;
+            box-shadow: 0px 1px 1px 0px #0000001A;
         }
 
         .payemnt-status-top-left-two p,
@@ -121,14 +123,15 @@
         .payemnt-status-top-left-two img,
         .payemnt-status-top-left-three img,
         .payemnt-status-top-left-four img {
-            flex: 30%;
-            height: 30px;
+            flex: 20%;
+            height: 25px;
+            margin-right: -15px;
         }
 
         .payemnt-status-top-left-three {
-            width: 200px;
+            width: 140px;
             height: 40px;
-            margin: 8px 12px 8px 16px;
+            margin: 8px 12px 8px 12px;
             padding: 8px 12px 8px 8px;
             border-radius: 6px;
             gap: 8px;
@@ -141,7 +144,7 @@
         .payemnt-status-top-left-four {
             width: 110px;
             height: 40px;
-            margin: 8px 12px 8px 16px;
+            margin: 8px 12px 8px 12px;
             padding: 8px 12px 8px 8px;
             border-radius: 6px;
             gap: 8px;
@@ -296,7 +299,7 @@
 
         .nav-pills .nav-link.active .vendor-count,
         .show .nav-link .vendor-count {
-            border: 1px solid blue;
+            border: 1px solid #1B59F8;
         }
     </style>
     <header>
@@ -399,11 +402,6 @@
                 </ul>
             </div>
 
-            {{-- <div class="vendor-combine1" style="margin-top: 25px";>
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-					
-				</ul>
-            </div>  --}}
 
             <div class="payemnt-status">
                 <div class="payemnt-status-top">
@@ -451,16 +449,23 @@
                             </defs>
                         </svg>
                         <div class="payemnt-status-top-left-two" style="">
-                            <p>All</p>
+                            <p>Active User</p>
                             <img src="IMAGES\users\Frame 1637.svg" alt="">
-
                         </div>
                         <div class="payemnt-status-top-left-three">
-                            <p>Completed Payout</p>
+                            <p>Returning</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-three">
+                            <p>Imported</p>
                             <img src="IMAGES\users\Frame 1637.svg" alt="">
                         </div>
                         <div class="payemnt-status-top-left-four">
-                            <p>Refund</p>
+                            <p>Date</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-two" style="">
+                            <p>User Type</p>
                             <img src="IMAGES\users\Frame 1637.svg" alt="">
                         </div>
                     </div>
@@ -487,8 +492,8 @@
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
-                                    <th class="th-2">User </th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Vendor </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
                                     <th class="th-5">Location</th>
@@ -500,8 +505,8 @@
                             </thead>
                             <tbody id="searchResults">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -514,8 +519,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                     <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -527,8 +532,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                     <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -540,8 +545,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -553,8 +558,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -566,8 +571,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -578,8 +583,8 @@
                                     <td>₹50,000</td>
                                     <td>₹1200</td>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -607,12 +612,12 @@
                                 <path fill="#a0a0a2"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
-                            <input type="text" placeholder="Search" id="searchInput-2">
+                            <input type="text" placeholder="Search" class="searchInput-2">
                         </div>
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">User </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
@@ -623,10 +628,10 @@
                                     <th class="th-9">Reconcilliation</th>
                                 </tr>
                             </thead>
-                            <tbody id="searchResults-two">
+                            <tbody class="searchResults-two">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -639,8 +644,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -653,8 +658,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -667,8 +672,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -681,8 +686,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -695,8 +700,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -708,8 +713,8 @@
                                     <td>₹50,000</td>
                                     <td>₹1200</td>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -738,12 +743,12 @@
                                 <path fill="#a0a0a2"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
-                            <input type="text" placeholder="Search" id="searchInput-3">
+                            <input type="text" placeholder="Search" class="searchInput-2">
                         </div>
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">User </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
@@ -754,10 +759,10 @@
                                     <th class="th-9">Reconcilliation</th>
                                 </tr>
                             </thead>
-                            <tbody id="searchResults-three">
+                            <tbody class="searchResults-two">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -770,8 +775,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -784,8 +789,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -798,8 +803,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -812,8 +817,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -826,8 +831,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -839,8 +844,8 @@
                                     <td>₹50,000</td>
                                     <td>₹1200</td>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -869,12 +874,12 @@
                                 <path fill="#a0a0a2"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
-                            <input type="text" placeholder="Search" id="searchInput-4">
+                            <input type="text" placeholder="Search" class="searchInput-2">
                         </div>
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">User </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
@@ -885,10 +890,10 @@
                                     <th class="th-9">Reconcilliation</th>
                                 </tr>
                             </thead>
-                            <tbody id="searchResults-four">
+                            <tbody class="searchResults-two">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -901,8 +906,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -914,8 +919,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                     <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -927,8 +932,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -940,8 +945,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -970,12 +975,12 @@
                                 <path fill="#a0a0a2"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
-                            <input type="text" placeholder="Search" id="searchInput-4">
+                            <input type="text" placeholder="Search" class="searchInput-2">
                         </div>
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">User </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
@@ -986,10 +991,10 @@
                                     <th class="th-9">Reconcilliation</th>
                                 </tr>
                             </thead>
-                            <tbody id="searchResults-four">
+                            <tbody class="searchResults-two">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1002,8 +1007,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1016,8 +1021,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1030,8 +1035,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1044,8 +1049,8 @@
                                     <td>₹1200</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1070,12 +1075,12 @@
                                 <path fill="#a0a0a2"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
-                            <input type="text" placeholder="Search" id="searchInput-4">
+                            <input type="text" placeholder="Search" class="searchInput-2">
                         </div>
                         <table class="table table-striped table-hover table-borderless">
                             <thead id="t-head">
                                 <tr>
-                                    <th class="th-1"><input type="checkbox" id="selectAll"></th>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">User </th>
                                     <th class="th-3">Mobile Number </th>
                                     <th class="th-4">Email </th>
@@ -1086,10 +1091,10 @@
                                     <th class="th-9">Reconcilliation</th>
                                 </tr>
                             </thead>
-                            <tbody id="searchResults-four">
+                            <tbody class="searchResults-two">
                                 <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                                    <td><input type="checkbox" class="check select-checkbox"></td>
+                                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                                     <td>+91 1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
@@ -1101,8 +1106,8 @@
                     <td>₹1200</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                        <td><input type="checkbox" class="check select-checkbox"></td>
+                        <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                         <td>+91 1234567890</td>
                         <td>username@company.com</td>
                         <td>Clock Tower, Dehradun</td>
@@ -1113,8 +1118,8 @@
                 <td>₹1200</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"></td>
-                    <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                    <td><input type="checkbox" class="check select-checkbox"></td>
+                    <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                     <td>+91 1234567890</td>
                     <td>username@company.com</td>
                     <td>Clock Tower, Dehradun</td>
@@ -1125,8 +1130,8 @@
             <td>₹1200</td>
             </tr>
             <tr>
-                <td><input type="checkbox"></td>
-                <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+                <td><input type="checkbox" class="check select-checkbox"></td>
+                <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
                 <td>+91 1234567890</td>
                 <td>username@company.com</td>
                 <td>Clock Tower, Dehradun</td>
@@ -1137,8 +1142,8 @@
         <td>₹1200</td>
         </tr>
         <tr>
-            <td><input type="checkbox"></td>
-            <td>Username<img src="IMAGES\users\Group 289423.svg" alt=""></td>
+            <td><input type="checkbox" class="check select-checkbox"></td>
+            <td><a href="/vendor-preview">Username<img src="IMAGES\users\Group 289423.svg" alt=""></a></td>
             <td>+91 1234567890</td>
             <td>username@company.com</td>
             <td>Clock Tower, Dehradun</td>
@@ -1161,6 +1166,45 @@
 
     </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var searchInputs = document.querySelectorAll('.searchInput-2'); // Select all elements with class "searchInput-2"
+    
+            searchInputs.forEach(function(searchInput) {
+                // Add event listener to input for filtering
+                searchInput.addEventListener('input', function() {
+                    var filter = searchInput.value.toUpperCase();
+                    var tables = document.querySelectorAll('.searchResults-two'); // Select all elements with class "searchResults-two"
+    
+                    tables.forEach(function(table) {
+                        var rows = table.getElementsByTagName('tr');
+    
+                        // Loop through all table rows, and hide those who don't match the search query
+                        for (var i = 0; i < rows.length; i++) {
+                            var cells = rows[i].getElementsByTagName('td');
+                            var found = false;
+                            for (var j = 0; j < cells.length; j++) {
+                                var cell = cells[j];
+                                if (cell) {
+                                    var textValue = cell.textContent || cell.innerText;
+                                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                        found = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (found) {
+                                rows[i].style.display = '';
+                            } else {
+                                rows[i].style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.getElementById('searchInput');
@@ -1194,39 +1238,7 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var searchInput = document.getElementById('searchInput-2');
-
-            // Add event listener to input for filtering
-            searchInput.addEventListener('input', function() {
-                var filter = searchInput.value.toUpperCase();
-                var table = document.getElementById('searchResults-second');
-                var rows = table.getElementsByTagName('tr');
-
-                // Loop through all table rows, and hide those who don't match the search query
-                for (var i = 0; i < rows.length; i++) {
-                    var cells = rows[i].getElementsByTagName('td');
-                    var found = false;
-                    for (var j = 0; j < cells.length; j++) {
-                        var cell = cells[j];
-                        if (cell) {
-                            var textValue = cell.textContent || cell.innerText;
-                            if (textValue.toUpperCase().indexOf(filter) > -1) {
-                                found = true;
-                                break;
-                            }
-                        }
-                    }
-                    if (found) {
-                        rows[i].style.display = '';
-                    } else {
-                        rows[i].style.display = 'none';
-                    }
-                }
-            });
-        });
-    </script>
+     
     <script>
         var searchInput = document.getElementById('searchInput-3');
 
@@ -1314,19 +1326,21 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const selectAllCheckbox = document.getElementById('selectAll');
-            const checkboxes = document.querySelectorAll('#searchResults tbody input[type="checkbox"]');
+        document.addEventListener("DOMContentLoaded", function() {
+            const selectAllCheckboxes = document.querySelectorAll(".selectAll");
 
-            function toggleCheckboxes() {
-                checkboxes.forEach(checkbox => {
-                    checkbox.checked = selectAllCheckbox.checked;
+            selectAllCheckboxes.forEach(function(selectAllCheckbox) {
+                const checkboxes = selectAllCheckbox.closest('table').querySelectorAll(".check");
+
+                selectAllCheckbox.addEventListener("change", function() {
+                    checkboxes.forEach(function(checkbox) {
+                        checkbox.checked = selectAllCheckbox.checked;
+                    });
                 });
-            }
-
-            selectAllCheckbox.addEventListener('change', toggleCheckboxes);
+            });
         });
     </script>
+
     <script>
         new DataTable('#example', {
             info: true,

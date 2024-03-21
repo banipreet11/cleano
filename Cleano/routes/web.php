@@ -55,6 +55,7 @@ Route::get('orders',  [Homecontroller::class ,"orders"])->name('orders');
 Route::get('users',  [Homecontroller::class ,"users"])->name('users');
 Route::get('users/add',  [Homecontroller::class ,"usersAdd"])->name('users-add');
 // Route::get('users/import',  [Homecontroller::class ,"usersImport"]);
+Route::get('/usermanagement_userdetail',  [Homecontroller::class, "usermanagement_userdetail"])->name('usermanagement_userdetail');
 
 Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
 Route::get('vendor-add',  [Homecontroller::class ,"addven"]);

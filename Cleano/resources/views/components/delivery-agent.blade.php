@@ -30,7 +30,7 @@
     }
     .delivery-count 
     {
-            width: 265px;
+            width: 235px;
             height: 90px;
             border-radius: 20px;
             border: 1px;
@@ -38,6 +38,8 @@
             background: white;
             padding-top: 20px;
             padding-left: 20px;
+            text-align:left;
+            margin-left:-10px;
     }
     .delivery-count p
     {
@@ -47,7 +49,6 @@
         font-weight: 400;
         line-height: 16px;
         color: #000000;
-
     }
     .delivery-count h6
     {
@@ -93,60 +94,62 @@
             }
 
             .payemnt-status-top-left-two {
-                width: 140px;
-                height: 40px;
-                margin: 8px 12px 8px 16px;
-                padding: 8px 12px 8px 8px;
-                border-radius: 6px;
-                gap: 8px;
-                display: flex;
-            }
+            width: 150px;
+            height: 40px;
+            margin: 8px 12px 8px 16px;
+            padding: 8px 12px 8px 8px;
+            border-radius: 6px;
+            gap: 8px;
+            display: flex;
+            border: 1px solid #5960781A;
+            box-shadow: 0px 0px 0px 1px #464F6029;
+            box-shadow: 0px 1px 1px 0px #0000001A;
+        }
 
-            .payemnt-status-top-left-two p,
-            .payemnt-status-top-left-three p,
-            .payemnt-status-top-left-four p {
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 16px;
-                letter-spacing: 0px;
-                display: flex;
-                text-align: center;
-            }
+        .payemnt-status-top-left-two p,
+        .payemnt-status-top-left-three p,
+        .payemnt-status-top-left-four p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0px;
+            display: flex;
+            text-align: center;
+        }
 
-            .payemnt-status-top-left-two img,
-            .payemnt-status-top-left-three img,
-            .payemnt-status-top-left-four img {
-                flex: 30%;
-                height: 24px;
-                margin-top: -1px;
-                margin-right: -15px;
-            }
+        .payemnt-status-top-left-two img,
+        .payemnt-status-top-left-three img,
+        .payemnt-status-top-left-four img {
+            flex: 20%;
+            height: 25px;
+            margin-right: -15px;
+        }
 
-            .payemnt-status-top-left-three {
-                width: 200px;
-                height: 40px;
-                margin: 8px 12px 8px 16px;
-                padding: 8px 12px 8px 8px;
-                border-radius: 6px;
-                gap: 8px;
-                display: flex;
-                border: 1px solid #5960781A;
-                box-shadow: 0px 0px 0px 1px #464F6029;
-                box-shadow: 0px 1px 1px 0px #0000001A;
-            }
+        .payemnt-status-top-left-three {
+            width: 140px;
+            height: 40px;
+            margin: 8px 12px 8px 12px;
+            padding: 8px 12px 8px 8px;
+            border-radius: 6px;
+            gap: 8px;
+            display: flex;
+            border: 1px solid #5960781A;
+            box-shadow: 0px 0px 0px 1px #464F6029;
+            box-shadow: 0px 1px 1px 0px #0000001A;
+        }
 
-            .payemnt-status-top-left-four {
-                width: 110px;
-                height: 40px;
-                margin: 8px 12px 8px 16px;
-                padding: 8px 12px 8px 8px;
-                border-radius: 6px;
-                gap: 8px;
-                display: flex;
-                border: 1px solid #5960781A;
-                box-shadow: 0px 0px 0px 1px #464F6029;
-                box-shadow: 0px 1px 1px 0px #0000001A;
-            }
+        .payemnt-status-top-left-four {
+            width: 110px;
+            height: 40px;
+            margin: 8px 12px 8px 12px;
+            padding: 8px 12px 8px 8px;
+            border-radius: 6px;
+            gap: 8px;
+            display: flex;
+            border: 1px solid #5960781A;
+            box-shadow: 0px 0px 0px 1px #464F6029;
+            box-shadow: 0px 1px 1px 0px #0000001A;
+        }
 
             .payemnt-status-top-right {
                 display: flex;
@@ -234,19 +237,34 @@
 
             }
 
-
-            table .paid {
-                width: 53px;
-                height: 18px;
-                border: none;
-                color: white !important;
-                background-color: #5EAA3A !important;
-                font-size: 8px;
-
-
-
+            table .online {
+                width: Fixed (53px)px;
+                height: Hug (14.78px)px;
+                padding: 5px;
+                border-radius: 2.78px;
+                border: 0.7px;
+                background: #FFFFFF;
+                border: 0.7px solid #0EAE00;
+                font-weight: 500;
+                line-height: 11.13px;
+                text-align: center;
+                color: #22C115;
             }
 
+            table .offline
+            {
+                width: Fixed (53px)px;
+                height: Hug (14.78px)px;
+                padding: 5px;
+                border-radius: 2.78px;
+                border: 0.7px;
+                background: #999999;
+                border: 0.7px solid #4D4D4D;
+                font-weight: 500;
+                line-height: 11.13px;
+                text-align: center;
+                color: #FFFFFF;
+            }
             table .pending {
                 width: 53px;
                 height: 18x;
@@ -271,8 +289,15 @@
                 margin: 5px;
 
             }
+            .nav-item .nav-link {
+            background-color: transparent !important;
+            }
 
-            .page-link {}
+
+            .nav-pills .nav-link.active .delivery-count,
+            .show .nav-link .delivery-count {
+                border: 1px solid #1B59F8;
+            }
 
 </style>
 <header>
@@ -294,41 +319,80 @@
 			</div>
 		</div>
 </header>
-         <div class="user_container">
+        <div class="user_container">
         <div class="delivery-container1">
             <div class="delivery-combine1">
                 <a href="delivery-add"><div class="add-delivery">Add Delivery Agent</div></a>
                 <div class="add-delivery" style="margin-left: 30px">Import Agent File</div>
             </div>
             <div class="delivery-combine1" style="margin-top: 25px";>
-                <div class="delivery-count">
-                    <p>Total Agent</p>
-                    <h6>614</h6>
-                </div>
-                <div class="delivery-count" style="margin-left:20px";>
-                    <p>Online Agent</p>
-                    <h6>124</h6>
-                </div>
-                <div class="delivery-count"  style="margin-left:20px";>
-                    <p>Offline Agent</p>
-                    <h6>504</h6>
-                </div>
-                <div class="delivery-count"  style="margin-left:20px";>
-                    <p>Cash Collection</p>
-                    <h6>₹12400</h6>
-                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            <div class="delivery-count">
+                                <p>Total Agent</p>
+                                <h6>614</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">
+                            <div class="delivery-count">
+                                <p>Online Agent</p>
+                                <h6>124</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">
+                            <div class="delivery-count">
+                                <p>Offline Agent</p>
+                                <h6>504</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause"
+                            aria-selected="true">
+                            <div class="delivery-count">
+                                <p>Cash Collection</p>
+                                <h6>₹12400</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-close-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-close" type="button" role="tab" aria-controls="pills-close"
+                            aria-selected="false">
+                            <div class="delivery-count">
+                                <p>Pickup Order</p>
+                                <h6>614</h6>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-premium-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-premium" type="button" role="tab" aria-controls="pills-premium"
+                            aria-selected="false">
+                            <div class="delivery-count">
+                                <p>Delivery</p>
+                                <h6>124</h6>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+        
             </div>    
-            <div class="delivery-combine1" style="margin-top: 25px";>
-                <div class="delivery-count">
-                    <p>Pickup Order</p>
-                    <h6>614</h6>
-                </div>
-                <div class="delivery-count"  style="margin-left:20px";>
-                    <p>Delivery</p>
-                    <h6>124</h6>
-                </div>
-            </div> 
+        
 			<div class="payemnt-status">
+
 				<div class="payemnt-status-top">
 					<div class="payemnt-status-top-left">
 
@@ -374,164 +438,548 @@
 								</filter>
 							</defs>
 						</svg>
-						<div class="payemnt-status-top-left-two" style="height: 40px;">
-							<p>Overview</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
-
-						</div>
-						<div class="payemnt-status-top-left-three">
-							<p>Completed Payout</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
-						</div>
-						<div class="payemnt-status-top-left-four">
-							<p>Refund</p>
-							<img src="IMAGES\users\Frame 1637.svg" alt="">
-						</div>
+						<div class="payemnt-status-top-left-two" style="">
+                            <p>Active User</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-three">
+                            <p>Returning</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-three">
+                            <p>Imported</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-four">
+                            <p>Date</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
+                        <div class="payemnt-status-top-left-two" style="">
+                            <p>User Type</p>
+                            <img src="IMAGES\users\Frame 1637.svg" alt="">
+                        </div>
 					</div>
 					<div class="payemnt-status-top-right">
 						<p>Export</p>
 						<img src="IMAGES\Vector (2).svg" alt="">
 					</div>
 				</div>
-				<div class="searchbaar">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-						style="width: 14px; height: 14px; margin-left:10px;">
-						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free
-							Copyright 2024 Fonticons, Inc.-->
-						<path fill="#a0a0a2"
-							d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-					</svg>
-					<input type="text" placeholder="Search" id="searchInput">
-				</div>
+				<div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" id="searchInput">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="searchResults">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
 
-				{{-- -------table ------ --}}
-				<table class="table table-striped table-hover table-borderless" id="searchResults">
-					<thead>
-						<tr>
-							<th><input type="checkbox" id="selectAll"> Date</th>
-							<th>Transation ID</th>
-							<th>Status</th>
-							<th>Total Items</th>
-							<th>Total order Amount</th>
-							<th>Total Payout</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr style="border: transparent">
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="pending">Pedding</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-							<td>123456789012</td>
-							<td><button class="paid">Paid</button></td>
-							<td>10</td>
-							<td>₹130.3</td>
-							<td>₹129</td>
-						</tr>
-					</tbody>
+                        </table>
+                    </div>
 
-				</table>
+                    <div class="tab-pane fade " id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                        aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="tab-pane fade " id="pills-pause" role="tabpanel" aria-labelledby="pills-pause-tab"
+                        tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-close" role="tabpanel" aria-labelledby="pills-close-tab"
+                        tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="tab-pane fade " id="pills-premium" role="tabpanel"
+                        aria-labelledby="pills-premium-tab" tabindex="0">
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">User </th>
+                                    <th class="th-3">Mobile Number </th>
+                                    <th class="th-4">Email </th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Reconcilliation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="offline">Offline</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"> </td>
+                                    <td>User name</td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="online">Online</button></td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>₹1000</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
 			</div>
 			<nav aria-label="Page navigation example">
 				<ul class="pagination justify-content-center">
@@ -583,75 +1031,60 @@
                 });
             </script>
 
-            <script>
-                const rowsPerPage = 10;
-                const data = [...]; // Your array of transaction data
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchInputs = document.querySelectorAll('.searchInput-2'); // Select all elements with class "searchInput-2"
 
-                // Function to populate table with data for a given page
-                function populateTable(page) {
-                    const tbody = document.querySelector('#searchResults tbody');
-                    tbody.innerHTML = ''; // Clear existing rows
+        searchInputs.forEach(function(searchInput) {
+            // Add event listener to input for filtering
+            searchInput.addEventListener('input', function() {
+                var filter = searchInput.value.toUpperCase();
+                var tables = document.querySelectorAll('.searchResults-two'); // Select all elements with class "searchResults-two"
 
-                    const startIndex = (page - 1) * rowsPerPage;
-                    const endIndex = startIndex + rowsPerPage;
+                tables.forEach(function(table) {
+                    var rows = table.getElementsByTagName('tr');
 
-                    for (let i = startIndex; i < endIndex && i < data.length; i++) {
-                        const rowData = data[i];
-                        const row = document.createElement('tr');
-                        row.innerHTML = `<td><input type="checkbox" class="check"> ${rowData.date}</td>
-                 <td>${rowData.transactionId}</td>
-                 <td><button class="${rowData.status.toLowerCase()}">${rowData.status}</button></td>
-                 <td>${rowData.totalItems}</td>
-                 <td>${rowData.totalOrderAmount}</td>
-                 <td>${rowData.totalPayout}</td>`;
-                        tbody.appendChild(row);
+                    // Loop through all table rows, and hide those who don't match the search query
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].getElementsByTagName('td');
+                        var found = false;
+                        for (var j = 0; j < cells.length; j++) {
+                            var cell = cells[j];
+                            if (cell) {
+                                var textValue = cell.textContent || cell.innerText;
+                                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                    found = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (found) {
+                            rows[i].style.display = '';
+                        } else {
+                            rows[i].style.display = 'none';
+                        }
                     }
-                }
+                });
+            });
+        });
+    });
+</script>
 
-                // Function to navigate to previous page
-                function previousPage() {
-                    currentPage--;
-                    if (currentPage < script 1) {
-                        currentPage = 1;
-                    }
-                    populateTable(currentPage);
-                }
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const selectAllCheckboxes = document.querySelectorAll(".selectAll");
 
-                // Function to navigate to next page
-                function nextPage() {
-                    currentPage++;
-                    const totalPages = Math.ceil(data.length / rowsPerPage);
-                    if (currentPage > totalPages) {
-                        currentPage = totalPages;
-                    }
-                    populateTable(currentPage);
-                }
+        selectAllCheckboxes.forEach(function(selectAllCheckbox) {
+            const checkboxes = selectAllCheckbox.closest('table').querySelectorAll(".check");
 
-                // Function to navigate to specific page
-                function goToPage(page) {
-                    currentPage = page;
-                    populateTable(currentPage);
-                }
-
-                let currentPage = 1;
-                populateTable(currentPage);
-            </script>
-
-
-            <script>
-                const selectAllCheckbox = document.getElementById('selectAll');
-                const checkboxes = document.querySelectorAll('#searchResults tbody input[type="checkbox"]');
-
-
-                function toggleCheckboxes() {
-                    checkboxes.forEach(checkbox => {
-                        checkbox.checked = selectAllCheckbox.checked;
-                    });
-                }
-
-
-                selectAllCheckbox.addEventListener('change', toggleCheckboxes);
-            </script>
+            selectAllCheckbox.addEventListener("change", function() {
+                checkboxes.forEach(function(checkbox) {
+                    checkbox.checked = selectAllCheckbox.checked;
+                });
+            });
+        });
+    });
+</script>
         </div>
     </div>
 </x-app-layout>

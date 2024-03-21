@@ -188,7 +188,7 @@
         .Multiple_section #label_border {
             border: 1px solid #d7dedd;
             border-radius: 6px;
-            width: 50%;
+            width: 100%;
         }
 
         @media (max-width: 700px) {
@@ -333,6 +333,7 @@
                 }
             });
         </script>
+    
     
     
 </x-app-layout>

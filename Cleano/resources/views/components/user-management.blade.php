@@ -242,8 +242,6 @@
             border: none;
             outline: none;
             font-size: 13px;
-
-
         }
 
         table .admin {
@@ -288,20 +286,15 @@
         table .regular {
             width: 70px;
             height: Hug (14.78px)px;
-            padding: 5px;
-            border-radius: 2.78px;
+            padding:5px;
+            border-radius: 2.78px 0px 0px 0px;
             border: 0.7px;
             background: #5EAA3A;
+            border: 0.7px solid #93C5FD;
             font-weight: 500;
             line-height: 11.13px;
             text-align: center;
             color: #FFFFFF;
-            width: 53px;
-            height: 18x;
-            font-size: 8px;
-            border: none;
-            background-color: #AAAAAA;
-            color: white;
         }
 
         table .check {
@@ -309,6 +302,10 @@
             margin-top: 3px;
         }
 
+        table .check a{
+            text-decoration: none;
+            color: black;
+        }
         .pagination {
             border: none;
             padding: 10px;
@@ -327,7 +324,7 @@
 
         .nav-pills .nav-link.active .users-total,
         .show .nav-link .users-total {
-            border: 1px solid blue;
+            border: 1px solid #1B59F8;
         }
     </style>
 
@@ -348,12 +345,12 @@
     <div class="user_container">
         <div class="users-management">
             <div class="users-add-top">
-                <a href="{{ route('users-add') }}">
+                <a href="{{ route('users-add') }}" id="add-user-link">
                     <div class="users-add-user"> Add User</div>
                 </a>
 
-                <a href="{{ route('users-add') }}">
-                    <div class="users-add-user" style="margin-left:55px;"> Import User Filer</div>
+                <a href="{{ route('users-add') }}" id="import-user-link">
+                    <div class="users-add-user" style="margin-left:55px;"> Import User File</div>
                 </a>
             </div>
 
@@ -453,7 +450,6 @@
                         <div class="payemnt-status-top-left-two" style="">
                             <p>All</p>
                             <img src="IMAGES\users\Frame 1637.svg" alt="">
-
                         </div>
                         <div class="payemnt-status-top-left-three">
                             <p>Completed Payout</p>
@@ -499,102 +495,73 @@
                             </thead>
                             <tbody id="searchResults">
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="new-user">New user</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="new-user">New user</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="new-user">New user</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="new-user">New user</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
+                                
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="new-user">New user</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="new-user">New user</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="new-user">New user</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="new-user">New user</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="premium">Premium</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
 
@@ -603,12 +570,12 @@
 
 
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="regular">Regular</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
@@ -640,145 +607,57 @@
                             </thead>
                             <tbody id="searchResults-second">
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
+                                    <td>50,000</td>
+                                    <td>-</td>
+                                </tr>
+                               
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
+                                    <td>+91-1234567890</td>
+                                    <td>username@company.com</button></td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                              </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
+                               
                             </tbody>
 
                         </table>
@@ -809,115 +688,54 @@
     </thead>
     <tbody id="searchResults-three">
         <tr style="border: transparent">
-            <td><input type="checkbox" class="check"> Username</td>
+            <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
             <td>+91-1234567890</td>
             <td>username@company.com</td>
             <td>Clock Tower, Dehradun</td>
-            <td>10</td>
             <td><button class="admin">Admin</button></td>
+            <td>10</td>
             <td>50,000</td>
             <td>-</td>
         </tr>
         <tr style="border: transparent">
-            <td><input type="checkbox" class="check"> Username</td>
+            <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
             <td>+91-1234567890</td>
             <td>username@company.com</td>
             <td>Clock Tower, Dehradun</td>
-            <td>10</td>
             <td><button class="admin">Admin</button></td>
+            <td>10</td>
             <td>50,000</td>
             <td>-</td>
         </tr>
         <tr style="border: transparent">
-            <td><input type="checkbox" class="check"> Username</td>
+            <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
             <td>+91-1234567890</td>
             <td>username@company.com</td>
             <td>Clock Tower, Dehradun</td>
-            <td>10</td>
             <td><button class="admin">Admin</button></td>
+            <td>10</td>
             <td>50,000</td>
             <td>-</td>
         </tr>
     
-                               <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                               
+                                <tr style="border: transparent">
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
+                                    <td>10</td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
+                                    <td><input type="checkbox" class="check"><a href="{{route('usermanagement_userdetail')}}">Username</a></td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</button></td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
                                     <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-
-
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
                                     <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
-                                    <td>50,000</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr style="border: transparent">
-                                    <td><input type="checkbox" class="check"> Username</td>
-                                    <td>+91-1234567890</td>
-                                    <td>username@company.com</button></td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>10</td>
-                                    <td><button class="admin">Admin</button></td>
                                     <td>50,000</td>
                                     <td>-</td>
                                 </tr>
@@ -1104,15 +922,17 @@
     </script>
 
 
-    
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const selectAllCheckbox = document.querySelector(".selectAll");
-        const checkboxes = document.querySelectorAll(".check");
+        const selectAllCheckboxes = document.querySelectorAll(".selectAll");
 
-        selectAllCheckbox.addEventListener("change", function () {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = selectAllCheckbox.checked;
+        selectAllCheckboxes.forEach(function(selectAllCheckbox) {
+            const checkboxes = selectAllCheckbox.closest('table').querySelectorAll(".check");
+
+            selectAllCheckbox.addEventListener("change", function () {
+                checkboxes.forEach(function (checkbox) {
+                    checkbox.checked = selectAllCheckbox.checked;
+                });
             });
         });
     });
@@ -1137,6 +957,8 @@
             });
         });
     </script>
+
+    
 
 
 
