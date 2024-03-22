@@ -323,6 +323,48 @@
 
             }
 
+            .users-total {
+                width: 265.86px;
+                height: 90px;
+                background: white;
+                border-radius: 20px;
+                padding-top: 20px;
+                padding-left: 20px;
+                margin-left: -10px;
+            }
+
+            .users-total p,
+            .users-total .users-count-top p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #8F9BB3;
+            }
+
+            .users-count-top {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .users-total h6 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #222B45;
+                margin-top: -5px;
+                text-align: left;
+            }
+
+            .nav-item .nav-link {
+                background-color: transparent !important;
+            }
+
+
+            .nav-pills .nav-link.active .users-total,
+            .show .nav-link .users-total {
+                border: 1px solid #1B59F8;
+            }
+
             .page-link {}
         </style>
         <header>
@@ -351,17 +393,54 @@
                 <h5 class="payment-transaction">Transactions</h5>
                 <div class="payment-transaction-day">
                     <p>Last 30 Days</p>
-                    <img src="IMAGES\uil_calender.svg" alt="">
+                    <img src="IMAGES\uil_calender.svg" alt="" id="calendar-icon">
+                    <input type="text" id="datepicker" style="display:none;">
                 </div>
+                {{-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <div class="payment-order">
                     <div class="payment-order-undelivered">
                         <p>Undelivered Order</p>
                         <h4>₹61,400</h4>
                     </div>
+                   
+                   
                     <div class="payment-order-completed">
                         <p>Completed payout</p>
                         <h4>₹50000</h4>
                     </div>
+                </div>
+            </ul> --}}
+                <div class="users-add-top" style="margin-top:30px; margin-left:-5px;">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="false">
+                                <div class="users-total">
+                                    <div class="users-count-top">
+                                        <p>Undelivered Order</p>
+
+                                    </div>
+                                    <h6>₹61,400</h6>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">
+                                <div class="users-total">
+                                    <div class="users-count-top">
+                                        <p>Completed payout</p>
+                                    </div>
+                                    <h6>₹50,000</h6>
+                                </div>
+                            </button>
+                        </li>
+
+                    </ul>
+
+
                 </div>
 
                 <div class="payemnt-status">
@@ -433,7 +512,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                             style="width: 14px; height: 14px; margin-left:10px;">
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free
-    							Copyright 2024 Fonticons, Inc.-->
+    Copyright 2024 Fonticons, Inc.-->
                             <path fill="#a0a0a2"
                                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
@@ -441,253 +520,367 @@
                     </div>
 
                     {{-- -------table ------ --}}
-                    <table class="table table-striped table-hover table-borderless" id="searchResults">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" id="selectAll"> Date</th>
-                                <th>Transation ID</th>
-                                <th>Status</th>
-                                <th>Total Items</th>
-                                <th>Total order Amount</th>
-                                <th>Total Payout</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border: transparent">
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="pending">Pedding</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
-                                <td>123456789012</td>
-                                <td><button class="paid">Paid</button></td>
-                                <td>10</td>
-                                <td>₹130.3</td>
-                                <td>₹129</td>
-                            </tr>
-                        </tbody>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <table class="table table-striped table-hover table-borderless" id="searchResults">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" id="selectAll"> Date</th>
+                                        <th>Transation ID</th>
+                                        <th>Status</th>
+                                        <th>Total Items</th>
+                                        <th>Total order Amount</th>
+                                        <th>Total Payout</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border: transparent">
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="pending">Pedding</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                </tbody>
 
-                    </table>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                    {{-- <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <table class="table table-striped table-hover table-borderless" id="searchResults">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" id="selectAll"> Date</th>
+                                        <th>Transation ID</th>
+                                        <th>Status</th>
+                                        <th>Total Items</th>
+                                        <th>Total order Amount</th>
+                                        <th>Total Payout</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border: transparent">
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="pending">Pedding</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td><input type="checkbox" class="check"> Deposited on 2 Jan 2024</td>
+                                        <td>123456789012</td>
+                                        <td><button class="paid">Paid</button></td>
+                                        <td>10</td>
+                                        <td>₹130.3</td>
+                                        <td>₹129</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div> --}}
                 </div>
-                <nav aria-label="Page navigation example">
-					<ul class="pagination justify-content-center">
-						<li class="page-item">
-							<a class="page-link" href="#" onclick="previousPage()">&lt;</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#" onclick="goToPage(1)">1</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#" onclick="goToPage(2)">2</a>
-						</li>
-						<li class="page-item"><a class="page-link" href="#" onclick="goToPage(3)">..</a>
-						</li>
-						<!-- Add more page numbers dynamically based on total pages -->
-						<li class="page-item">
-							<a class="page-link" href="#" onclick="nextPage()">&gt;</a>
-						</li>
-					</ul>
-				</nav>
-                   
 
-                    <script>
-                        var searchInput = document.getElementById('searchInput');
+                </div>
+            </div>
+        </div>
 
-                        // Add event listener to input for filtering
-                        searchInput.addEventListener('input', function() {
-                            var filter = searchInput.value.toUpperCase();
-                            var table = document.getElementById('searchResults');
-                            var rows = table.getElementsByTagName('tr');
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" onclick="previousPage()">&lt;</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" onclick="goToPage(1)">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" onclick="goToPage(2)">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" onclick="goToPage(3)">..</a>
+                </li>
+                <!-- Add more page numbers dynamically based on total pages -->
+                <li class="page-item">
+                    <a class="page-link" href="#" onclick="nextPage()">&gt;</a>
+                </li>
+            </ul>
+        </nav>
 
-                            // Loop through all table rows, and hide those who don't match the search query
-                            for (var i = 0; i < rows.length; i++) {
-                                var cells = rows[i].getElementsByTagName('td');
-                                var found = false;
-                                for (var j = 0; j < cells.length; j++) {
-                                    var cell = cells[j];
-                                    if (cell) {
-                                        var textValue = cell.textContent || cell.innerText;
-                                        if (textValue.toUpperCase().indexOf(filter) > -1) {
-                                            found = true;
-                                            break;
-                                        }
-                                    }
-                                }
-                                if (found) {
-                                    rows[i].style.display = '';
-                                } else {
-                                    rows[i].style.display = 'none';
-                                }
+
+        <script>
+            var searchInput = document.getElementById('searchInput');
+
+            // Add event listener to input for filtering
+            searchInput.addEventListener('input', function() {
+                var filter = searchInput.value.toUpperCase();
+                var table = document.getElementById('searchResults');
+                var rows = table.getElementsByTagName('tr');
+
+                // Loop through all table rows, and hide those who don't match the search query
+                for (var i = 0; i < rows.length; i++) {
+                    var cells = rows[i].getElementsByTagName('td');
+                    var found = false;
+                    for (var j = 0; j < cells.length; j++) {
+                        var cell = cells[j];
+                        if (cell) {
+                            var textValue = cell.textContent || cell.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                found = true;
+                                break;
                             }
-                        });
-                    </script>
+                        }
+                    }
+                    if (found) {
+                        rows[i].style.display = '';
+                    } else {
+                        rows[i].style.display = 'none';
+                    }
+                }
+            });
+        </script>
 
-                    <script>
-                        const rowsPerPage = 10;
-                        const data = [...]; // Your array of transaction data
+        <script>
+            const rowsPerPage = 10;
+            const data = [...]; // Your array of transaction data
 
-                        // Function to populate table with data for a given page
-                        function populateTable(page) {
-                            const tbody = document.querySelector('#searchResults tbody');
-                            tbody.innerHTML = ''; // Clear existing rows
+            // Function to populate table with data for a given page
+            function populateTable(page) {
+                const tbody = document.querySelector('#searchResults tbody');
+                tbody.innerHTML = ''; // Clear existing rows
 
-                            const startIndex = (page - 1) * rowsPerPage;
-                            const endIndex = startIndex + rowsPerPage;
+                const startIndex = (page - 1) * rowsPerPage;
+                const endIndex = startIndex + rowsPerPage;
 
-                            for (let i = startIndex; i < endIndex && i < data.length; i++) {
-                                const rowData = data[i];
-                                const row = document.createElement('tr');
-                                row.innerHTML = `<td><input type="checkbox" class="check"> ${rowData.date}</td>
+                for (let i = startIndex; i < endIndex && i < data.length; i++) {
+                    const rowData = data[i];
+                    const row = document.createElement('tr');
+                    row.innerHTML = `<td><input type="checkbox" class="check"> ${rowData.date}</td>
                          <td>${rowData.transactionId}</td>
                          <td><button class="${rowData.status.toLowerCase()}">${rowData.status}</button></td>
                          <td>${rowData.totalItems}</td>
                          <td>${rowData.totalOrderAmount}</td>
                          <td>${rowData.totalPayout}</td>`;
-                                tbody.appendChild(row);
-                            }
-                        }
+                    tbody.appendChild(row);
+                }
+            }
 
-                        // Function to navigate to previous page
-                        function previousPage() {
-                            currentPage--;
-                            if (currentPage < script 1) {
-                                currentPage = 1;
-                            }
-                            populateTable(currentPage);
-                        }
+            // Function to navigate to previous page
+            function previousPage() {
+                currentPage--;
+                if (currentPage < script 1) {
+                    currentPage = 1;
+                }
+                populateTable(currentPage);
+            }
 
-                        // Function to navigate to next page
-                        function nextPage() {
-                            currentPage++;
-                            const totalPages = Math.ceil(data.length / rowsPerPage);
-                            if (currentPage > totalPages) {
-                                currentPage = totalPages;
-                            }
-                            populateTable(currentPage);
-                        }
+            // Function to navigate to next page
+            function nextPage() {
+                currentPage++;
+                const totalPages = Math.ceil(data.length / rowsPerPage);
+                if (currentPage > totalPages) {
+                    currentPage = totalPages;
+                }
+                populateTable(currentPage);
+            }
 
-                        // Function to navigate to specific page
-                        function goToPage(page) {
-                            currentPage = page;
-                            populateTable(currentPage);
-                        }
+            // Function to navigate to specific page
+            function goToPage(page) {
+                currentPage = page;
+                populateTable(currentPage);
+            }
 
-                        let currentPage = 1;
-                        populateTable(currentPage);
-                    </script>
-
-
-                    <script>
-                        const selectAllCheckbox = document.getElementById('selectAll');
-                        const checkboxes = document.querySelectorAll('#searchResults tbody input[type="checkbox"]');
+            let currentPage = 1;
+            populateTable(currentPage);
+        </script>
 
 
-                        function toggleCheckboxes() {
-                            checkboxes.forEach(checkbox => {
-                                checkbox.checked = selectAllCheckbox.checked;
-                            });
-                        }
+        <script>
+            const selectAllCheckbox = document.getElementById('selectAll');
+            const checkboxes = document.querySelectorAll('#searchResults tbody input[type="checkbox"]');
 
 
-                        selectAllCheckbox.addEventListener('change', toggleCheckboxes);
-                    </script>
+            function toggleCheckboxes() {
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = selectAllCheckbox.checked;
+                });
+            }
 
+
+            selectAllCheckbox.addEventListener('change', toggleCheckboxes);
+        </script>
 </x-app-layout>

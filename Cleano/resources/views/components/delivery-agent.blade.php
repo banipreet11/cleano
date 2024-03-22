@@ -28,6 +28,21 @@
         padding-top:13px;
         padding-left:15px;
     }
+    .delivery-request
+    {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #FFFFFF;
+        background: #75B1E8;
+        width: 280px;
+        height: 51px;
+        border-radius: 8px;
+        padding-top:13px;
+        padding-left:15px;
+        margin-left: 30px;
+    }
     .delivery-count 
     {
             width: 235px;
@@ -324,6 +339,7 @@
             <div class="delivery-combine1">
                 <a href="delivery-add"><div class="add-delivery">Add Delivery Agent</div></a>
                 <div class="add-delivery" style="margin-left: 30px">Import Agent File</div>
+                <div class="delivery-request">Approve Delivery Request</div>
             </div>
             <div class="delivery-combine1" style="margin-top: 25px";>
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">

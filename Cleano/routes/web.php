@@ -57,10 +57,19 @@ Route::get('users/add',  [Homecontroller::class ,"usersAdd"])->name('users-add')
 // Route::get('users/import',  [Homecontroller::class ,"usersImport"]);
 Route::get('/usermanagement_userdetail',  [Homecontroller::class, "usermanagement_userdetail"])->name('usermanagement_userdetail');
 
+
+/* Vendor */
+/*  ======== */
+
 Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
 Route::get('vendor-add',  [Homecontroller::class ,"addven"]);
 Route::get('/Vendor-Approval-Request',  [Homecontroller::class, "Vendor_Approval_Request"])->name('Vendor_Approval_Request');
 Route::get('vendor-preview',  [Homecontroller::class ,"vendor_preview"]);
+Route::get('vendors/add',  [Homecontroller::class ,"addvendor"])->name('add-vendor');
+
+
+/* Delivery */
+/* ======== */
 
 Route::get('delivery',  [Homecontroller::class ,"delivery"])->name('delivery');
 

@@ -1,7 +1,6 @@
 <x-app-layout>
 
     <style>
-
         .custom-container {
             width: 100%;
             height: 93px;
@@ -269,6 +268,125 @@
 
         }
 
+        .delivered {
+            width: 70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #5EAA3A;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .shipped {
+            width: 70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #BE9415;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .accepted {
+            width: 70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #2577E4;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .pending {
+            width: 70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #18C6DE;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .cancel {
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #C13030;
+            border: 0.7px solid #C13030 ;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .rejected-button
+        {
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #FFF066;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #000000;
+        }
+        .cancel-button
+        {
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #C13030;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .failed-button
+        {
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #DD8501;
+            border: 0.7px solid #C58E00;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .return-button
+        {
+            
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #222B45;
+            border: 0.7px solid #3199FF;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .cbb-button
+        {
+            width:70px;
+            height: Hug (14.78px)px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 0.7px;
+            background: #9126FC;
+            border: 0.7px solid #93C5FD;
+            text-align: center;
+            color: #FFFFFF;
+        }
         .payment-order .payment-order-completed {
             width: 280px;
             height: 90px;
@@ -350,25 +468,44 @@
         }
 
 
-		.nav-pills .nav-link.active .order-column,
-.nav-pills .show .nav-link.active .order-column .order-combine1 {
-    border: 1px solid #1B59F8;
-   }
-		
-       
-        /* @media(max-width:1400px){
-   .order-column {
-   width: 155px;
-  
-   .order-combine1 .order-div2 {
-    font-size: 22px;
-    font-weight: 600;
-   }
-  } */
+        .nav-pills .nav-link.active .order-column,
+        .show .nav-link .order-column {
+            border: 1px solid #1B59F8;
+        }
+
+
+
+        @media(max-width:1460px) {
+            .order-column {
+                width: 150px;
+                padding:0px;
+            }
+
+                .order-combine1 .order-div2 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            .nav-pills .nav-link.order {
+      background: blue !important;
+      color: white;
+      gap: 10px;
+      margin-left: 20px;
+    }
+    /* Align disabled tab to the right */
+    .nav-pills .nav-item.disabled {
+      margin-left: auto;
+    }
+    .btn-group{
+        float: right;
+        margin-right: 80px;
+        margin-top: -50px;
+    }
     </style>
     <header>
         <div class="d-flex justify-content-between header_box">
-            <h3>Order Management<span class="heading-short">/Total Order</span></h3>
+            <h3>Order Management<span class="heading-short">Total Order</span></h3>
             <div class="header_left_side">
                 <span class="first"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                         viewBox="0 0 36 36">
@@ -392,104 +529,104 @@
         <div class="custom-container container">
             <div class="order-count">
                 <ul class="nav nav-pills mb-3 d-flex justify-content-between" id="pills-tab" role="tablist">
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                aria-selected="true">
-                                <div class="order-column">
-                                    <div class="order-div1">Total Order</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">3,298</div>
-                                        <img src="IMAGES\Leaderboard Arrow.svg" alt="">
-                                    </div>
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            <div class="order-column">
+                                <div class="order-div1">Total Order</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">3,298</div>
+                                    <img src="IMAGES\Leaderboard Arrow.svg" alt="">
                                 </div>
-                            </button>
-                        </li>
-                    </div>
+                            </div>
+                        </button>
+                    </li>
+                    {{-- </div> --}}
 
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-profile" type="button" role="tab"
-                                aria-controls="pills-profile" aria-selected="false">
-                                <div class="order-column">
-                                    <div class="order-div1">Pending Order</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">2980</div>
-                                        <img src="IMAGES\Down.svg" alt="">
-                                    </div>
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">
+                            <div class="order-column">
+                                <div class="order-div1">Pending Order</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">2980</div>
+                                    <img src="IMAGES\Down.svg" alt="">
                                 </div>
-                            </button>
-                        </li>
-                    </div>
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
+                            </div>
+                        </button>
+                    </li>
+                    {{-- </div> --}}
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
 
-                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-contact" type="button" role="tab"
-                                aria-controls="pills-contact" aria-selected="false">
-                                <div class="order-column">
-                                    <div class="order-div1">Accepted Order</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">5026</div>
-                                        <img src="IMAGES\Leaderboard Arrow.svg" alt="">
-                                    </div>
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">
+                            <div class="order-column">
+                                <div class="order-div1">Accepted Order</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">5026</div>
+                                    <img src="IMAGES\Leaderboard Arrow.svg" alt="">
                                 </div>
-                            </button>
+                            </div>
+                        </button>
 
-                        </li>
-                    </div>
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
+                    </li>
+                    {{-- </div> --}}
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
 
-                            <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause"
-                                aria-selected="true">
-                                <div class="order-column">
-                                    <div class="order-div1">Shipping Order</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">2700</div>
-                                        <img src="IMAGES\Down.svg" alt="">
-                                    </div>
+                        <button class="nav-link" id="pills-pause-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-pause" type="button" role="tab" aria-controls="pills-pause"
+                            aria-selected="true">
+                            <div class="order-column">
+                                <div class="order-div1">Shipping Order</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">2700</div>
+                                    <img src="IMAGES\Down.svg" alt="">
                                 </div>
-                            </button>
+                            </div>
+                        </button>
 
-                        </li>
-                    </div>
+                    </li>
+                    {{-- </div> --}}
 
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-close-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-close" type="button" role="tab"
-                                aria-controls="pills-close" aria-selected="false">
-                                <div class="order-column">
-                                    <div class="order-div1">Delivered Orders</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">4000</div>
-                                        <img src="IMAGES\Down.svg" alt="">
-                                    </div>
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-close-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-close" type="button" role="tab" aria-controls="pills-close"
+                            aria-selected="false">
+                            <div class="order-column">
+                                <div class="order-div1">Delivered Orders</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">4000</div>
+                                    <img src="IMAGES\Down.svg" alt="">
                                 </div>
-                            </button>
-                        </li>
-                    </div>
-                    <div class="col-lg-2 col-md-2">
-                        <li class="nav-item" role="presentation">
+                            </div>
+                        </button>
+                    </li>
+                    {{-- </div> --}}
+                    {{-- <div class="col-lg-2 col-md-2"> --}}
+                    <li class="nav-item" role="presentation">
 
-                            <button class="nav-link" id="pills-premium-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-premium" type="button" role="tab"
-                                aria-controls="pills-premium" aria-selected="false">
-                                <div class="order-column">
-                                    <div class="order-div1">Others Order</div>
-                                    <div class="order-combine1">
-                                        <div class="order-div2">200</div>
-                                        <img src="IMAGES\Down.svg" alt="">
-                                    </div>
+                        <button class="nav-link" id="pills-premium-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-premium" type="button" role="tab"
+                            aria-controls="pills-premium" aria-selected="false">
+                            <div class="order-column">
+                                <div class="order-div1">Others Order</div>
+                                <div class="order-combine1">
+                                    <div class="order-div2">200</div>
+                                    <img src="IMAGES\Down.svg" alt="">
                                 </div>
-                            </button>
+                            </div>
+                        </button>
 
-                        </li>
-                    </div>
+                    </li>
+                    {{-- </div> --}}
 
                 </ul>
 
@@ -618,7 +755,7 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
 										linear-gradient(0deg, #955306, #955306);">UPI</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -634,7 +771,7 @@
 											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -650,7 +787,7 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -667,7 +804,7 @@
 										#5EAA3A;border: 0.7px solid #500050;
 										background: #6F0D6F;">Cash</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -683,59 +820,12 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="cancel">Cancel</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"style="background:
-          #5EAA3A;border: 0.7px solid #500050;
-           background: #6F0D6F;">Cash</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"style="background:
-          #5EAA3A;border: 0.7px solid #500050;background: #6F0D6F;">Cash</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-
-
-
-                            </tbody>
+                               </tbody>
                         </table>
                     </div>
                 </div>
@@ -855,27 +945,11 @@
                                     <td>+91 1234567890</td>
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
-                                            style="background:
-									 #5EAA3A;border: 0.7px solid #500050;
-										background: #6F0D6F;">Cash</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
                                             style="background: #DE7B07;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
-									linear-gradient(0deg, #955306, #955306);">UPI</button>
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
+										linear-gradient(0deg, #955306, #955306);">UPI</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -888,10 +962,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #001C6E;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
+											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                            <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -904,30 +978,15 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #A67548;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #158D86;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
+
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
                                     <td>Deposited on 2 Jan 2024</td>
@@ -936,10 +995,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background:
-									 #5EAA3A;border: 0.7px solid #500050;
-									background: #6F0D6F;">Cash</button>
+										#5EAA3A;border: 0.7px solid #500050;
+										background: #6F0D6F;">Cash</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -952,26 +1011,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #001C6E;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
+                                            <td><button class="pending">Pending</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1096,27 +1139,11 @@
                                     <td>+91 1234567890</td>
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
-                                            style="background:
-									 #5EAA3A;border: 0.7px solid #500050;
-										background: #6F0D6F;">Cash</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
                                             style="background: #DE7B07;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
-									linear-gradient(0deg, #955306, #955306);">UPI</button>
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
+										linear-gradient(0deg, #955306, #955306);">UPI</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1129,10 +1156,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #001C6E;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
+											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1145,30 +1172,15 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #A67548;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #158D86;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
+
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
                                     <td>Deposited on 2 Jan 2024</td>
@@ -1177,10 +1189,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background:
-									 #5EAA3A;border: 0.7px solid #500050;
-									background: #6F0D6F;">Cash</button>
+										#5EAA3A;border: 0.7px solid #500050;
+										background: #6F0D6F;">Cash</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1193,26 +1205,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background: #001C6E;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
+										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
+										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-									border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-									linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="accepted">Accepted</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1337,27 +1333,11 @@
                                     <td>+91 1234567890</td>
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
-                                            style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
-											background: #6F0D6F;">Cash</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
                                             style="background: #DE7B07;
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
 										linear-gradient(0deg, #955306, #955306);">UPI</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1373,7 +1353,7 @@
 											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1389,27 +1369,12 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #158D86;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
+
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
                                     <td>Deposited on 2 Jan 2024</td>
@@ -1418,10 +1383,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
+										#5EAA3A;border: 0.7px solid #500050;
 										background: #6F0D6F;">Cash</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1437,23 +1402,7 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="shipped">Shipped</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1578,27 +1527,11 @@
                                     <td>+91 1234567890</td>
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
-                                            style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
-											background: #6F0D6F;">Cash</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
                                             style="background: #DE7B07;
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
 										linear-gradient(0deg, #955306, #955306);">UPI</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1614,7 +1547,7 @@
 											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1630,27 +1563,12 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
                                             Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #158D86;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button>
-                                    </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
+
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
                                     <td>Deposited on 2 Jan 2024</td>
@@ -1659,10 +1577,10 @@
                                     <td>+91 1234567890</td>
                                     <td><button class="payment-status-button"
                                             style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
+										#5EAA3A;border: 0.7px solid #500050;
 										background: #6F0D6F;">Cash</button>
                                     </td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1678,23 +1596,7 @@
 										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
 										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
                                             Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
+                                    <td><button class="delivered">Delivered</td>
                                     <td>Clock Tower, Dehradun</td>
                                     <td>Active</td>
                                     <td>-</td>
@@ -1704,13 +1606,39 @@
                     </div>
                 </div>
 
-                <div class="tab-pane fade " id="pills-premium" role="tabpanel" aria-labelledby="pills-premium-tab"
+                 <div class="tab-pane fade " id="pills-premium" role="tabpanel" aria-labelledby="pills-premium-tab"
                     tabindex="0">
                     <div class="order-row2-div1">Others Order</div>
                     <div class="order-row2-combine1">
                         <div class="order-row2-combine1-text">200</div>
                         <img src="IMAGES\Leaderboard Arrow.svg" alt="">
                     </div>
+                       {{--  --}}
+                       <ul class="nav nav-pills btn-group mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link order" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Rejected Order</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link order" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cancelled Order</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link order" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cancelled by Buyer</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link order" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Faild Order</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link order" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Returned</button>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">.</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                      </div>
+                        {{--  --}}
+
                     <div class="payemnt-status">
                         <div class="payemnt-status-top">
                             <div class="payemnt-status-top-left">
@@ -1777,7 +1705,7 @@
                                     <img src="IMAGES\users\Frame 1637.svg" alt="">
                                 </div>
                                 <div class="payemnt-status-top-left-four" style="">
-                                    <p>orders</p>
+                                    <p>User Type</p>
                                     <img src="IMAGES\users\Frame 1637.svg" alt="">
                                 </div>
                             </div>
@@ -1801,143 +1729,75 @@
                                 <tr>
                                     <th class="th-1"><input type="checkbox" class="selectAll"></th>
                                     <th class="th-2">Orders</th>
-                                    <th class="th-3">User </th>
-                                    <th class="th-4">Mobile Number </th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
                                     <th class="th-5">Location</th>
-                                    <th class="th-6">Payment</th>
-                                    <th class="th-7">Status</th>
-                                    <th class="th-8">Total Order</th>
-                                    <th class="th-9">Total Sales</th>
-                                    <th class="th-10">Date</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
                                 </tr>
                             </thead>
                             <tbody class="searchResults-two">
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
-											background: #6F0D6F;">Cash</button>
+                                    <td>D#256349</td>
+                                    <td>Ekart Logistics</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="rejected-button">Rejected</button>
                                     </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>50,000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #DE7B07;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #955306, #955306),
-										linear-gradient(0deg, #955306, #955306);">UPI</button>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="cancel-button">Cancel</button>
                                     </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
+                                    <td>20</td>
+                                    <td>2000</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #001C6E;
-											border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-											linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
-                                            Card</button></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #158D86;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">PayPal</button>
+                                    <td><button class="failed-button">Failed</button>
                                     </td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
+                                    <td>20</td>
+                                    <td>2000</td>
                                     <td>-</td>
                                 </tr>
+
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background:
-										 #5EAA3A;border: 0.7px solid #500050;
-										background: #6F0D6F;">Cash</button>
-                                    </td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
+                                    <td><button class="return-button">Return</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
                                     <td>-</td>
 
                                 <tr>
                                     <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #001C6E;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Credit
-                                            Card</button></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="check"></td>
-                                    <td>Deposited on 2 Jan 2024</td>
-                                    <td>Username</td>
-                                    <td>+91 1234567890</td>
-                                    <td>+91 1234567890</td>
-                                    <td><button class="payment-status-button"
-                                            style="background: #A67548;
-										border: 0.7px solid;border-image-source: linear-gradient(0deg, #1B59F8, #1B59F8),
-										linear-gradient(0deg, #1B59F8, #1B59F8);">Debit
-                                            Card</button></td>
-                                    <td>username@company.com</td>
-                                    <td>Clock Tower, Dehradun</td>
-                                    <td>Active</td>
+                                    <td><button class="cbb-button">CbB</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
                                     <td>-</td>
                                 </tr>
                             </tbody>
@@ -2108,14 +1968,14 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInputs = document.querySelectorAll(
-            '.searchInput-2'); // Select all elements with class "searchInput-2"
+                '.searchInput-2'); // Select all elements with class "searchInput-2"
 
             searchInputs.forEach(function(searchInput) {
                 // Add event listener to input for filtering
                 searchInput.addEventListener('input', function() {
                     var filter = searchInput.value.toUpperCase();
                     var tables = document.querySelectorAll(
-                    '.searchResults-two'); // Select all elements with class "searchResults-two"
+                        '.searchResults-two'); // Select all elements with class "searchResults-two"
 
                     tables.forEach(function(table) {
                         var rows = table.getElementsByTagName('tr');
@@ -2144,10 +2004,6 @@
                 });
             });
         });
-
-
-
-		
     </script>
 
 

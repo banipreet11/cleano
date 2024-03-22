@@ -24,11 +24,13 @@
         }
 
         .table_form #img_para {
-            width: 40px;
-            height: 32px;
+            width: 45px;
+            height: 40px;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1.5);
             padding: 8px 0;
             border-radius: 6px;
+            margin-top: 10px;
+            left: 5px;
         }
 
         .table_form p img {
@@ -86,11 +88,20 @@
             background-color: #F8F9FC;
         }
 
-        .table_form_flex {
-            display: flex;
+        .nav-item .nav-link {
+            background-color: transparent !important;
         }
 
-        .table_form_flex p {
+
+        /* .nav-pills .nav-link.active p,
+         .nav-link p {
+            border: 1px solid #1B59F8;
+        } */
+        .nav-pills .nav-link p:active {
+    border: 1px solid #1B59F8;
+}
+    
+        .table_form p {
             width: fit-content;
             /* height: 30px; */
             font-size: 12px;
@@ -102,7 +113,7 @@
             border-radius: 6px;
         }
 
-        .table_form_flex span {
+        .table_form span {
             background-color: #6788DD;
             color: white;
             padding: 3px 4px;
@@ -425,49 +436,60 @@
 
                 </div>
 
-
                 <div class="user_1 mt-4">
 
                     <p>All Orders</p>
 
 
                     <div class="table_form ">
-
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <div class="d-flex gap-4">
 
                             <p id="img_para"><img src="\IMAGES\filter.svg"></p>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <div class="total-order">
+                                         <p>Today <span>425</span></p>
+                                    </div></button>
+                              </li>
 
-                            <div class="table_form_flex">
-                                <div class="">
-                                    <p>Today <span>425</span></p>
-                                </div>
-                            </div>
-                            <div class="table_form_flex">
-                                <div class="">
-                                    <p>Yesterday <span>425</span></p>
-                                </div>
-                            </div>
+                            
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"> 
+                                    <div class="total-order"><p>Yesterday <span>425</span></p>
+                                    </div></button>
+                              </li>
+                                    
+                               
 
-                            <div class="table_form_flex">
-                                <div class="">
-                                    <p>Vendor <span>425</span></p>
-                                </div>
-                            </div>
+                              <li class="nav-item" role="presentation">
+                             
+                                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <div class="total-order"> <p>Vendor <span>425</span></p>
+                                    </div></button>
+                               
+                              </li>
+                              
 
-                            <div class="table_form_flex">
-                                <div class="">
-                                    <p>Email <span>425</span></p>
-                                </div>
-                            </div>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">  
+                                    <div class="total-order"><p>Email <span>425</span></p>
+                                    </div></button>
+                              </li>
+                                   
+                               
 
-                            <div class="table_form_flex">
-                                <div class="">
-                                    <p>Number <span>425</span></p>
-                                </div>
-                            </div>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <div class="total-order"><p>Number <span>425</span></p>
+                                    </div></button>
+                              </li>
+                              
 
 
                         </div>
+                        </ul>
+                    
 
                         <div class="search_icon"
                             style="   border: 1px solid #687182 !important;
@@ -486,9 +508,13 @@
                             margin-left:10px;
                             ">
                         </div>
-
+                        <div class="tab-content" id="pills-tabContent">
+                            
                         <div class="card_section">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
                             <div class="row">
+                              
 
                                 <div class="col-lg-4 col-md-6 col-sm-12">
 
@@ -732,10 +758,16 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                           
                             </div>
+
                         </div>
+                    
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">ddrt</div>
+                </div>
+
+                </div>
+
 
                     </div>
                 </div>
@@ -747,7 +779,7 @@
 
     </div>
 
-
+   
 
 
 

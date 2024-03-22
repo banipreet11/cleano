@@ -33,14 +33,10 @@
     background-color: #ffffff;
     border-radius: 8.03px;
     padding: 40px 40px 10px 40px;
-    width: 1112.83px;
+    width: 100%;
 }
 
-@media (max-width: 1430px) {
-    .Agent_tabs {
-        width: 100%;
-    }
-}
+
 
 .Agent_tabs .Agent_tabs_form p {
     font-size: 12px;
@@ -231,6 +227,7 @@
 
     <div class="user_container">
 
+       <div class="container">
         <div class="Agent-Registration-section">
 
             <div class="mt-2">
@@ -349,7 +346,6 @@
                         aria-labelledby="pills-Multiple-tab">
 
                         <div class="Multiple_section mt-5">
-
                             <form>
                                 <label class="mb-3">Upload Excel Sheet Here</label><br>
                                 <div class="d-flex" id="label_border">
@@ -374,6 +370,7 @@
 
 
         </div>
+       </div>
 
     </div>
 

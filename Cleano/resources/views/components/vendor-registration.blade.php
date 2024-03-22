@@ -213,7 +213,7 @@
     </style>
     <header>
         <div class="d-flex justify-content-between header_box">
-            <h3>Add User</h3>
+            <h3>Add Vendor</h3>
             <div class="header_left_side">
                 <span class="second"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                         viewBox="0 0 24 24">
@@ -226,7 +226,7 @@
     
         <div class="user_container d-block">
             <div class="main-sec-1 d-flex">
-                <a href="{{route('users')}}" style=" margin-top:-50px;";><svg width="35" height="35" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="{{route('vendors')}}" style=" margin-top:-50px;";><svg width="35" height="35" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.40625 20.1562H36.2812C36.6376 20.1562 36.9794 20.2978 37.2314 20.5498C37.4834 20.8018 37.625 21.1436 37.625 21.5C37.625 21.8564 37.4834 22.1982 37.2314 22.4502C36.9794 22.7022 36.6376 22.8438 36.2812 22.8438H9.40625C9.04987 22.8438 8.70808 22.7022 8.45608 22.4502C8.20407 22.1982 8.0625 21.8564 8.0625 21.5C8.0625 21.1436 8.20407 20.8018 8.45608 20.5498C8.70808 20.2978 9.04987 20.1562 9.40625 20.1562Z" fill="#333333"/>
                     <path d="M9.96301 21.4997L21.1081 32.6421C21.3604 32.8944 21.5021 33.2367 21.5021 33.5935C21.5021 33.9503 21.3604 34.2925 21.1081 34.5449C20.8558 34.7972 20.5135 34.9389 20.1567 34.9389C19.7999 34.9389 19.4576 34.7972 19.2053 34.5449L7.11157 22.4511C6.98644 22.3263 6.88715 22.178 6.81941 22.0148C6.75167 21.8515 6.7168 21.6765 6.7168 21.4997C6.7168 21.323 6.75167 21.148 6.81941 20.9847C6.88715 20.8215 6.98644 20.6732 7.11157 20.5484L19.2053 8.45462C19.4576 8.2023 19.7999 8.06055 20.1567 8.06055C20.5135 8.06055 20.8558 8.2023 21.1081 8.45462C21.3604 8.70694 21.5021 9.04916 21.5021 9.40599C21.5021 9.76283 21.3604 10.105 21.1081 10.3574L9.96301 21.4997Z" fill="#333333" />
                     </svg></a>
@@ -235,25 +235,24 @@
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Add User</button>
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">Add Vendor</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                        role="tab" aria-controls="pills-profile" aria-selected="false">Add Multiple Users</button>
+                        role="tab" aria-controls="pills-profile" aria-selected="false">Add Multiple Vendors</button>
                 </li>
             </ul>
-            
     
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <form class="user-form">
-                        <p class="add-user" style="font-size: 40px;">Add User</p>
-                        <p class="user-id">User Id: DR0001</p>
+                        <p class="add-user" style="font-size: 40px;">Add Vendor</p>
+                        <p class="user-id">Vendor Id: DR0001</p>
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12 p-3">
                                 <div class="form-detail mb-3">
-                                    <label class="form-label" for="exampleInputName1">User Name</label>
+                                    <label class="form-label" for="exampleInputName1">Vendor Name</label>
                                     <input class="form-control" id="exampleInputName1" type="Name" aria-describedby="emailHelp"
                                         style="outline: none;" placeholder=  "Enter Driver Name">
     
@@ -267,7 +266,7 @@
                                     <input class="form-control" id="exampleInputEmail1" type="Emaild" placeholder= "this@gmail.com">
                                 </div>
                                 <div class="form-detail mb-3">
-                                    <label class="form-label" for="exampleInputAddress">Address</label>
+                                    <label class="form-label" for="exampleInputAddress">Location</label>
                                     <input class="form-control" id="exampleInputAddress1" type="Address" placeholder= "address">
                                 </div>
     

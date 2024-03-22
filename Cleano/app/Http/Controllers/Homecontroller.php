@@ -73,6 +73,10 @@ class Homecontroller extends Controller
     {
         return view('components.vendor-add');
     }
+    public function addvendor()
+    {
+        return view('components.vendor-registration');
+    }
 
     // User Management
     public function users()
