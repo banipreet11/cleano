@@ -345,11 +345,11 @@
     <div class="user_container">
         <div class="users-management">
             <div class="users-add-top">
-                <a href="{{ route('users-add') }}" id="add-user-link">
+                <a href="{{ route('users_add') }}" id="add-user-link">
                     <div class="users-add-user"> Add User</div>
                 </a>
 
-                <a href="{{ route('users-add') }}" id="import-user-link">
+                <a href="{{ route('users_add') }}" id="import-user-link">
                     <div class="users-add-user" style="margin-left:55px;"> Import User File</div>
                 </a>
             </div>

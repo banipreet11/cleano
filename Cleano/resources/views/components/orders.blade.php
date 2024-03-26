@@ -142,79 +142,34 @@
         .payemnt-status-top-left {
             display: flex;
             flex: 90%;
+            flex-wrap:wrap;
         }
 
-        .payemnt-status-top-left-one {
-            width: 40px;
-            height: 40px;
-            margin: 8px 12px 8px 16px;
-            padding: 8px 12px 8px 12px;
-            border-radius: 6px;
-            gap: 8px;
-            border: 1px solid #5960781A;
-            box-shadow: 0px 0px 0px 1px #464F6029;
-            box-shadow: 0px 1px 1px 0px #0000001A;
+        .payment-status-box 
+        {
+            width:fit-content;
+            border-radius:6px;
+            border:1px solid #D9DBDE;
+            padding:2px 5px;
+            height:30px;
+            margin-right:20px;
         }
-
-        .payemnt-status-top-left-two {
-            width: 150px;
-            height: 40px;
-            margin: 8px 12px 8px 16px;
-            padding: 8px 12px 8px 8px;
-            border-radius: 6px;
-            gap: 8px;
-            display: flex;
-            border: 1px solid #5960781A;
-            box-shadow: 0px 0px 0px 1px #464F6029;
-            box-shadow: 0px 1px 1px 0px #0000001A;
+        .payment-status-box p 
+        {
+            font-size:12px;
+            color:#979797;
         }
-
-        .payemnt-status-top-left-two p,
-        .payemnt-status-top-left-three p,
-        .payemnt-status-top-left-four p {
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 16px;
-            letter-spacing: 0px;
-            display: flex;
-            text-align: center;
-        }
-
-        .payemnt-status-top-left-two img,
-        .payemnt-status-top-left-three img,
-        .payemnt-status-top-left-four img {
-            flex: 20%;
-            height: 25px;
-            margin-right: -15px;
-        }
-
-        .payemnt-status-top-left-three {
-            width: 140px;
-            height: 40px;
-            margin: 8px 12px 8px 12px;
-            padding: 8px 12px 8px 8px;
-            border-radius: 6px;
-            gap: 8px;
-            display: flex;
-            border: 1px solid #5960781A;
-            box-shadow: 0px 0px 0px 1px #464F6029;
-            box-shadow: 0px 1px 1px 0px #0000001A;
-        }
-
-        .payemnt-status-top-left-four {
-            width: 110px;
-            height: 40px;
-            margin: 8px 12px 8px 12px;
-            padding: 8px 12px 8px 8px;
-            border-radius: 6px;
-            gap: 8px;
-            display: flex;
-            border: 1px solid #5960781A;
-            box-shadow: 0px 0px 0px 1px #464F6029;
-            box-shadow: 0px 1px 1px 0px #0000001A;
-        }
-
-
+         .payment-status-box  span 
+         {
+             background-color:#6788DD;
+             padding:3px 5px;
+             border-radius:4px;
+             font-size:11px;
+             color:#ffffff;
+             margin-left:8px;
+         }
+        
+        /*===============*/
         .payemnt-status-top-right {
             display: flex;
             flex: 10%;
@@ -502,6 +457,35 @@
         margin-right: 80px;
         margin-top: -50px;
     }
+
+    .other_order_tabs {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.other_order_tab_btn {
+    padding:0 20px;
+    width:fit-content;
+  cursor: pointer;
+  margin-right:30px;
+  border:none;
+  border-radius:5px;
+  background-color:#75B1E8;
+  color:#FFFFFF;
+  font-size:13px;
+  outline:none;
+  height:35px;
+  margin-bottom:20px;
+}
+
+.other_order_tab_content {
+  display: none;
+}
+
+.other_order_tab_content.active {
+  display: block;
+}
+
     </style>
     <header>
         <div class="d-flex justify-content-between header_box">
@@ -528,7 +512,7 @@
     <div class="user_container">
         <div class="custom-container container">
             <div class="order-count">
-                <ul class="nav nav-pills mb-3 d-flex justify-content-between" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills mb-3 d-flex " id="pills-tab" role="tablist">
                     {{-- <div class="col-lg-2 col-md-2"> --}}
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -641,10 +625,10 @@
                         <img src="IMAGES\Leaderboard Arrow.svg" alt="">
                     </div>
                     <div class="payemnt-status">
-                        <div class="payemnt-status-top">
-                            <div class="payemnt-status-top-left">
+                        <div class="payemnt-status-top ">
+                            <div class="payemnt-status-top-left d-flex align-items-center ">
                                 <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" style="margin-right:20px;">
                                     <g filter="url(#filter0_ddd_501_18005)">
                                         <rect x="5" y="5" width="40" height="32" rx="6"
                                             fill="white" />
@@ -689,25 +673,26 @@
                                         </filter>
                                     </defs>
                                 </svg>
-                                <div class="payemnt-status-top-left-four" style="">
-                                    <p>Today</p>
-                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                
+                                <div class="payment-status-box d-flex justify-content-between align-items-center" style="">
+                                    <p class="mb-0">Today</p>
+                                    <span>425</span>
                                 </div>
-                                <div class="payemnt-status-top-left-three">
-                                    <p>Yesterday</p>
-                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                <div class="payment-status-box d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Yesterday</p>
+                                     <span>425</span>
                                 </div>
-                                <div class="payemnt-status-top-left-three">
-                                    <p>Imported</p>
-                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                <div class="payment-status-box d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Imported</p>
+                                    <span>425</span>
                                 </div>
-                                <div class="payemnt-status-top-left-four">
-                                    <p>Date</p>
-                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                <div class="payment-status-box d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Date</p>
+                                    <span>425</span>
                                 </div>
-                                <div class="payemnt-status-top-left-four" style="">
-                                    <p>Orders</p>
-                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                <div class="payment-status-box d-flex justify-content-between align-items-center" style="">
+                                    <p class="mb-0">Orders</p>
+                                     <span>425</span>
                                 </div>
                             </div>
                             <div class="payemnt-status-top-right">
@@ -1608,38 +1593,631 @@
 
                  <div class="tab-pane fade " id="pills-premium" role="tabpanel" aria-labelledby="pills-premium-tab"
                     tabindex="0">
-                    <div class="order-row2-div1">Others Order</div>
-                    <div class="order-row2-combine1">
+                     <div class="d-flex">
+                         <div > <!--- other_order_section left start_---->
+                       <div class="order-row2-div1">Others Order</div>
+                        <div class="order-row2-combine1">
                         <div class="order-row2-combine1-text">200</div>
                         <img src="IMAGES\Leaderboard Arrow.svg" alt="">
-                    </div>
-                       {{--  --}}
-                       <ul class="nav nav-pills btn-group mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link order" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Rejected Order</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link order" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cancelled Order</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link order" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cancelled by Buyer</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link order" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Faild Order</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link order" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Returned</button>
-                          </li>
-                      </ul>
-                      <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">.</div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
                       </div>
+                     </div><!---- other_order_section _left  end ---->
+                       {{--  --}}
+                      
+                      <div class="other_order_tabs">
+                        <button class="other_order_tab_btn active" data-tab="reject" onclick="hide_other_order_table()">Rejected Order </button>
+                        <button class="other_order_tab_btn" data-tab="cancel" onclick="hide_other_order_table()">Cancelled Order</button>
+                        <button class="other_order_tab_btn" data-tab="cancel_buyer" onclick="hide_other_order_table()">Cancelled by Buyer</button>
+                        <button class="other_order_tab_btn" data-tab="fail" onclick="hide_other_order_table()">Failed Order</button>
+                        <button class="other_order_tab_btn" data-tab="return" onclick="hide_other_order_table()">Returned</button>
+                      </div>
+                     </div>
+                      
+                      <!--=======  reject table ======-->
+                     <div class="other_order_tab_content" id="reject">
+                         <div class="payemnt-status ">
+                        <div class="payemnt-status-top">
+                            <div class="payemnt-status-top-left">
+                                <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_ddd_501_18005)">
+                                        <rect x="5" y="5" width="40" height="32" rx="6"
+                                            fill="white" />
+                                        <path
+                                            d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+                                            fill="#464F60" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feOffset />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+                                            <feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+                                                result="effect3_dropShadow_501_18005" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect3_dropShadow_501_18005" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>Today</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Yesterday</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Imported</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four">
+                                    <p>Date</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>User Type</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payemnt-status-top-right">
+                                <p>Export</p>
+                                <img src="IMAGES\Vector (2).svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Orders</th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                <tr>
+                                    <td><input type="checkbox" class="check"></td>
+                                    <td>D#256349</td>
+                                    <td>Ekart Logistics</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="rejected-button">Rejected</button>
+                                    </td>
+                                    <td>10</td>
+                                    <td>50,000</td>
+                                    <td>-</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                     </div>
+                     
+                     <!--========== cancel order tabel =======-->
+                     <div class="other_order_tab_content" id="cancel">
+                          <div class="payemnt-status ">
+                        <div class="payemnt-status-top">
+                            <div class="payemnt-status-top-left">
+                                <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_ddd_501_18005)">
+                                        <rect x="5" y="5" width="40" height="32" rx="6"
+                                            fill="white" />
+                                        <path
+                                            d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+                                            fill="#464F60" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feOffset />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+                                            <feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+                                                result="effect3_dropShadow_501_18005" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect3_dropShadow_501_18005" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>Today</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Yesterday</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Imported</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four">
+                                    <p>Date</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>User Type</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payemnt-status-top-right">
+                                <p>Export</p>
+                                <img src="IMAGES\Vector (2).svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Orders</th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                              
+                                <tr>
+                                    <td><input type="checkbox" class="check"></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="cancel-button">Cancel</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
+                                    <td>-</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                     </div>
+                     
+                     <!----========= cancel buyer table =====----->
+                     <div class="other_order_tab_content" id="cancel_buyer">
+                          <div class="payemnt-status ">
+                        <div class="payemnt-status-top">
+                            <div class="payemnt-status-top-left">
+                                <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_ddd_501_18005)">
+                                        <rect x="5" y="5" width="40" height="32" rx="6"
+                                            fill="white" />
+                                        <path
+                                            d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+                                            fill="#464F60" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feOffset />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+                                            <feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+                                                result="effect3_dropShadow_501_18005" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect3_dropShadow_501_18005" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>Today</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Yesterday</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Imported</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four">
+                                    <p>Date</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>User Type</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payemnt-status-top-right">
+                                <p>Export</p>
+                                <img src="IMAGES\Vector (2).svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Orders</th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                                
+                                <tr>
+                                    <td><input type="checkbox" class="check"></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="cbb-button">CbB</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     </div>
+                     
+                     <!-------=====Fail table ====--->
+                     <div class="other_order_tab_content" id="fail">
+                          <div class="payemnt-status ">
+                        <div class="payemnt-status-top">
+                            <div class="payemnt-status-top-left">
+                                <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_ddd_501_18005)">
+                                        <rect x="5" y="5" width="40" height="32" rx="6"
+                                            fill="white" />
+                                        <path
+                                            d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+                                            fill="#464F60" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feOffset />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+                                            <feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+                                                result="effect3_dropShadow_501_18005" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect3_dropShadow_501_18005" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>Today</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Yesterday</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Imported</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four">
+                                    <p>Date</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>User Type</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payemnt-status-top-right">
+                                <p>Export</p>
+                                <img src="IMAGES\Vector (2).svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Orders</th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                               
+                                <tr>
+                                    <td><input type="checkbox" class="check"></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="failed-button">Failed</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
+                                    <td>-</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                     </div>
+                     
+                     <!------===== return table -----====----->
+                     <div class="other_order_tab_content" id="return">
+                          <div class="payemnt-status ">
+                        <div class="payemnt-status-top">
+                            <div class="payemnt-status-top-left">
+                                <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_ddd_501_18005)">
+                                        <rect x="5" y="5" width="40" height="32" rx="6"
+                                            fill="white" />
+                                        <path
+                                            d="M30.79 13.6156C31.3029 12.9591 30.8351 12 30.002 12H20.0019C19.1687 12 18.7009 12.9591 19.2138 13.6156L24.0398 19.7287C24.1772 19.9045 24.2518 20.1212 24.2518 20.3443V25.7961C24.2518 25.9743 24.4672 26.0635 24.5932 25.9375L25.6054 24.9254C25.6991 24.8316 25.7518 24.7044 25.7518 24.5718V20.3443C25.7518 20.1212 25.8264 19.9045 25.9638 19.7287L30.79 13.6156Z"
+                                            fill="#464F60" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_ddd_501_18005" x="0" y="0" width="50" height="42"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="2" />
+                                            <feGaussianBlur stdDeviation="2.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.34902 0 0 0 0 0.376471 0 0 0 0 0.470588 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                result="effect1_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feOffset />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0.27451 0 0 0 0 0.308497 0 0 0 0 0.376471 0 0 0 0.16 0" />
+                                            <feBlend mode="normal" in2="effect1_dropShadow_501_18005"
+                                                result="effect2_dropShadow_501_18005" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="0.5" />
+                                            <feColorMatrix type="matrix"
+                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="effect2_dropShadow_501_18005"
+                                                result="effect3_dropShadow_501_18005" />
+                                            <feBlend mode="normal" in="SourceGraphic"
+                                                in2="effect3_dropShadow_501_18005" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>Today</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Yesterday</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-three">
+                                    <p>Imported</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four">
+                                    <p>Date</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                                <div class="payemnt-status-top-left-four" style="">
+                                    <p>User Type</p>
+                                    <img src="IMAGES\users\Frame 1637.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payemnt-status-top-right">
+                                <p>Export</p>
+                                <img src="IMAGES\Vector (2).svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="searchbaar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 14px; height: 14px; margin-left:10px;">
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.-->
+                                <path fill="#a0a0a2"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            </svg>
+                            <input type="text" placeholder="Search" class="searchInput-2">
+                        </div>
+                        <table class="table table-striped table-hover table-borderless">
+                            <thead id="t-head">
+                                <tr>
+                                    <th class="th-1"><input type="checkbox" class="selectAll"></th>
+                                    <th class="th-2">Orders</th>
+                                    <th class="th-3">Logistics Company</th>
+                                    <th class="th-4">Email</th>
+                                    <th class="th-5">Location</th>
+                                    <th class="th-6">Status</th>
+                                    <th class="th-7">Total Order</th>
+                                    <th class="th-8">Total Sales</th>
+                                    <th class="th-9">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody class="searchResults-two">
+                               
+                              
+
+                                <tr>
+                                    <td><input type="checkbox" class="check"></td>
+                                    <td>#256349</td>
+                                    <td>Shipway</td>
+                                    <td>username@company.com</td>
+                                    <td>Clock Tower, Dehradun</td>
+                                    <td><button class="return-button">Return</button>
+                                    </td>
+                                    <td>20</td>
+                                    <td>2000</td>
+                                    <td>-</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     </div>
                         {{--  --}}
 
-                    <div class="payemnt-status">
+                    <div class="payemnt-status other_order_table">
                         <div class="payemnt-status-top">
                             <div class="payemnt-status-top-left">
                                 <svg width="50" height="42" viewBox="0 0 50 42" fill="none"
@@ -1810,6 +2388,61 @@
 
         </div>
     </div>
+    
+    <!-------- other_order tabs js  ----->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const order_other_tabs = document.querySelectorAll('.other_order_tab_btn');
+    const tabContents = document.querySelectorAll('.other_order_tab_content');
+    const otherOrderTable = document.querySelector('.other_order_table');
+    const removeActiveBtn = document.getElementById('pills-premium-tab');
+
+    order_other_tabs.forEach(tab_other => {
+        tab_other.addEventListener('click', function() {
+            order_other_tabs.forEach(t => t.classList.remove('active'));
+            tab_other.classList.add('active');
+
+            const tabId = tab_other.getAttribute('data-tab');
+            tabContents.forEach(content => {
+                if (content.getAttribute('id') === tabId) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+
+            // Hide other_order_table when a tab is active
+            otherOrderTable.style.display = 'none';
+        });
+    });
+
+    removeActiveBtn.addEventListener('click', function() {
+        order_other_tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Show other_order_table when active class is removed from tabs
+        otherOrderTable.style.display = 'block';
+    });
+});
+</script>
+
+
+
+<script>
+    
+
+function hide_other_order_table()
+{
+    var other_order_table  =  document.querySelector('.other_order_table');
+   other_order_table.style.display = "none";
+       
+}
+</script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.getElementById('searchInput');

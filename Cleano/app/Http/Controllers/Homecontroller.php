@@ -67,25 +67,32 @@ class Homecontroller extends Controller
     }
     public function vendors()
     {
-        return view('components.vendor-management');
+        return view('components.vendors');
     }
-    public function addven()
+    public function vendor_addition()
     {
-        return view('components.vendor-add');
+        return view('components.vendor_addition');
     }
     public function addvendor()
     {
-        return view('components.vendor-registration');
+        return view('components.vendor_register');
+    }
+    public function Vendor_Approval_Request()
+    {
+        return view('components.Vendor_Approval_Request');
+    }
+    public function vendor_preview(){
+        return view('components.vendor_preview');
     }
 
     // User Management
     public function users()
     {
-        return view('components.user-management');
+        return view('components.users');
     }
-    public function usersAdd()
+    public function users_add()
     {
-        return view('components.user-registration');
+        return view('components.users_add');
     }
     public function usermanagement_userdetail()
     {
@@ -94,17 +101,11 @@ class Homecontroller extends Controller
 
     public function delivery()
     {
-        return view('components.delivery-agent');
+        return view('components.delivery');
     }
-    public function delivadd()
+    public function delivery_add()
     {
-        return view('components.delivery-add');
+        return view('components.delivery_add');
     }
-    public function Vendor_Approval_Request()
-    {
-        return view('components.VendorApprovalRequests');
-    }
-    public function vendor_preview(){
-        return view('components.vendor-preview');
-    }
+    
 }

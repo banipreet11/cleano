@@ -327,10 +327,10 @@
     <div class="user_container">
         <div class="vendor-container1">
             <div class="vendor-combine1">
-                <a href="{{ route('add-vendor') }}">
+                <a href="{{ route('vendor_addition') }}">
                     <div class="add-vendor">Add Vendor</div>
                 </a>
-                <a href="{{ route('add-vendor') }}">
+                <a href="{{ route('vendor_addition') }}">
                     <div class="add-vendor" style="margin-left: 55px">Import Vendor File</div>
                 </a>
                 <a href="{{ route('Vendor_Approval_Request') }}">

@@ -337,7 +337,7 @@
         <div class="user_container">
         <div class="delivery-container1">
             <div class="delivery-combine1">
-                <a href="delivery-add"><div class="add-delivery">Add Delivery Agent</div></a>
+                <a href="{{route('delivery_add')}}"><div class="add-delivery">Add Delivery Agent</div></a>
                 <div class="add-delivery" style="margin-left: 30px">Import Agent File</div>
                 <div class="delivery-request">Approve Delivery Request</div>
             </div>

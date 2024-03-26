@@ -53,7 +53,7 @@ Route::get('discount',  [Homecontroller::class ,"discount"])->name('discount');
 Route::get('orders',  [Homecontroller::class ,"orders"])->name('orders');
 
 Route::get('users',  [Homecontroller::class ,"users"])->name('users');
-Route::get('users/add',  [Homecontroller::class ,"usersAdd"])->name('users-add');
+Route::get('users_add',  [Homecontroller::class ,"users_add"])->name('users_add');
 // Route::get('users/import',  [Homecontroller::class ,"usersImport"]);
 Route::get('/usermanagement_userdetail',  [Homecontroller::class, "usermanagement_userdetail"])->name('usermanagement_userdetail');
 
@@ -62,9 +62,9 @@ Route::get('/usermanagement_userdetail',  [Homecontroller::class, "usermanagemen
 /*  ======== */
 
 Route::get('vendors',  [Homecontroller::class ,"vendors"])->name('vendors');
-Route::get('vendor-add',  [Homecontroller::class ,"addven"]);
-Route::get('/Vendor-Approval-Request',  [Homecontroller::class, "Vendor_Approval_Request"])->name('Vendor_Approval_Request');
-Route::get('vendor-preview',  [Homecontroller::class ,"vendor_preview"]);
+Route::get('vendor_addition',  [Homecontroller::class ,"vendor_addition"])->name('vendor_addition');
+Route::get('/Vendor_Approval_Request',  [Homecontroller::class, "Vendor_Approval_Request"])->name('Vendor_Approval_Request');
+Route::get('vendor_preview',  [Homecontroller::class ,"vendor_preview"])->name('vendor_preview');
 Route::get('vendors/add',  [Homecontroller::class ,"addvendor"])->name('add-vendor');
 
 
@@ -73,4 +73,4 @@ Route::get('vendors/add',  [Homecontroller::class ,"addvendor"])->name('add-vend
 
 Route::get('delivery',  [Homecontroller::class ,"delivery"])->name('delivery');
 
-Route::get('delivery-add',  [Homecontroller::class ,"delivadd"])->name('delivadd');
+Route::get('delivery_add',  [Homecontroller::class ,"delivery_add"])->name('delivery_add');

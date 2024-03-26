@@ -266,56 +266,56 @@
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> sendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> dendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> rendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 
                                 <tr>
@@ -323,49 +323,49 @@
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"> Vendorname</td>
                                     <td>+91-1234567890</td>
                                     <td>username@company.com</td>
                                     <td>Clock Tower, Dehradun</td>
-                                    <td><a href="/vendor-preview"><button>Preview</button></a></td>
+                                    <td><a href="{{route('vendor_preview')}}"><button>Preview</button></a></td>
                                 </tr>
                             </tbody>
                         </table>
